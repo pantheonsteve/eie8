@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * @file
+ * Functions to support theming in the SASS Starterkit subtheme.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter() for settings form.
+ *
+ * Replace Barrio setting options with subtheme ones.
+ */
+function eie8_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+      'bg-primary' => t('Primary'),
+      'bg-secondary' => t('Secondary'),
+      'bg-light' => t('Light'),
+      'bg-dark' => t('Dark'),
+      'bg-white' => t('White'),
+      'bg-transparent' => t('Transparent'),
+  );
+
+  $form['fonts']['icons']['bootstrap_barrio_icons']['#options']['fontawesome_5'] = 'Font Awesome 5';
+
+}
+
+function eie8_preprocess_page(&$variables)
+{
+  $icons = theme_get_setting('bootstrap_barrio_icons');
+  if ($icons) {
+    $variables['#attached']['library'][] = ( $icons == 'fontawesome_5' ? 'eie8' : 'bootstrap_barrio' ) . '/' . $icons;
+  }
+}

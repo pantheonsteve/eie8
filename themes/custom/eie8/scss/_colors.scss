@@ -1,0 +1,178 @@
+$peach: #ffb3ab;
+$purple: #470c68;
+$blue: #003057;
+$darkBlue: #0a2b4c;
+$lightBlue: #007398;
+$veryLightBlue: #7bafde;
+$lightPink: #c766a3;
+$pink: #a20067;
+$darkPink: #91005d;
+$orange: #dc4405;
+$darkOrange: #c53d03;
+$lightGray: #e1e1e1;
+$darkGray: #1e1e1e;
+$paleYellow: #f1eb9c;
+$lightPurple: #a20067;
+$green: #034638;
+$lightGreen: #487a7b;
+$maroon: #96232f;
+$breakSmall: 768px;
+$breakMedium: 992px;
+$breakLarge: 1200px;
+$black: #000000;
+$white: #ffffff;
+$primaryColor: $darkPink;
+$secondaryColor: $darkBlue;
+$primaryColorOnDarkBackground: $paleYellow;
+$secondaryColorOnDarkBackground: $darkPink;
+$gray: #dcdcdc;
+
+/* Colors */
+
+.pale-yellow {
+  color: $paleYellow !important;
+}
+
+.pale-yellow-background {
+  background-color: $paleYellow;
+  color: #fff;
+}
+
+.peach {
+  color: $peach !important;
+}
+
+.peach-background {
+  background-color: $peach;
+  color: #fff;
+}
+
+.purple {
+  color: $purple !important;
+}
+
+.purple-background {
+  background-color: $purple;
+  color: #fff;
+}
+
+.blue {
+  color: $blue !important;
+}
+
+.blue-background {
+  background-color: $blue;
+  color: #fff;
+}
+
+.light-blue {
+  color: $lightBlue !important;
+}
+
+.light-blue-background {
+  background-color: $lightBlue;
+  color: #fff;
+}
+
+.very-light-blue {
+  color: $veryLightBlue !important;
+}
+
+.very-light-blue-background {
+  background-color: $veryLightBlue;
+  color: #fff;
+}
+
+.dark-blue {
+  color: $darkBlue !important;
+}
+
+.dark-blue-background {
+  background-color: $darkBlue;
+  color: #fff;
+}
+
+.pink {
+  color: $pink !important;
+}
+
+.pink-background {
+  background-color: $pink;
+  color: #fff;
+}
+
+.dark-pink {
+  color: $darkPink !important;
+}
+
+.dark-pink-background {
+  background-color: $darkPink;
+  color: #fff;
+}
+
+.orange {
+  color: $orange !important;
+}
+
+.orange-background {
+  background-color: $orange;
+  color: #fff;
+}
+
+.dark-orange {
+  color: $darkOrange !important;
+}
+
+.dark-orange-background {
+  background-color: $darkOrange;
+  color: #fff;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.white-background {
+  background-color: #fff;
+}
+
+.white-transparent {
+  color: white;
+  opacity: .7;
+}
+
+.light-purple {
+  color: $lightPurple !important;
+}
+
+.light-purple-background {
+  background-color: $lightPurple;
+  color: #fff;
+}
+
+.green {
+  color: $green !important;
+}
+
+.green-background {
+  background-color: $green;
+  color: #fff;
+}
+
+.maroon {
+  color: $maroon !important;
+}
+
+.maroon-background {
+  background-color: $maroon;
+  color: #fff;
+}
+
+.light-green {
+  color: $lightGreen !important;
+}
+
+.light-green-background {
+  background-color: $lightGreen;
+  color: #fff;
+}

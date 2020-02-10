@@ -1,0 +1,161 @@
+/* Font awesome coloring */
+
+.fa.white {
+  color: white !important;
+}
+.fa-featured {
+  color: $purple;
+}
+
+.fa-omni {
+  color: $darkBlue;
+}
+
+.fa-exhibits {
+  color: $lightBlue;
+}
+
+.fa-planetarium {
+  color: $green;
+}
+
+.fa-4d {
+  color: $lightGreen;
+}
+
+.fa-events {
+  color: $maroon;
+}
+
+.fa-presentations {
+  color: $pink;
+}
+
+.fa-drop-in {
+  color: $orange;
+}
+
+
+.venue-icon-position {
+  .featured-i {
+    padding-left: 0px;
+  }
+  .exhibits-i {
+    left: -18px;
+    position: relative;
+  }
+  .omni-i {
+    left: -16px;
+    position: relative;
+  }
+  .planetarium-i {
+    left: -7px;
+    position: relative;
+  }
+  .dropin-i {
+  }
+  .fourd-i {
+    left: -12px;
+    position: relative;
+  }
+  .presentations-i {
+    left: -17px;
+    position: relative;
+  }
+  .events-i {
+    left: -13px;
+    position: relative;
+  }
+}
+
+
+
+.omni-i {
+  font-size: 80px !important;
+  padding-top: -15px !important;
+}
+
+.fourd-i {
+  padding-top: 30px !important;
+  font-size: 110px !important;
+  line-height: 0px !important;
+}
+
+.fourd-i-h4 {
+  line-height: 0px !important;
+  padding-top: 10px !important;
+  padding-bottom: 18px !important;
+}
+
+.featured-i {
+  font-size: 88px !important;
+}
+
+.exhibits-i {
+  font-size: 86px !important;
+}
+
+.exhibits-i-h4 {
+  padding-top: 0px !important;
+  margin-top: 2px !important;
+}
+
+.presentations-i {
+  font-size: 93px !important;
+}
+
+.presentations-i-h4 {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+.dropin-i {
+  font-size: 68px !important;
+}
+
+.dropin-i-h4 {
+  padding-top: 0px !important;
+  margin-top: 16px !important;
+}
+
+.planetarium-i {
+  font-size: 86px !important;
+}
+
+.planetarium-i-h4 {
+  padding-top: 0px !important;
+  margin-top: 6px !important;
+}
+
+.events-i {
+  font-size: 84px !important;
+}
+
+.events-i-h4 {
+  padding-top: 0px !important;
+  margin-top: 0px !important;
+}
+
+/* only used for exhibits and omni icons due to ratio sizes */
+.padding-i-h4 {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.rect-i {
+padding: 5px;
+font-size: 42px !important;
+}
+.square-i {
+padding: 5px;
+font-size: 50px !important;
+}
+
+.small-i {
+padding: 5px;
+font-size: 54px !important;
+}
+
+.fa-small {
+  font-size: 20px;
+}

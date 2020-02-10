@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Bootstrap SASS Subtheme.
+
+eie8.settings:
+  type: theme_settings
+  label: 'Bootstrap SASS Subtheme settings'

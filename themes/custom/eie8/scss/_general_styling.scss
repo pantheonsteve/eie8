@@ -1,0 +1,64 @@
+body {
+  font-size: 100%;
+  position: relative;
+  left: 0;
+  overflow-x: hidden;
+  font-family: akzidenz-grotesk-pro, sans-serif;
+}
+
+.container-padding {
+  padding: 40px;
+  @media screen and (max-width: $breakSmall) {
+    padding: 0px 40px;
+  }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+#blue-overlay {
+  background-color: rgba(0, 48, 87, 0.86);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+}
+
+.icon {
+  font-family: web-refresh;
+}
+
+.field-collection-container {
+  margin: 0;
+border: 0px;
+}
+
+hr {
+  height: 0px !important;
+}
+
+label {
+    display: inline-block;
+}
+#drupal-node-shortcut {
+  position: fixed;
+  top: 300px;
+  left: 0px;
+  background-color: #ae528a;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.card {
+   cursor: pointer; 
+}

@@ -1,0 +1,40 @@
+//***Site Logo***//
+a.navbar-brand img {
+    height: 90px;
+    width: auto;
+}
+
+//***TOP MENUS***//
+.menu--main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.secondary-nav > a.nav-link {
+  font-size: 0.8rem;
+}
+
+.shop-eie {
+  //**Shop EiE Button**//
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background: #4089BD;
+  white-space: nowrap;
+}
+
+//**Search Bar**//
+svg.svg-inline--fa.fa-search.fa-w-16.float-right {
+    position: relative;
+    margin-top: -25px;
+    margin-right: 10px;
+}
+
+//***Footer Content***//
+.site-footer {
+  background: #ffffff;
+}

@@ -1,0 +1,12 @@
+global-styling:
+  version: 1.0
+  js:
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

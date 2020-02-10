@@ -1,0 +1,35 @@
+# Library
+# --------------
+eie8_library: 'production'
+# Layout
+# --------------
+eie8_sidebar_position: 'both'
+eie8_content_offset: 0
+eie8_sidebar_first_width: 4
+eie8_sidebar_first_offset: 0
+eie8_sidebar_second_width: 3
+eie8_sidebar_second_offset: 0
+
+# Container
+# --------------
+eie8_fluid_container: 0
+
+# Buttons
+# --------------
+eie8_button: 1
+eie8_button_size: ''
+eie8_button_outline: 0
+
+# Navbar
+# --------------
+eie8_navbar_toggle: 1
+eie8_navbar_container: 'navbar-toggleable-md'
+eie8_navbar_top_position: ''
+eie8_navbar_top_color: 'navbar-dark'
+eie8_navbar_top_background: 'bg-secondary'
+eie8_navbar_position: ''
+eie8_navbar_color: 'navbar-dark'
+eie8_navbar_background: 'bg-primary'
+# Colors
+# --------------
+eie8_table_hover: 1

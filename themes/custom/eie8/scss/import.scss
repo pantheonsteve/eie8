@@ -1,0 +1,28 @@
+/* IMPORTS */
+
+//@import url(font-awesome.min.css);
+// variables
+@import "variables";
+//bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+//material design bootstrap
+//@import "../node_modules/mdbootstrap/scss/mdb";
+// barrio
+@import "barrio";
+// typography
+@import "typography";
+// mixins
+@import "mixins";
+
+/*********** SASS VARIABLES ***********/
+
+@import 'colors';
+
+/*********** PARTIAL FILES ***********/
+
+@import 'font_awesome_styling';
+@import 'general_styling';
+
+/*********** COMPONENTS ***********/
+
+@import 'components/site-footer';
