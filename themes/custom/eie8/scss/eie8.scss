@@ -1,7 +1,32 @@
-//***Site Logo***//
+@import "colors";
+
+//***MoS Branding at Top of Page***//
+.mos-branding {
+  background-color: $light-gray;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  img {
+    height: 25px;
+    width: 125px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 30px;
+    //max-width: 80%;
+
+  }
+}
+
+//***Site Logo Block***//
 a.navbar-brand img {
     height: 90px;
     width: auto;
+}
+
+.region-site-branding {
+    margin-right: 80px;
+    margin-left: 30px;
 }
 
 //***TOP MENUS***//
@@ -10,8 +35,21 @@ a.navbar-brand img {
   margin-right: auto;
 }
 
+.nav-link {
+  color: $darkGray;
+}
+
 .secondary-nav > a.nav-link {
+  color: $darkGray;
   font-size: 0.8rem;
+}
+
+.navbar-nav li.nav-item > a.nav-link {
+  color: $darkGray;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 15px;
 }
 
 .shop-eie {
@@ -25,16 +63,21 @@ a.navbar-brand img {
   padding: 12px 24px;
   background: #4089BD;
   white-space: nowrap;
+  top: 4px;
 }
 
 //**Search Bar**//
 svg.svg-inline--fa.fa-search.fa-w-16.float-right {
-    position: relative;
-    margin-top: -25px;
-    margin-right: 10px;
+  position: relative;
+  margin-left: -35px;
 }
 
 //***Footer Content***//
 .site-footer {
-  background: #ffffff;
+  background: $light-gray;
+}
+
+//***Search Block Form***//
+.search-block-form {
+    margin-right: 15px;
 }

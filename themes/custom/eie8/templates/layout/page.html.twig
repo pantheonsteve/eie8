@@ -70,12 +70,22 @@
 <div id="page-wrapper">
   <div id="page">
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+      <div class="mos-branding">
+        <div class="row">
+          <div class="container">
+            <a href="https://www.mos.org/" target="_blank">
+              <img class="mos-logo-header-small" alt="Museum of Science Logo" src="/themes/custom/eie8/images/logos/mos_logo_header_small.png" />
+            </a>
+          </div>
+        </div>
+      </div>
       {% block head %}
-        {% if page.secondary_menu or page.top_header or page.top_header_form %}
+        {% if page.secondary_menu or page.top_header or page.top_header_form or page.site_branding %}
           <nav{{ navbar_top_attributes }}>
           {% if container_navbar %}
           <div class="container">
           {% endif %}
+              {{ page.site_branding }}
               {{ page.secondary_menu }}
               {{ page.top_header }}
               {% if page.top_header_form %}

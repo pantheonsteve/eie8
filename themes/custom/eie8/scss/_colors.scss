@@ -1,3 +1,50 @@
+//
+// Colors
+//
+
+// Brand Colors
+$eie-red: #da291c;
+$eie-yellow: #ffb700;
+$eie-blue: #214391;
+$eie-green: #4db4b5;
+$eie-purple: #662d91;
+$eie-charcoal: #474747;
+$eie-light-blue: #f3f3f3;
+$eie-light-yellow: #fef4d8;
+
+// Base Colors
+$primary-color: #da291c;
+$secondary-color: #f1f1f1;
+$accent-color: #8a8d8f;
+$link-color: $primary-color;
+$text-color: #474747;
+
+// Generic Colors
+$white: #ffffff;
+$pale-yellow: #fcd262;
+$pale-blue: #acc5e4;
+$lighter-blue: #f4f5f9;
+$light-gray: #f2f2f2;
+$lighter-gray: #f3f3f3;
+$dark-gray: #c4c6c7;
+
+// PRODUCT COLORS
+$wee-engineer: $eie-purple;
+$wee-engineer-dark: #663090;
+$wee-engineer-light: #c2509d;
+$eie-for-kindergarten: #ff7945;
+$eie-for-kindergarten-dark: #f89a42;
+$eie-for-kindergarten-light: #ffef00;
+$engineering-is-elementary: $primary-color;
+$engineering-is-elementary-dark: #ee3124;
+$engineering-is-elementary-light: #f37021;
+$engineering-adventures: $eie-blue;
+$engineering-adventures-dark: #214391;
+$engineering-adventures-light: #37c5f0;
+$engineering-everywhere: $eie-green;
+$engineering-everywhere-dark: #4eb3b4;
+$engineering-everywhere-light: #78c9b0;
+
 $peach: #ffb3ab;
 $purple: #470c68;
 $blue: #003057;
@@ -10,7 +57,7 @@ $darkPink: #91005d;
 $orange: #dc4405;
 $darkOrange: #c53d03;
 $lightGray: #e1e1e1;
-$darkGray: #1e1e1e;
+$darkGray: #474747;
 $paleYellow: #f1eb9c;
 $lightPurple: #a20067;
 $green: #034638;
@@ -28,6 +75,14 @@ $secondaryColorOnDarkBackground: $darkPink;
 $gray: #dcdcdc;
 
 /* Colors */
+
+.dark-gray {
+  color: $darkGray !important;
+}
+
+.light-gray {
+  color: $lightGray !important;
+}
 
 .pale-yellow {
   color: $paleYellow !important;
