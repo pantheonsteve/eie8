@@ -7,7 +7,7 @@
 
   'use strict';
 
-  Drupal.behaviors.bootstrap_barrio_subtheme = {
+  Drupal.behaviors.eie8 = {
     attach: function(context, settings) {
       var position = $(window).scrollTop();
       $(window).scroll(function () {

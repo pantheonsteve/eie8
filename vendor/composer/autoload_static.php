@@ -29,9 +29,17 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
     );
 
     public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'phpDocumentor\\Reflection\\' => 25,
+        ),
         'l' => 
         array (
             'lsolesen\\pel\\' => 13,
+        ),
+        'c' => 
+        array (
+            'cweagans\\Composer\\' => 18,
         ),
         'Z' => 
         array (
@@ -39,6 +47,10 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
             'Zend\\Feed\\' => 10,
             'Zend\\Escaper\\' => 13,
             'Zend\\Diactoros\\' => 15,
+        ),
+        'W' => 
+        array (
+            'Webmozart\\Assert\\' => 17,
         ),
         'T' => 
         array (
@@ -97,6 +109,8 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
         ),
         'D' => 
         array (
+            'Drupal\\Tests\\lightning_layout\\' => 30,
+            'Drupal\\Tests\\lightning_core\\' => 28,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\VendorHardening\\' => 39,
@@ -121,9 +135,19 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpDocumentor\\Reflection\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
+            1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
+            2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
         'lsolesen\\pel\\' => 
         array (
             0 => __DIR__ . '/..' . '/lsolesen/pel/src',
+        ),
+        'cweagans\\Composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/cweagans/composer-patches/src',
         ),
         'Zend\\Stdlib\\' => 
         array (
@@ -140,6 +164,10 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
         'Zend\\Diactoros\\' => 
         array (
             0 => __DIR__ . '/..' . '/zendframework/zend-diactoros/src',
+        ),
+        'Webmozart\\Assert\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webmozart/assert/src',
         ),
         'Twig\\' => 
         array (
@@ -277,6 +305,14 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
         array (
             0 => __DIR__ . '/..' . '/egulias/email-validator/EmailValidator',
         ),
+        'Drupal\\Tests\\lightning_layout\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/lightning_layout/tests/src',
+        ),
+        'Drupal\\Tests\\lightning_core\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/src',
+        ),
         'Drupal\\Driver\\' => 
         array (
             0 => __DIR__ . '/../..' . '/drivers/lib/Drupal/Driver',
@@ -392,6 +428,13 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
     );
 
     public static $classMap = array (
+        'Acquia\\LightningExtension\\Context\\AwaitTrait' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/AwaitTrait.inc',
+        'Acquia\\LightningExtension\\Context\\CkEditorContext' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/CkEditorContext.behat.inc',
+        'Acquia\\LightningExtension\\Context\\DebugContext' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/DebugContext.behat.inc',
+        'Acquia\\LightningExtension\\Context\\ElementContext' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/ElementContext.behat.inc',
+        'Acquia\\LightningExtension\\Context\\EntityContext' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/EntityContext.behat.inc',
+        'Acquia\\LightningExtension\\Context\\TestModuleContext' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/TestModuleContext.behat.inc',
+        'Acquia\\LightningExtension\\Context\\ViewsContext' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/ViewsContext.behat.inc',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'DivisionByZeroError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
@@ -406,6 +449,7 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
         'ParseError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
         'SessionUpdateTimestampHandlerInterface' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
         'TypeError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+        'WatchdogContext' => __DIR__ . '/../..' . '/modules/contrib/lightning_core/tests/contexts/WatchdogContext.behat.inc',
     );
 
     public static function getInitializer(ClassLoader $loader)

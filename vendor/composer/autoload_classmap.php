@@ -6,6 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Acquia\\LightningExtension\\Context\\AwaitTrait' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/AwaitTrait.inc',
+    'Acquia\\LightningExtension\\Context\\CkEditorContext' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/CkEditorContext.behat.inc',
+    'Acquia\\LightningExtension\\Context\\DebugContext' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/DebugContext.behat.inc',
+    'Acquia\\LightningExtension\\Context\\ElementContext' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/ElementContext.behat.inc',
+    'Acquia\\LightningExtension\\Context\\EntityContext' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/EntityContext.behat.inc',
+    'Acquia\\LightningExtension\\Context\\TestModuleContext' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/TestModuleContext.behat.inc',
+    'Acquia\\LightningExtension\\Context\\ViewsContext' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/ViewsContext.behat.inc',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
     'DivisionByZeroError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
@@ -20,4 +27,5 @@ return array(
     'ParseError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ParseError.php',
     'SessionUpdateTimestampHandlerInterface' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/SessionUpdateTimestampHandlerInterface.php',
     'TypeError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/TypeError.php',
+    'WatchdogContext' => $baseDir . '/modules/contrib/lightning_core/tests/contexts/WatchdogContext.behat.inc',
 );

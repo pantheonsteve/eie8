@@ -6,11 +6,14 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'phpDocumentor\\Reflection\\' => array($vendorDir . '/phpdocumentor/reflection-common/src', $vendorDir . '/phpdocumentor/reflection-docblock/src', $vendorDir . '/phpdocumentor/type-resolver/src'),
     'lsolesen\\pel\\' => array($vendorDir . '/lsolesen/pel/src'),
+    'cweagans\\Composer\\' => array($vendorDir . '/cweagans/composer-patches/src'),
     'Zend\\Stdlib\\' => array($vendorDir . '/zendframework/zend-stdlib/src'),
     'Zend\\Feed\\' => array($vendorDir . '/zendframework/zend-feed/src'),
     'Zend\\Escaper\\' => array($vendorDir . '/zendframework/zend-escaper/src'),
     'Zend\\Diactoros\\' => array($vendorDir . '/zendframework/zend-diactoros/src'),
+    'Webmozart\\Assert\\' => array($vendorDir . '/webmozart/assert/src'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'TYPO3\\PharStreamWrapper\\' => array($vendorDir . '/typo3/phar-stream-wrapper/src'),
     'Symfony\\Polyfill\\Util\\' => array($vendorDir . '/symfony/polyfill-util'),
@@ -45,6 +48,8 @@ return array(
     'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'FontLib\\' => array($vendorDir . '/phenx/php-font-lib/src/FontLib'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/EmailValidator'),
+    'Drupal\\Tests\\lightning_layout\\' => array($baseDir . '/modules/contrib/lightning_layout/tests/src'),
+    'Drupal\\Tests\\lightning_core\\' => array($baseDir . '/modules/contrib/lightning_core/tests/src'),
     'Drupal\\Driver\\' => array($baseDir . '/drivers/lib/Drupal/Driver'),
     'Drupal\\Core\\' => array($baseDir . '/core/lib/Drupal/Core'),
     'Drupal\\Composer\\Plugin\\VendorHardening\\' => array($vendorDir . '/drupal/core-vendor-hardening'),
