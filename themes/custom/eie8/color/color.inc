@@ -133,7 +133,7 @@ $info = [
   ],
 
   // Preview files.
-  'preview_library' => 'intrado_bootstrap/color.preview',
+  'preview_library' => 'eie8/color.preview',
   'preview_html' => 'color/preview.html',
 
   // Attachments.

@@ -36,16 +36,15 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-
-<div class="heroblock jumbotron jumbotron-fluid" style="background-image: url({{file_url(content.field_background_image['#items'].entity.uri.value) }}); background-size: cover; background-position: center; height:460px; padding-top:90px; padding-bottom:90px;" >
+<div class="heroblock jumbotron jumbotron-fluid hero-image full-width" style="background: url({{file_url(content.field_background_image['#items'].entity.uri.value) }})">
   <div class="container">
     <div class="row">
-      <div class="col-6">
-      {{ title_prefix }}
-      {% if label %}
-        <h2{{ title_attributes.addClass('display-4') }} class="color-heading">{{ label }}</h2>
-      {% endif %}
-      {{ title_suffix }}
+      <div class="col-xs-12">
+        {{ title_prefix }}
+        {% if label %}
+          <h2{{ title_attributes.addClass('display-4') }} class="color-heading">{{ label }}</h2>
+        {% endif %}
+        {{ title_suffix }}
         <div class="lead">{{ content.body }}</div>
         <div><a href="{{ content.field_button[0]['#url'] }}" class="btn btn-primary">{{ content.field_button[0]['#title'] }}</a></div>
       </div>

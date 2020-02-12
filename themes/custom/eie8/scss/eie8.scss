@@ -12,7 +12,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     position: relative;
-    left: 30px;
+    left: 60px;
     //max-width: 80%;
 
   }
@@ -85,7 +85,7 @@ a.navbar-brand img {
 
 svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   position: relative;
-  left: 125px;
+  right: 10px;
   bottom: 20px;
 }
 
@@ -102,4 +102,9 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 //***Search Block Form***//
 .search-block-form {
     margin-right: 15px;
+}
+
+//***Header***//
+.header {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.05);
 }

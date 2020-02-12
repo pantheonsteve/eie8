@@ -10,9 +10,15 @@ bootstrap:
   js:
     /libraries/popper/popper.min.js: {}
     /libraries/bootstrap/dist/js/bootstrap.min.js: {}
+    themes/custom/eie8/node_modules/bootstrap/js/dist/collapse.js: {}
   css:
     component:
       /libraries/bootstrap/dist/css/bootstrap.min.css: {}
+alerts:
+  version: VERSION
+  css:
+    component:
+      css/alerts.css: {}
 bootstrap_cdn:
   js:
     //cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js: {}
@@ -27,10 +33,5 @@ color.preview:
       color/preview.css: {}
   js:
     color/preview.js: {}
-  css:
-    component:
-      css/style.css: {}
   dependencies:
     - color/drupal.color
-    - core/jquery
-    - core/drupal

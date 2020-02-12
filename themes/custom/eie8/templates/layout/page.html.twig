@@ -123,6 +123,9 @@
         </nav>
       {% endblock %}
     </header>
+    {% if node.type.landing_page %}
+      <h1> This is a landing page</h1>
+    {% endif %}
     {% if page.highlighted %}
       <div class="highlighted">
         <aside class="{{ container }} section clearfix" role="complementary">
@@ -141,7 +144,7 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="{{ container }}">
+        <div id="main" class="container-fluid">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>
@@ -182,15 +185,15 @@
         <div class="{{ container }}">
           {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
             <div class="row">
-              <div class="site-footer__top clearfix col-md-4">
+              <div class="site-footer__top clearfix col-md-3">
                 {{ page.footer_first }}
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 {{ page.footer_second }}
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
                 {{ page.footer_third }}
-              <div class="col-md-4">
+              <div class="col-md-3">
                 {{ page.footer_fourth }}
               </div>
             </div>
