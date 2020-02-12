@@ -37,6 +37,14 @@ a.navbar-brand img {
 
 .nav-link {
   color: $darkGray;
+
+  :hover {
+    color: blue;
+  }
+
+  :focus {
+    color: blue;
+  }
 }
 
 .secondary-nav > a.nav-link {
@@ -71,9 +79,19 @@ a.navbar-brand img {
 }
 
 //**Search Bar**//
+.form-control.form-search.rounded-pill {
+  position: relative;top: 7px;
+}
+
 svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   position: relative;
-  margin-left: -35px;
+  left: 125px;
+  bottom: 20px;
+}
+
+//**Search bar button hidden**//
+.search-block-form button {
+    display: none;
 }
 
 //***Footer Content***//
