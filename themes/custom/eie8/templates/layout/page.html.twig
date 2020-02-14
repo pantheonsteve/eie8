@@ -34,7 +34,6 @@
  *
  * Regions:
  * - page.top_header: Items for the top header region.
- * - page.top_header_form: Items for the top header form region.
  * - page.header: Items for the header region.
  * - page.header_form: Items for the header form region.
  * - page.highlighted: Items for the highlighted region.
@@ -85,14 +84,23 @@
           {% if container_navbar %}
           <div class="container">
           {% endif %}
-              {{ page.site_branding }}
-              {{ page.secondary_menu }}
-              {{ page.top_header }}
-              {% if page.top_header_form %}
-                <div class="form-inline navbar-form float-right">
-                  {{ page.top_header_form }}
+              <div class="col-4">
+                {{ page.site_branding }}
+              </div>
+              <div class="col-8">
+                <div class="">
+                {{ page.secondary_menu }}
                 </div>
-              {% endif %}
+                <div class="row">
+                  <div class="col-12">
+                    {% if page.top_header_form %}
+                    <div class="form-inline navbar-form float-right">
+                      {{ page.top_header_form }}
+                    </div>
+                    {% endif %}
+                  <div>
+                </div>
+            </div>
           {% if container_navbar %}
           </div>
           {% endif %}
@@ -144,7 +152,7 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="container-fluid">
+        <div id="main" class="container">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
               <main{{ content_attributes }}>

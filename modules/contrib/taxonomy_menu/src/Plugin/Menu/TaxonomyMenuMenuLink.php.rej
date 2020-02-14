@@ -1,0 +1,21 @@
+***************
+*** 117,124 ****
+  
+      // Get the description field name.
+      $taxonomy_menu = $this->entityTypeManager->getStorage('taxonomy_menu')->load($this->pluginDefinition['metadata']['taxonomy_menu_id']);
+-     $description_field_name = $taxonomy_menu->getDescriptionFieldName();
+- 
+      $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  
+      if ($link->hasTranslation($language)) {
+--- 117,126 ----
+  
+      // Get the description field name.
+      $taxonomy_menu = $this->entityTypeManager->getStorage('taxonomy_menu')->load($this->pluginDefinition['metadata']['taxonomy_menu_id']);
++     //Fix to prevent errors when $taxonomy_menu is 'null'
++     if($taxonomy_menu != null){
++       $description_field_name = $taxonomy_menu->getDescriptionFieldName();
++     }
+      $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  
+      if ($link->hasTranslation($language)) {

@@ -3,7 +3,6 @@
 //***MoS Branding at Top of Page***//
 .mos-branding {
   background-color: $light-gray;
-  padding: 5px;
   margin-bottom: 10px;
 
   img {
@@ -12,7 +11,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     position: relative;
-    left: 60px;
+    //left: 60px;
     //max-width: 80%;
 
   }
@@ -24,12 +23,12 @@ a.navbar-brand img {
     width: auto;
 }
 
-.region-site-branding {
-    margin-right: 80px;
-    margin-left: 30px;
-}
-
 //***TOP MENUS***//
+.secondary-menu {
+  position: relative;
+  margin-left: -70px;
+  left: 12px;
+}
 .menu--main {
   margin-left: auto;
   margin-right: auto;
@@ -47,9 +46,19 @@ a.navbar-brand img {
   }
 }
 
-.secondary-nav > a.nav-link {
+.sf-depth-2 {
+  background: white;
+}
+
+ul.sf-menu a, ul.sf-menu span.nolink {
+  display: block;
+  //padding: 1em 1.1em;
+  position: relative;
+}
+
+a.secondary-nav-link {
   color: $darkGray;
-  font-size: 0.8rem;
+  font-size: 1.0rem;
 }
 
 .navbar-nav li.nav-item > a.nav-link {
@@ -75,23 +84,49 @@ a.navbar-brand img {
   padding: 12px 24px;
   background: #4089BD;
   white-space: nowrap;
-  top: 4px;
+  top: 7px;
 }
 
 //**Search Bar**//
+.form-row.search-block-form.search-form {
+    position: relative;
+    bottom: 10px;
+}
+
 .form-control.form-search.rounded-pill {
-  position: relative;top: 7px;
+  position: relative;
+  top: 17px;
 }
 
 svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   position: relative;
-  right: 10px;
-  bottom: 20px;
+  left: 124px;
+  bottom: 28px;
+}
+
+.form-row.search-block-form.search-form {
+  margin-right: -46px;
 }
 
 //**Search bar button hidden**//
 .search-block-form button {
     display: none;
+}
+
+//**Main Nav (Superfish)**//
+.block-superfishmain {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+
+.sf-main.sf-menu > li a {
+  color: #474747;
+  /* text-transform: uppercase; */
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 15px;
 }
 
 //***Footer Content***//
@@ -101,7 +136,7 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 
 //***Search Block Form***//
 .search-block-form {
-    margin-right: 15px;
+    margin-right: 2px;
 }
 
 //***Header***//
