@@ -65,6 +65,27 @@
       <path value="$PROJECT_DIR$/vendor/drupal/core-project-message" />
       <path value="$PROJECT_DIR$/vendor/drupal/core-composer-scaffold" />
       <path value="$PROJECT_DIR$/vendor/drupal/core-vendor-hardening" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/alchemy/zippy" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/stecman/symfony-console-completion" />
+      <path value="$PROJECT_DIR$/vendor/drupal/console-extend-plugin" />
+      <path value="$PROJECT_DIR$/vendor/drupal/console" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/path-util" />
+      <path value="$PROJECT_DIR$/vendor/drupal/console-core" />
+      <path value="$PROJECT_DIR$/vendor/drupal/console-en" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/webflo/drupal-finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/placeholder-resolver" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-configuration" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
