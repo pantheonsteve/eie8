@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains eie_blocks.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function eie_blocks_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the eie_blocks module.
+    case 'help.page.eie_blocks':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Blocks for the EiE Website') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function eie_blocks_theme() {
+  return [
+    'eie_blocks' => [
+      'render element' => 'children',
+    ],
+  ];
+}

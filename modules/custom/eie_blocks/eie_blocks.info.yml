@@ -1,0 +1,7 @@
+name: 'EiE Blocks'
+type: module
+description: 'Custom Blocks for the EiE Website'
+core: 8.x
+package: 'EiE'
+dependencies:
+  - drupal:block

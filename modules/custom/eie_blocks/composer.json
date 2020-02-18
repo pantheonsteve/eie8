@@ -1,0 +1,13 @@
+{
+    "name": "eie_blocks",
+    "type": "drupal-module",
+    "description": "Custom Blocks for the EiE Website",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/eie_blocks",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/eie_blocks",
+        "source": "http://cgit.drupalcode.org/eie_blocks",
+    },
+}

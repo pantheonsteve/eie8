@@ -1,0 +1,16 @@
+one_column:
+  label: 'One column'
+  category: 'EiE'
+  template: templates/one-column
+  default_region: main
+  regions:
+    main:
+      label: Main content
+card_image_top:
+  label: 'Card Image Top'
+  category: 'EiE'
+  template: templates/card-image-top
+  default_region: main
+  regions:
+    main:
+      label: Main Content

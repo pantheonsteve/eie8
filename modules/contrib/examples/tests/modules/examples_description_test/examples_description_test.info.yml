@@ -1,0 +1,12 @@
+name: 'Sample Description Template Test'
+type: module
+description: 'Support module for testing the DescriptionTemplateTrait.'
+package: Testing
+core: 8.x
+dependencies:
+  - examples
+
+# Information added by Drupal.org packaging script on 2019-08-23
+version: '8.x-1.0'
+project: 'examples'
+datestamp: 1566573495
