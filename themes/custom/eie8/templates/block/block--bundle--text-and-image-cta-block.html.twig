@@ -40,11 +40,13 @@
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
+    {{ content['#block_content'].field_overlay_color.value }}
   {% endif %}
   {{ title_suffix }}
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
-      {{ message }}
+      {{ content }}
+      {{ bundle }}
     </div>
   {% endblock %}
 </div>

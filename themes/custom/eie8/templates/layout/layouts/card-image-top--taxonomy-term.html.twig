@@ -1,0 +1,21 @@
+{% if content %}
+  <div {{ attributes.addClass('featured-card', 'wow', 'col-md-4', 'featured-attractions-list', 'animated') }}>
+    {% if content.main %}
+      <div {{ region_attributes.main.addClass('main-region') }}>
+        {{ content.main }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
+
+
+<div class="featured-card wow col-md-4 mr-3 animated" data-url="planetarium/destination-mars" style="visibility:visible;">
+  <img class="inner-border" src="{{ field_category_image }}" width="100%" />
+  <br>
+  <br>
+  <img src="{{ field_category_icon }}" />
+  <h5><i class="fa fa-planetarium purple" aria-hidden="true"></i> <strong>{{ name }}</strong></h5>
+  <p>{{ description__value }}</p>
+</div>
+early_childhood_icon.png
+

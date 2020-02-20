@@ -9,7 +9,7 @@ one_column:
 card_image_top:
   label: 'Card Image Top'
   category: 'EiE'
-  template: templates/card-image-top
+  template: templates/card-image-top--taxonomy-term
   default_region: main
   regions:
     main:

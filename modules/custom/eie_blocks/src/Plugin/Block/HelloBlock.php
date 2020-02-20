@@ -20,7 +20,7 @@ class HelloBlock extends BlockBase {
    */
   public function defaultConfiguration() {
     return [
-      'message' => Hello World,
+      'message' => 'Hello World',
     ] + parent::defaultConfiguration();
   }
 
@@ -54,7 +54,7 @@ class HelloBlock extends BlockBase {
   public function build() {
     $build = [];
     $build['#theme'] = 'hello_block';
-    $build['#conten'][] = $this->configuration['message'];
+    $build['#content'][] = $this->configuration['message'];
 
     return $build;
   }
