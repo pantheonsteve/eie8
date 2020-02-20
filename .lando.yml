@@ -1,8 +1,8 @@
 name: eie8
 recipe: pantheon
 config:
+  php: /usr/local/etc/php/php.ini
   framework: drupal8
   site: eie8
   id: 2f0f0053-9a8f-4ac2-a901-2cfb4874b2e8
-  conf:
-    php: config/php.ini
+  xdebug: true
