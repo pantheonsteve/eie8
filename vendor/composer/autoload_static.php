@@ -155,6 +155,7 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
         array (
             'Asm89\\Stack\\' => 12,
             'Alchemy\\Zippy\\' => 14,
+            'Ajgl\\Twig\\Extension\\' => 20,
         ),
     );
 
@@ -456,6 +457,10 @@ class ComposerStaticInitf0a76219c246ec6fe5f87782734a67c8
         'Alchemy\\Zippy\\' => 
         array (
             0 => __DIR__ . '/..' . '/alchemy/zippy/src',
+        ),
+        'Ajgl\\Twig\\Extension\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ajgl/breakpoint-twig-extension/src',
         ),
     );
 

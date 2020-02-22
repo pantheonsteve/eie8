@@ -6,6 +6,9 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\media\Entity\Media;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\media_entity\MediaInterface;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -59,8 +62,28 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
  * Implements hook_preproccess_block()
  * @param $variables
  */
-function eie8_preprocess_block(&$variables) {
-  if (isset($variables['elements']['content']['#block_content'])) {
-    $variables['fun'] = 'Hellpo';
+/*
+function eie8_preprocess(&$variables, $hook) {
+  if ($hook == 'media__image__featured_card') {
+    xdebug_break();
   }
+}
+*/
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function eie8_preprocess_block__bundle__text_and_image_cta_block(&$variables) {
+
+  //$image_id = 7;
+  //$media = Media::load($image_id);
+  //$media_url = ImageStyle::load('TYPE_OF_CROP')->buildUrl($media->image->entity->getFileUri());
+  //$variables['media_url'] =  $media_url;
+
+  $body = $variables["content"]["#block_content"]->values["body"]["x-default"][0]["value"];
+  $variables['body'] = $body;
+  $variables['text_overlay'] = $variables["content"]["field_text_overlay"][0]["#text"];
+  $variables['overlay_color'] = $variables["elements"]["content"]["#block_content"]->values["field_overlay_color"]["x-default"][0]["value"];
+  $variables['link'] = $variables["content"]["#block_content"]->values["field_cta_link"]["x-default"][0]["uri"];
+  $variables['cta_text'] = $variables["content"]["field_cta_link"][0]["#title"];
+  //$variables['background_image_url'] = $context["elements"]["content"]["field_background_image"][0]["#item"]->properties["entity"]->target->entity->values["uri"]["x-default"];
 }

@@ -39,14 +39,17 @@
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-    {{ content['#block_content'].field_overlay_color.value }}
   {% endif %}
   {{ title_suffix }}
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
       {{ content }}
-      {{ bundle }}
+      {{ overlay_color }}
+      {{ body }}
+      {{ link }}
+      {{ cta_text }}
+      {{ text_overlay | raw }}
+      <img src={{ file_url(content.field_background_image|field_target_entity.uri.value) }} alt={{ content.field_background_image|field_raw('alt') }} />
     </div>
   {% endblock %}
 </div>
