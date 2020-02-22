@@ -27,23 +27,26 @@
   set classes = [
     'taxonomy-term',
     'vocabulary-' ~ term.bundle|clean_class,
+    'col-4'
   ]
 %}
-
-<div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
-  <div class="card overlap-block featured-attractions-list">
-    {% if content.field_category_image|render is not empty %}
-      <div style="height: 250px; overflow:hidden;">
-        <img class="featured-card wow mr-3 animated inner-border category-image-card card-img-top" src={{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
+<a href="{{ content.url }}">
+  <div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
+    <div class="card overlap-block featured-attractions-list">
+      {% if content.field_category_image|render is not empty %}
+        <div style="height: 250px; overflow:hidden;">
+          <img class="featured-card wow mr-3 animated inner-border category-image-card card-img-top" src={{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
+        </div>
+      {% endif %}
+      {{ content.url }}
+      {% if content.field_category_icon|render is not empty %}
+        <img class="inner-border img-fluid featured-card wow mr-3 animated category-icon-card" src={{ file_url(content.field_category_icon[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
+      {% endif %}
+      <div class="card-body category-body">
+        {{ content.name }}
+        <p></p> <!-- spacer don't delete -->
+        <p class="p-1">{{ content.description }}</p>
       </div>
-    {% endif %}
-    {% if content.field_category_icon|render is not empty %}
-      <img class="inner-border img-fluid featured-card wow mr-3 animated category-icon-card" src={{ file_url(content.field_category_icon[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
-    {% endif %}
-    <div class="card-body">
-      {{ content.name }}
-      <p></p> <!-- spacer don't delete -->
-      <p class="p-1">{{ content.description }}</p>
     </div>
   </div>
-</div>
+</a>

@@ -64,7 +64,7 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
  */
 /*
 function eie8_preprocess(&$variables, $hook) {
-  if ($hook == 'media__image__featured_card') {
+  if ($hook == 'webform') {
     xdebug_break();
   }
 }
