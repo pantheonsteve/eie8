@@ -27,7 +27,7 @@
   set classes = [
     'taxonomy-term',
     'vocabulary-' ~ term.bundle|clean_class,
-    'col-4'
+    'card-image-top'
   ]
 %}
 <a href="{{ content.url }}">
@@ -38,7 +38,6 @@
           <img class="featured-card wow mr-3 animated inner-border category-image-card card-img-top" src={{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
         </div>
       {% endif %}
-      {{ content.url }}
       {% if content.field_category_icon|render is not empty %}
         <img class="inner-border img-fluid featured-card wow mr-3 animated category-icon-card" src={{ file_url(content.field_category_icon[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
       {% endif %}

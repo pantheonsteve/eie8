@@ -8510,10 +8510,6 @@ form .form-type-textarea {
   background-color: #487a7b;
   color: #fff; }
 
-.eie-green {
-  background-color: #4db4b5;
-  color: #fff; }
-
 /* ------------------ Header ------------------ */
 #navbar-top {
   padding: 0 1rem; }
@@ -9328,10 +9324,6 @@ nav.tabs {
   background-color: #487a7b;
   color: #fff; }
 
-.eie-green {
-  background-color: #4db4b5;
-  color: #fff; }
-
 .mos-branding {
   background-color: #f2f2f2;
   margin-bottom: 10px; }
@@ -9906,10 +9898,6 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   background-color: #487a7b;
   color: #fff; }
 
-.eie-green {
-  background-color: #4db4b5;
-  color: #fff; }
-
 /*********** PARTIAL FILES ***********/
 /* Font awesome coloring */
 .fa.white {
@@ -10123,6 +10111,10 @@ label {
   margin-left: -50vw;
   margin-right: -50vw; }
 
+.card-image-top {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
 .category-image-card {
   height: 100%;
   background-position: center center;
@@ -10136,7 +10128,24 @@ label {
   height: 50px; }
 
 .card-body.category-body {
-  height: 250px; }
+  min-height: 250px; }
+
+.email-webform-block {
+  background: #007398 !important;
+  color: #fff !important;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 6rem;
+  width: 103% !important; }
+
+.form-item-email-opt-in {
+  float: left;
+  margin-left: 18px; }
+
+.email-submit-button {
+  border-radius: 0 !important;
+  border: 1px solid white !important;
+  background: none !important; }
 
 /* GENERAL STYLES
 -------------------------------------------------*/
