@@ -57,14 +57,22 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
   }
 }
 
-
+/**
+ * @param $variables
+ */
+function eie8_preprocess_superfish_menu_items(&$variables) {
+  if(isset($variables)) {
+    $variables['null'] = 'null';
+  }
+}
+/*
 /**
  * Implements hook_preproccess_block()
  * @param $variables
- */
-/*
+ *//*
+
 function eie8_preprocess(&$variables, $hook) {
-  if ($hook == 'webform') {
+  if ($hook == 'superfish') {
     xdebug_break();
   }
 }

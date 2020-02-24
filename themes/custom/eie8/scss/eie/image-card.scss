@@ -3,6 +3,20 @@
   margin-bottom: 15px;
 }
 
+.card-image-wrapper {
+
+  @media (max-width: 575px) {
+    height: 250px;
+    overflow: hidden;
+    width: 130%;
+    position: relative;
+    right: 45px;
+  }
+
+  height: 250px;
+  overflow: hidden;
+}
+
 .category-image-card {
   height: 100%;
   background-position: center center;

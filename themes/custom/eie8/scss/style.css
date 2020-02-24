@@ -9332,16 +9332,15 @@ nav.tabs {
     width: 125px;
     margin-top: 5px;
     margin-bottom: 5px;
-    position: relative; }
+    position: relative;
+    left: 15px; }
 
 a.navbar-brand img {
   height: 90px;
   width: auto; }
 
 .secondary-menu {
-  position: relative;
-  margin-left: -70px;
-  left: 12px; }
+  position: relative; }
 
 .menu--main {
   margin-left: auto;
@@ -9353,6 +9352,13 @@ a.navbar-brand img {
     color: blue; }
   .nav-link :focus {
     color: blue; }
+
+.superfish-secondary-navigation {
+  float: right; }
+  @media (min-width: 576px) {
+    .superfish-secondary-navigation {
+      position: relative;
+      top: 5px; } }
 
 .sf-depth-2 {
   background: white; }
@@ -9390,19 +9396,18 @@ a.secondary-nav-link {
 
 .form-row.search-block-form.search-form {
   position: relative;
-  bottom: 10px; }
+  top: 11px;
+  left: 27px; }
 
-.form-control.form-search.rounded-pill {
-  position: relative;
-  top: 17px; }
-
+@media (min-width: 576px) {
+  svg.svg-inline--fa.fa-search.fa-w-16.float-right {
+    position: relative;
+    bottom: 28px;
+    left: 125px; } }
 svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   position: relative;
-  left: 124px;
-  bottom: 28px; }
-
-.form-row.search-block-form.search-form {
-  margin-right: -46px; }
+  bottom: 28px;
+  right: 10px; }
 
 .search-block-form button {
   display: none; }
@@ -10115,6 +10120,17 @@ label {
   margin-top: 15px;
   margin-bottom: 15px; }
 
+.card-image-wrapper {
+  height: 250px;
+  overflow: hidden; }
+  @media (max-width: 575px) {
+    .card-image-wrapper {
+      height: 250px;
+      overflow: hidden;
+      width: 130%;
+      position: relative;
+      right: 45px; } }
+
 .category-image-card {
   height: 100%;
   background-position: center center;
@@ -10135,8 +10151,20 @@ label {
   color: #fff !important;
   margin-top: 25px;
   margin-bottom: 25px;
-  padding: 6rem;
-  width: 103% !important; }
+  padding: 5rem;
+  width: 108% !important;
+  position: relative;
+  right: 15px; }
+  @media (min-width: 576px) {
+    .email-webform-block {
+      background: #007398 !important;
+      color: #fff !important;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      padding: 6rem;
+      width: 103% !important;
+      position: relative;
+      right: 15px; } }
 
 .form-item-email-opt-in {
   float: left;
