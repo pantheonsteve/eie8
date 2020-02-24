@@ -36,8 +36,7 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div class="p-5 m-5">
-  <div{{ attributes.addClass(classes) }}>
+<div{{ attributes.addClass(classes) }}>
     {{ title_prefix }}
     {% if label %}
       <h2{{ title_attributes }}>{{ label }}</h2>
@@ -48,5 +47,4 @@
         {{ content }}
       </div>
     {% endblock %}
-  </div>
 </div>
