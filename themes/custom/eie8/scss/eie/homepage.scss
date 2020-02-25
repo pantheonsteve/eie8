@@ -1,0 +1,29 @@
+.featured-card {
+  cursor: pointer;
+  @media screen and (min-width: 576px) {
+    &:hover {
+      transform: scale(1.05);
+      transition: all 150ms;
+      border: 1px solid white;
+      box-shadow: 2px 2px 20px gray;
+      /*transition-delay: 5s; *//* delays for 1 second */
+      /*-webkit-transition-delay: 5s;*/ /* for Safari & Chrome */
+      z-index: 1000;
+      background-color: lighten(white, 5%);
+      transition: background-color 0s;
+      -webkit-transition: transform .2s ease-in-out;
+      -moz-transition: transform .2s ease-in-out;
+      transition: transform .2s ease-in-out;
+      z-index: 1;
+      padding-top: 15px;
+      position: relative;
+      margin-bottom: -15px;
+      margin-top: -15px;
+      p {
+        font-size: .995rem !important;
+        line-height: 24px !important;
+        padding-right: 0px;
+      }
+    }
+  }
+}

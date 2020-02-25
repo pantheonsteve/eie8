@@ -1,11 +1,11 @@
 {#
 /**
  * @file
- * Theme override to display a taxonomy term.
+ * Default theme implementation to display a taxonomy term.
  *
  * Available variables:
  * - url: URL of the current term.
- * - name: Name of the current term.
+ * - name: (optional) Name of the current term.
  * - content: Items for the content of the term (fields and description).
  *   Use 'content' to print them all, or print a subset such as
  *   'content.description'. Use the following code to exclude the
@@ -21,31 +21,36 @@
  * - view_mode: View mode, e.g. 'full', 'teaser', etc.
  *
  * @see template_preprocess_taxonomy_term()
+ *
+ * @ingroup themeable
  */
 #}
 {%
   set classes = [
     'taxonomy-term',
     'vocabulary-' ~ term.bundle|clean_class,
-    'card-image-top'
+    'card-image-top',
+    'featured-card',
   ]
 %}
-<a href="{{ content.url }}">
   <div{{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }}>
-    <div class="overlap-block featured-attractions-list">
+    <div class="featured-attractions-list overlap-block pr-2 pl-2">
       {% if content.field_category_image|render is not empty %}
         <div class="card-image-wrapper">
-          <img class="featured-card wow mr-3 animated inner-border category-image-card card-img-top" src={{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
+          <img class="wow mr-3 animated inner-border category-image-card card-img-top" src={{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
         </div>
       {% endif %}
       {% if content.field_category_icon|render is not empty %}
-        <img class="inner-border img-fluid featured-card wow mr-3 animated category-icon-card" src={{ file_url(content.field_category_icon[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
+        <img class="inner-border img-fluid wow mr-3 animated category-icon-card" src={{ file_url(content.field_category_icon[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />
       {% endif %}
       <div class="card-body category-body">
-        {{ content.name }}
+        {{ title_prefix }}
+        {% if content.name and not page %}
+          <h2><a href="{{ url }}">{{ content.name }}</a></h2>
+          <p>{{ term }}</p>
+        {% endif %}
         <p></p> <!-- spacer don't delete -->
         <p class="p-1">{{ content.description }}</p>
       </div>
     </div>
   </div>
-</a>

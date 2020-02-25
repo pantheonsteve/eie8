@@ -6,19 +6,20 @@
 .card-image-wrapper {
 
   @media (max-width: 575px) {
-    height: 250px;
+    height: 320px;
     overflow: hidden;
     width: 130%;
     position: relative;
     right: 45px;
   }
 
-  height: 250px;
+  height: 320px;
   overflow: hidden;
 }
 
 .category-image-card {
   height: 100%;
+  width: auto !important;
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -33,4 +34,5 @@
 
 .card-body.category-body {
   min-height: 250px;
+  padding: 10px !important;
 }
