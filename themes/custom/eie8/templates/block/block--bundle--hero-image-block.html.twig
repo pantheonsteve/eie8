@@ -36,17 +36,29 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div class="heroblock jumbotron jumbotron-fluid hero-image full-width" style="background: url({{file_url(content.field_background_image['#items'].entity.uri.value) }})">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        {{ title_prefix }}
-        {% if label %}
-          <h2{{ title_attributes.addClass('display-4') }} class="color-heading">{{ label }}</h2>
-        {% endif %}
-        {{ title_suffix }}
-        <div class="lead">{{ content.body }}</div>
-        <div><a href="{{ content.field_button[0]['#url'] }}" class="btn btn-primary">{{ content.field_button[0]['#title'] }}</a></div>
+<div class="media-slide-content">
+  <div class="heroblock jumbotron jumbotron-fluid hero-image full-width media-slide-content media-slide-image" style="background: url({{file_url(content.field_background_image['#items'].entity.uri.value) }}); background-repeat: no-repeat;
+    background-size: cover; background-position: center center;">
+    <div class="container">
+      <div class="row">
+        <div class="p-5">
+        <div class="media-hero-title">
+          {% if label %}
+            <h2>{{ label }}</h2>
+          {% endif %}
+        </div>
+        <div>
+          {% set conBody %}
+              {{ content.body }}
+          {% endset %}
+          <p class="media-hero-text">{{ conBody|striptags }}</p>
+          {% if content.field_button %}
+          <div class="media-slide-cta">
+            <a href="{{ content.field_button[0]['#url'] }}">{{ content.field_button[0]['#title'] }}</a>
+          </div>
+          {% endif %}
+        </div>
+        </div>
       </div>
     </div>
   </div>

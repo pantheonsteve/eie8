@@ -56,7 +56,7 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
 
 /**
  * @param $variables
- */
+ *//*
 function eie8_preprocess_block_bundle__media_block(&$variables) {
   xdebug_break();
 }

@@ -10120,6 +10120,80 @@ label {
   margin-left: -50vw;
   margin-right: -50vw; }
 
+@media (min-width: 801px) {
+  .media-slide-content .media-slide-title {
+    width: 100%;
+    margin-left: calc(20vw - 10%);
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*max-width: 600px;*/
+    *zoom: 1; }
+
+  .media-slide-content .media-slide-text {
+    width: 100%;
+    margin-left: calc(20vw - 10%);
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 600px;
+    *zoom: 1; } }
+.media-slide-image {
+  height: 400px;
+  width: 100vw;
+  object-fit: cover; }
+
+.media-slide-opacity-layer {
+  height: 400px;
+  width: 64%; }
+
+.media-slide-title {
+  position: absolute;
+  top: 96px;
+  left: 122px;
+  width: 50%;
+  /*max-width: 600px;*/
+  padding: 20px;
+  height: 100px;
+  overflow: hidden;
+  z-index: 1000002; }
+
+.media-hero-title h2 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #fff; }
+
+.media-hero-text {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: #fff;
+  padding: 20px; }
+
+.media-slide-text {
+  top: 176px;
+  font-size: 22px;
+  width: 50%;
+  height: 120px;
+  /*max-width: 600px;*/ }
+
+.media-slide-cta a {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background: #4089BD;
+  white-space: nowrap;
+  z-index: 1000002; }
+
+.media-slide-title,
+.media-slide-text {
+  width: 100%;
+  /*max-width: 600px;*/ }
+
 .card-image-top {
   margin-top: 15px;
   margin-bottom: 15px; }
@@ -10208,6 +10282,92 @@ label {
         font-size: .995rem !important;
         line-height: 24px !important;
         padding-right: 0px; } }
+
+.hero-image img {
+  width: 100%;
+  display: block; }
+
+.hero-image.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw; }
+
+@media (min-width: 801px) {
+  .media-slide-content .media-slide-title {
+    width: 100%;
+    margin-left: calc(20vw - 10%);
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*max-width: 600px;*/
+    *zoom: 1; }
+
+  .media-slide-content .media-slide-text {
+    width: 100%;
+    margin-left: calc(20vw - 10%);
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 600px;
+    *zoom: 1; } }
+.media-slide-image {
+  height: 400px;
+  width: 100vw;
+  object-fit: cover; }
+
+.media-slide-opacity-layer {
+  height: 400px;
+  width: 64%; }
+
+.media-slide-title {
+  position: absolute;
+  top: 96px;
+  left: 122px;
+  width: 50%;
+  /*max-width: 600px;*/
+  padding: 20px;
+  height: 100px;
+  overflow: hidden;
+  z-index: 1000002; }
+
+.media-hero-title h2 {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #fff; }
+
+.media-hero-text {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: #fff;
+  padding: 20px; }
+
+.media-slide-text {
+  top: 176px;
+  font-size: 22px;
+  width: 50%;
+  height: 120px;
+  /*max-width: 600px;*/ }
+
+.media-slide-cta a {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  background: #4089BD;
+  white-space: nowrap;
+  z-index: 1000002; }
+
+.media-slide-title,
+.media-slide-text {
+  width: 100%;
+  /*max-width: 600px;*/ }
 
 /* GENERAL STYLES
 -------------------------------------------------*/
