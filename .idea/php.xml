@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BladeDebugConfiguration">
+    <cachePath />
+  </component>
   <component name="PhpIncludePathManager">
     <include_path>
       <path value="$USER_HOME$/.lando/config/pantheon" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.3" />
+  <component name="TwigDebugConfiguration">
+    <cachePath>$PROJECT_DIR$/sites/default/files/php</cachePath>
+  </component>
 </project>

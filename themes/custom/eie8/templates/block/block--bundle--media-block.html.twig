@@ -34,17 +34,28 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
+    'container-fluid',
   ]
 %}
+
 <div{{ attributes.addClass(classes) }}>
+  <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <div class="container">
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
+    <h2{{ title_attributes.addClass('display-5', 'text-left') }}>{{ label }}</h2>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
-      {{ content }}
+    <div{{ content_attributes.addClass('content', 'lead', 'text-left') }}>
+      {{ content.body }}
     </div>
   {% endblock %}
+  {% if content.field_media %}
+    <div{{ content_attributes.removeClass('lead', 'text-left') }}>
+        {{ content.field_media }}
+    </div>
+  {% endif %}
+  </div>
+    </div>
 </div>
