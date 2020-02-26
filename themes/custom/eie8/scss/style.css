@@ -9437,6 +9437,14 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   margin-top: 5rem;
   margin-bottom: 5rem; }
 
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column; }
+
 /* TYPOGRAPHY */
 /* Google Fonts */
 /* MIXINS */
@@ -10209,11 +10217,41 @@ label {
       position: relative;
       right: 45px; } }
 
+.explore-card {
+  margin-left: -15px !important;
+  margin-right: -15px !important; }
+
+.featured-image-wrapper {
+  height: 341px;
+  width: auto;
+  overflow: hidden; }
+
+.featured-card-icon {
+  position: relative !important;
+  bottom: 4px !important;
+  left: 0px !important; }
+
 .category-image-card {
   height: 100%;
   width: auto !important;
   background-position: center center;
   background-repeat: no-repeat; }
+
+.icon {
+  font-family: web-refresh;
+  position: relative;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+  font-size: 35px;
+  left: -15px; }
+
+.content-area {
+  padding: 35px;
+  margin-bottom: -65px;
+  display: inline-block;
+  position: relative;
+  top: -65px; }
 
 .category-icon-card {
   position: relative;
@@ -10225,6 +10263,15 @@ label {
 .card-body.category-body {
   min-height: 250px;
   padding: 10px !important; }
+
+.featured-attractions.card {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 0px; }
+
+.featured-attractions .content-area .description {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 .email-webform-block {
   background: #007398 !important;

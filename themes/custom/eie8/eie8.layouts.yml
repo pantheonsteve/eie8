@@ -14,3 +14,11 @@ card_image_top:
   regions:
     main:
       label: Main Content
+featured_card:
+  label: 'Featured Card'
+  category: 'EiE'
+  template: templates/featured-card--taxonomy-term
+  default_region: main
+  regions:
+    main:
+      label: Main Content
