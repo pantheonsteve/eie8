@@ -2,16 +2,16 @@ global-styling:
   version: VERSION
   js:
     js/global.js: {}
-    ../../libraries/superfish/superfish.js: {}
+    ../../../libraries/superfish/superfish.js: {}
   css:
     component:
       css/style.css: {}
       css/colors.css: {}
 bootstrap:
   js:
-    /libraries/popper/popper.min.js: {}
-    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
-    themes/custom/eie8/node_modules/bootstrap/js/dist/collapse.js: {}
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/collapse.js: {}
   css:
     component:
       /libraries/bootstrap/dist/css/bootstrap.min.css: {}
