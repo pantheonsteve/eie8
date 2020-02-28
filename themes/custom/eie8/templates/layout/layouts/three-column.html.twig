@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Bootstrap Layouts: "3 Columns" template.
+ *
+ * Available layout variables:
+ * - wrapper: Wrapper element for the layout container.
+ * - attributes: Wrapper attributes for the layout container.
+ *
+ * Available region variables:
+ * - left
+ * - center
+ * - right
+ *
+ * Each region variable contains the following properties:
+ * - wrapper: The HTML element to use to wrap this region.
+ * - attributes: The HTML attributes to use on the wrapper for this region.
+ * - content: The content to go inside the wrapper for this region.
+ */
+#}
+{% if content %}
+  <div {{ attributes.addClass('three-column', 'container') }}>
+  {{ title_suffix.contextual_links }}
+  <div class="row">
+  {% if content.left %}
+  <div class="col-sm-12 col-lg-4">
+    <div {{ region_attributes.left.addClass('left-region') }}>
+    {{ content.left }}
+    </div>
+  </div>
+  {% endif %}
+
+  {% if content.center %}
+    <div class="col-sm-12 col-lg-4">
+      <div {{ region_attributes.left.addClass('center-region') }}>
+        {{ content.center }}
+      </div>
+    </div>
+  {% endif %}
+
+  {% if content.right %}
+    <div class="col-sm-12 col-lg-4">
+      <div {{ region_attributes.right.addClass('right-region') }}>
+      {{ content.right }}
+      </div>
+    </div>
+  {% endif %}
+  </div>
+</div>
+{% endif %}
+
+

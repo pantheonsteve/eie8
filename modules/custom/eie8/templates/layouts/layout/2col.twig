@@ -1,14 +1,15 @@
 {#
 /**
  * @file
- * Bootstrap Layouts: "1 Column" template.
+ * Bootstrap Layouts: "2 Columns" template.
  *
  * Available layout variables:
  * - wrapper: Wrapper element for the layout container.
  * - attributes: Wrapper attributes for the layout container.
  *
  * Available region variables:
- * - main
+ * - left
+ * - right
  *
  * Each region variable contains the following properties:
  * - wrapper: The HTML element to use to wrap this region.
@@ -16,16 +17,19 @@
  * - content: The content to go inside the wrapper for this region.
  */
 #}
-{% if content %}
-  <div class='container'>
-    <div class='row'>
-      <div class='col-sm-12'>
-        {% if content.main %}
-          <div {{ region_attributes.main.addClass('main-region') }}>
-            {{ content.main }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-{% endif %}
+<{{ wrapper }}{{ attributes }}>
+  {{ title_suffix.contextual_links }}
+
+  {% if left.content %}
+  <{{ left.wrapper }}{{ left.attributes }}>
+    {{ left.content }}
+  </{{ left.wrapper }}>
+  {% endif %}
+
+  {% if right.content %}
+  <{{ right.wrapper }}{{ right.attributes }}>
+    {{ right.content }}
+  </{{ right.wrapper }}>
+  {% endif %}
+
+</{{ wrapper }}>

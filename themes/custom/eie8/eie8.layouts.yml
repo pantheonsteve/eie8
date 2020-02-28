@@ -1,11 +1,113 @@
+# One column.
 one_column:
   label: 'One column'
   category: 'EiE'
-  template: templates/one-column
+  template: templates/layout/layouts/one-column
   default_region: main
+  icon_map:
+    - [main]
   regions:
     main:
       label: Main content
+#One column fluid
+one_column_fluid:
+  label: 'One column - Fluid'
+  category: 'EiE'
+  template: templates/layout/layouts/one-column-fluid
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content
+# Two column.
+two_column:
+  label: 'Two column'
+  category: 'EiE'
+  icon_map:
+    - [left]
+    - [right]
+  template: templates/layout/layouts/two-column
+  regions:
+    left:
+      label: 'Left'
+      classes:
+        - col-sm-12
+        - col-lg-6
+    right:
+      label: 'Right'
+      classes:
+        - col-sm-12
+        - col-lg-6
+# Two column fluid.
+two_column_fluid:
+  label: 'Two column fluid'
+  category: 'EiE'
+  icon_map:
+    - [left]
+    - [right]
+  template: templates/layout/layouts/two-column-fluid
+  regions:
+    left:
+      label: 'Left'
+      classes:
+        - col-sm-12
+        - col-lg-6
+    right:
+      label: 'Right'
+      classes:
+        - col-sm-12
+        - col-lg-6
+# Three column.
+three_column:
+  label: 'Three column'
+  category: 'EiE'
+  icon_map:
+    - [left]
+    - [center]
+    - [right]
+  template: templates/layout/layouts/three-column
+  regions:
+    left:
+      label: 'Left'
+      classes:
+        - col-sm-12
+        - col-lg-4
+    center:
+      label: 'Center'
+      classes:
+        - col-sm-12
+        - col-lg-4
+    right:
+      label: 'Right'
+      classes:
+        - col-sm-12
+        - col-lg-4
+# Three column fluid.
+three_column_fluid:
+  label: 'Three column fluid'
+  category: 'EiE'
+  icon_map:
+    - [left]
+    - [center]
+    - [right]
+  template: templates/layout/layouts/three-column-fluid
+  regions:
+    left:
+      label: 'Left'
+      classes:
+        - col-sm-12
+        - col-lg-4
+    center:
+      label: 'Center'
+      classes:
+        - col-sm-12
+        - col-lg-4
+    right:
+      label: 'Right'
+      classes:
+        - col-sm-12
+        - col-lg-4
 card_image_top:
   label: 'Card Image Top'
   category: 'EiE'
