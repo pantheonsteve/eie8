@@ -20,7 +20,7 @@
 {% if content %}
   <div {{ attributes.addClass('two-column', 'container-fluid') }}>
     {{ title_suffix.contextual_links }}
-    <div class="row">
+    <div class="row display-flex">
       {% if content.left %}
         <div class="col-sm-12 col-lg-6">
           <div {{ region_attributes.left.addClass('left-region') }}>
