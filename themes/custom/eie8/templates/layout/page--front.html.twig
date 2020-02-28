@@ -86,10 +86,10 @@
             {% if container_navbar %}
             <div class="container">
               {% endif %}
-              <div class="col-lg-3 col-sm-12">
+              <div class="col-3">
                 {{ page.site_branding }}
               </div>
-              <div class="col-lg-9 col-sm-12">
+              <div class="col-9">
                 <div class="">
                   {{ page.secondary_menu }}
                 </div>
@@ -103,6 +103,8 @@
                     <div>
                     </div>
                   </div>
+                </div>
+              </div>
                   {% if container_navbar %}
                 </div>
                 {% endif %}
@@ -114,7 +116,8 @@
             {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
               <div class="collapse navbar-collapse" id="CollapsingNavbar">
                 {{ page.primary_menu }}
                 {% if page.header_form %}

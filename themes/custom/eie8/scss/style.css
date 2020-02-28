@@ -9363,6 +9363,16 @@ a.navbar-brand img {
 .sf-depth-2 {
   background: white; }
 
+.superfish-main-navigation {
+  float: right; }
+  @media (min-width: 576px) {
+    .superfish-main-navigation {
+      position: relative;
+      top: 5px; } }
+
+.sf-depth-2 {
+  background: white; }
+
 ul.sf-menu a, ul.sf-menu span.nolink {
   display: block;
   padding: 1em 1.1em;

@@ -60,6 +60,20 @@ a.navbar-brand img {
   background: white;
 }
 
+.superfish-main-navigation {
+
+  @media (min-width: 576px) {
+    position: relative;
+    top: 5px;
+  }
+
+  float:right;
+}
+
+.sf-depth-2 {
+  background: white;
+}
+
 ul.sf-menu a, ul.sf-menu span.nolink {
   display: block;
   padding: 1em 1.1em;
