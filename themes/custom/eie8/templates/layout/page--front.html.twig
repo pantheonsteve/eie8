@@ -90,9 +90,11 @@
                 {{ page.site_branding }}
               </div>
               <div class="col-9">
+                {% if page.secondary_menu %}
                 <div class="">
                   {{ page.secondary_menu }}
                 </div>
+                {% endif %}
                 <div class="row">
                   <div class="col-12">
                     {% if page.top_header_form %}

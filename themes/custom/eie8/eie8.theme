@@ -53,39 +53,3 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
-
-/**
- * @param $variables
- *//*
-function eie8_preprocess_block_bundle__media_block(&$variables) {
-  xdebug_break();
-}
-/*
-/**
- * Implements hook_preprocess_HOOK().
- *//*
-function eie8_preprocess_block__bundle__text_and_image_cta_block(&$variables) {
-
-  $body = $variables["content"]["#block_content"]->values["body"]["x-default"][0]["value"];
-  $variables['body'] = $body;
-  $variables['text_overlay'] = $variables["content"]["field_text_overlay"][0]["#text"];
-  $variables['overlay_color'] = $variables["elements"]["content"]["#block_content"]->values["field_overlay_color"]["x-default"][0]["value"];
-  $variables['link'] = $variables["content"]["#block_content"]->values["field_cta_link"]["x-default"][0]["uri"];
-  $variables['cta_text'] = $variables["content"]["field_cta_link"][0]["#title"];
-  //$variables['background_image_url'] = $context["elements"]["content"]["field_background_image"][0]["#item"]->properties["entity"]->target->entity->values["uri"]["x-default"];
-}
-
-
-/*
-/**
- * Implements hook_preprocess_HOOK().
- *//*
-function eie8_card_image_top__taxonomy_term(&$variables) {
-
-  if($variables["content"]["#view_mode"] = 'card_with_image') {
-    $tid = $variables["content"]["#contextual_links"]["taxonomy_term"]["route_parameters"]["taxonomy_term"];
-    $path = '/taxonomy/term/'.$tid;
-    $variables['path'] = $path;
-  }
-}
-*/

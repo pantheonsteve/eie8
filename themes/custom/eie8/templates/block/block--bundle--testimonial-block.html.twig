@@ -41,17 +41,17 @@
 
 <div class="container-fluid container-padding">
         <div class="row">
-            <div class="d-none d-md-block col-md-3 col-lg-2 offset-lg-1 wow fadeInLeft slow" style="visibility: visible; animation-name: fadeInLeft;">
-                {{ content.field_testimonial_image }}
+            <div class="d-none d-md-block col-3 wow fadeInLeft slow" style="visibility: visible; animation-name: fadeInLeft;">
+                {{ content.field_image }}
             </div>
-            <div class="col-md-5">
+            <div class="col-6">
                 <p class="testimonial wow fadeInDown slow" style="visibility: visible; animation-name: fadeInDown;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
                 <p class="d-none d-md-block wow fadeInUp slow" style="visibility: visible; animation-name: fadeInUp;">
-                    <i class="fa fa-quote-left orange author-size" aria-hidden="true"></i>
-                    <strong>{{ content.field_quote_source }}</strong>
+                    <span><i class="fa fa-quote-left orange author-size" aria-hidden="true"></i><strong>{{ content.field_quote_source }}</strong></span>
+
                 </p>
             </div>
-            <div class="col-md-4 col-lg-3 wow fadeInRight slow delay-1s" style="visibility: visible; animation-name: fadeInRight;">
+            <div class="col-3 wow fadeInRight slow delay-1s" style="visibility: visible; animation-name: fadeInRight;">
                 <p><a href="{{ content.field_button[0]['#url'] }}" class="btn btn-solid btn-block">{{ content.field_button[0]['#title'] }}</a></p>
             </div>
         </div>

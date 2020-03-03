@@ -97,6 +97,23 @@ a.secondary-nav-link {
     color: $darkGray;
 }
 
+#superfish-secondary-navigation-toggle {
+  position: relative;
+  bottom: 5px;
+}
+
+.shop-eie-button {
+  //**wrapper for Shop EiE Button to style on non-mobile displays**//
+}
+
+.show-on-mobile {
+  //**Show only on mobile, hide on other screens**//
+}
+
+.hide-on-mobile {
+  //**Hide on mobile, show on other screen sizes**//
+}
+
 .shop-eie {
   //**Shop EiE Button**//
   position: relative;

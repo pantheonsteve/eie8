@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains mobile_detect.module.
+ */
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function mobile_detect_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the mobile_detect module.
+    case 'help.page.mobile_detect':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Mobile Detect') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function mobile_detect_theme() {
+  $theme = [];
+
+  return $theme;
+}
