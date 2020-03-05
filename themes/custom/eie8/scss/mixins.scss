@@ -16,3 +16,132 @@ $value in $theme-colors {
         @include button-outline-variant($value);
     }
 }
+
+/* border radius */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -khtml-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-box-shadow: $radius;
+  border-radius: $radius;
+}
+
+/* text shadows */
+@mixin text-shadow($args) {
+  -webkit-text-shadow: $args;
+  -khtml-text-shadow: $args;
+  -moz-text-shadow: $args;
+  -ms-text-shadow: $args;
+  -o-text-shadow: $args;
+  text-shadow: $args;
+}
+
+/* box shadows */
+@mixin box-shadow($args) {
+  -webkit-box-shadow: $args;
+  -khtml-box-shadow: $args;
+  -moz-box-shadow: $args;
+  -ms-box-shadow: $args;
+  -o-box-shadow: $args;
+  box-shadow: $args;
+}
+
+/* opacity */
+@mixin opacity($value) {
+  filter: alpha(opacity=$value*100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$value*100});
+  opacity: $value;
+}
+
+/* transitions */
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -khtml-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+/* transform */
+@mixin transform($args) {
+  -webkit-transform: $args;
+  -khtml-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+/* user select */
+@mixin user-select($args) {
+  -webkit-user-select: $args;
+  -khtml-user-select: $args;
+  -moz-user-select: $args;
+  -ms-user-select: $args;
+  -o-user-select: $args;
+  user-select: $args;
+}
+
+/* linear gradient */
+@mixin linear-gradient($args) {
+  -webkit-linear-gradient: $args;
+  -khtml-linear-gradient: $args;
+  -moz-linear-gradient: $args;
+  -ms-linear-gradient: $args;
+  -o-linear-gradient: $args;
+  linear-gradient: $args;
+}
+
+/* linear background gradient */
+@mixin linear-bg-gradient($top, $bottom){
+  background: $top;
+  background: -moz-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom));
+  background: -webkit-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -o-linear-gradient(top, $top 0%, $bottom 100%);
+  background: -ms-linear-gradient(top, $top 0%, $bottom 100%);
+  background: linear-gradient(to bottom, $top 0%, $bottom 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000',GradientType=0);
+}
+
+/* background size */
+@mixin background-size($value) {
+  -webkit-background-size: $value;
+  -khtml-background-size: $value;
+  -moz-background-size: $value;
+  -ms-background-size: $value;
+  -o-background-size: $value;
+  background-size: $value;
+}
+
+/* text size adjust */
+@mixin text-size-adjust($value) {
+  -webkit-text-size-adjust: $value;
+  -khtml-text-size-adjust: $value;
+  -moz-text-size-adjust: $value;
+  -ms-text-size-adjust: $value;
+  -o-text-size-adjust: $value;
+  text-size-adjust: $value;
+}
+
+/* touch callout */
+@mixin touch-callout($value) {
+  -webkit-touch-callout: $value;
+  -khtml-touch-callout: $value;
+  -moz-touch-callout: $value;
+  -ms-touch-callout: $value;
+  -o-touch-callout: $value;
+  touch-callout: $value;
+}
+
+/* appearance */
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+  -khtml-appearance: $value;
+  -moz-appearance: $value;
+  -ms-appearance: $value;
+  -o-appearance: $value;
+  appearance: $value;
+}

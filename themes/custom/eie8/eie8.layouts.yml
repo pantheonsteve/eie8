@@ -20,6 +20,17 @@ one_column_fluid:
   regions:
     main:
       label: Main content
+#One Column Fluid - taxonomy term full
+one_column_fluid__taxonomy_term_full:
+  label: 'One column - Fluid - Taxonomy Term - Full'
+  category: 'EiE'
+  template: templates/layout/layouts/one-column-fluid--taxonomy-term-full
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content
 # Two column.
 two_column:
   label: 'Two column'

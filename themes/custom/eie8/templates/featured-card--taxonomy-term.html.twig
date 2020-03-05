@@ -25,6 +25,7 @@
  * @ingroup themeable
  */
 #}
+
 {%
   set classes = [
     'taxonomy-term',
@@ -34,7 +35,8 @@
     'animated',
   ]
 %}
-<div {{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }} data-url="#">
+{{ breakpoint() }}
+<div {{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }} data-url="{{ url }}">
   {% if content.field_category_image|render is not empty %}
     <div class="featured-image-wrapper">
       <img class="tile category-image-card" src={{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }} alt={{ content.field_category_image|field_raw('alt') }} />

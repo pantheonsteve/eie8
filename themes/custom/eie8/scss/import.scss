@@ -12,8 +12,6 @@
 
 // barrio
 @import "barrio";
-// typography
-@import "typography";
 // mixins
 @import "mixins";
 
@@ -27,8 +25,9 @@
 @import 'components/site-footer';
 
 /***********EiE Modules**********/
-@import 'eie/hero_image_block';
-@import 'eie/image-card';
-@import 'eie/email-webform';
-@import 'eie/homepage';
-@import 'eie/hero_image_block';
+@import 'partials/hero_image_block';
+@import 'partials/image-card';
+@import 'partials/email-webform';
+@import 'partials/homepage';
+@import 'partials/hero_image_block';
+@import 'partials/_page_content';

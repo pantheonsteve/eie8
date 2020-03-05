@@ -6,6 +6,8 @@
  */
 
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\media\Entity\Media;
+use Drupal\file\Entity\File;
 
 /**
  * Implements hook_form_system_theme_settings_alter() for settings form.
@@ -52,4 +54,28 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
   if (isset($variables['elements']['content']['#block_content'])) {
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
+}
+
+function eie8_preprocess_block(&$variables){
+  /*
+  $slides = $context['rows']['#build']['items'];
+  $image_urls = [];
+  foreach ($slides as $slide){
+    $field_background_media = $slide['#view']['field']['field_background_media'];
+    $mid = $field_background_media['view']['result'][0]['_entity']['values']['id']['x-default'];
+    $media = Media::load($mid);
+    $fid = $media->field_media_image->target_id;
+    $file = File::load($fid);
+    $url = $file->toUrl();
+    $image_urls[] = $url;
+  }
+  $variables['urls'] = $image_urls;
+  */
+}
+
+/**
+ * @param $variables
+ */
+function eie8_ds_entity_view(&$variables){
+  xdebug_break();
 }

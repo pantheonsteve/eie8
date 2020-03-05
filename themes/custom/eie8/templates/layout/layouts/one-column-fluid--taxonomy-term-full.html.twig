@@ -17,15 +17,18 @@
  */
 #}
 {% if content %}
-  <div class='container-fluid'>
-    <div class='row'>
-      <div class='col-sm-12'>
-        {% if content.main %}
-          <div {{ region_attributes.main.addClass('main-region') }}>
-            {{ content.main }}
+<div class="media-slide-content">
+  <div class="heroblock jumbotron jumbotron-fluid hero-image full-width media-slide-content media-slide-image" style="background: url('{{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }}'); background-repeat: no-repeat;
+    background-size: cover; background-position: center center;">
+    <div class="container">
+      <div class="row">
+        <div class="p-5">
+          <div class="media-hero-title">
+              <h2>{{ content.name }}</h2>
           </div>
-        {% endif %}
+        </div>
       </div>
     </div>
   </div>
+</div>
 {% endif %}

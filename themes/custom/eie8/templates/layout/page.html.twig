@@ -70,49 +70,56 @@
   <div id="page">
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
       <div class="mos-branding">
-        <div class="row">
-          <div class="container">
-            <a href="https://www.mos.org/" target="_blank">
-              <img class="mos-logo-header-small" alt="Museum of Science Logo" src="/themes/custom/eie8/images/logos/mos_logo_header_small.png" />
-            </a>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="container">
+              <a href="https://www.mos.org/" target="_blank">
+                <img class="mos-logo-header-small" alt="Museum of Science Logo" src="/themes/custom/eie8/images/logos/mos_logo_header_small.png" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form or page.site_branding %}
           <nav{{ navbar_top_attributes }}>
-          {% if container_navbar %}
-          <div class="container">
-          {% endif %}
-              <div class="col-4">
+            {% if container_navbar %}
+            <div class="container">
+              {% endif %}
+              <div class="col-3">
                 {{ page.site_branding }}
               </div>
-              <div class="col-8">
-                <div class="">
-                {{ page.secondary_menu }}
-                </div>
+              <div class="col-9">
+                {% if page.secondary_menu %}
+                  <div class="">
+                    {{ page.secondary_menu }}
+                  </div>
+                {% endif %}
                 <div class="row">
                   <div class="col-12">
                     {% if page.top_header_form %}
-                    <div class="form-inline navbar-form float-right">
-                      {{ page.top_header_form }}
-                    </div>
+                      <div class="form-inline navbar-form float-right">
+                        {{ page.top_header_form }}
+                      </div>
                     {% endif %}
-                  <div>
+                    <div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              {% if container_navbar %}
             </div>
-          {% if container_navbar %}
-          </div>
-          {% endif %}
+            {% endif %}
           </nav>
         {% endif %}
         <nav{{ navbar_attributes }}>
           {% if container_navbar %}
           <div class="container">
-          {% endif %}
+            {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
+                    class="fas fa-bars fa-1x"></i></span></button>
               <div class="collapse navbar-collapse" id="CollapsingNavbar">
                 {{ page.primary_menu }}
                 {% if page.header_form %}
@@ -120,12 +127,12 @@
                     {{ page.header_form }}
                   </div>
                 {% endif %}
-	          </div>
+              </div>
             {% endif %}
             {% if sidebar_collapse %}
               <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
             {% endif %}
-          {% if container_navbar %}
+            {% if container_navbar %}
           </div>
           {% endif %}
         </nav>
@@ -152,15 +159,15 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="container">
+        <div id="main" class="container-fluid">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
-              <main{{ content_attributes }}>
-                <section class="section">
-                  <a id="main-content" tabindex="-1"></a>
-                  {{ page.content }}
-                </section>
-              </main>
+            <main{{ content_attributes }}>
+              <section class="section">
+                <a id="main-content" tabindex="-1"></a>
+                {{ page.content }}
+              </section>
+            </main>
             {% if page.sidebar_first %}
               <div{{ sidebar_first_attributes }}>
                 <aside class="section" role="complementary">
@@ -190,21 +197,21 @@
     {% endif %}
     <footer class="site-footer">
       {% block footer %}
-        <div class="{{ container }}">
-          {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-            <div class="row">
-              <div class="site-footer__top clearfix col-md-3">
-                {{ page.footer_first }}
-              </div>
-              <div class="col-md-3">
-                {{ page.footer_second }}
-              </div>
-              <div class="col-md-3">
-                {{ page.footer_third }}
-              <div class="col-md-3">
-                {{ page.footer_fourth }}
-              </div>
+      <div class="{{ container }}">
+        {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+        <div class="row">
+          <div class="site-footer__top clearfix col-md-3">
+            {{ page.footer_first }}
+          </div>
+          <div class="col-md-3">
+            {{ page.footer_second }}
+          </div>
+          <div class="col-md-3">
+            {{ page.footer_third }}
+            <div class="col-md-3">
+              {{ page.footer_fourth }}
             </div>
+          </div>
           {% endif %}
           {% if page.footer_fifth %}
             <div class="site-footer__bottom">
@@ -212,7 +219,7 @@
             </div>
           {% endif %}
         </div>
-      {% endblock %}
+        {% endblock %}
     </footer>
   </div>
 </div>

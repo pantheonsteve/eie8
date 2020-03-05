@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/blazy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/libraries/slick" vcs="Git" />
   </component>
 </project>
