@@ -1,0 +1,106 @@
+/*Start of Related Links Styling*/
+
+.related-links-section {
+  width: 100%;
+  margin-bottom: 130px;
+  h1 {
+    padding: 100px 100px 20px 100px;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+  }
+  h2 {
+    font-size: 70px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+  }
+  h3 {
+    padding-left: 10px;
+    padding-right: 170px;
+    padding-top: 340px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  p {
+    padding: 0 100px 0 100px;
+    font-family: ScalaPro;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: $breakSmall) {
+    h1 {
+      padding: 50px 50px 20px 50px;
+      font-size: 28px;
+      font-weight: 700;
+      font-style: normal;
+      color: #ffffff;
+    }
+    h2 {
+      font-size: 70px;
+      font-weight: 700;
+      font-style: normal;
+      color: #ffffff;
+    }
+    h3 {
+      font-size: 22px;
+      font-weight: 500;
+      font-style: normal;
+      color: #ffffff;
+    }
+    p {
+      padding: 0 50px 0 50px;
+      font-family: ScalaPro;
+      font-size: 16px;
+      font-weight: normal;
+      color: #ffffff;
+    }
+  }
+
+}
+
+.overlap-related-box-1 {
+  bottom: -60px;
+  position: relative;
+  height: 400px;
+  width: 261px;
+  background-image: url("https://mos-general-assets.s3.amazonaws.com/webrefresh/explore-images/related-links-1.png");
+  background-repeat: no-repeat;
+
+}
+
+.overlap-related-box-2 {
+  bottom: -60px;
+  position: relative;
+  height: 400px;
+  width: 261px;
+  background-image: url("https://mos-general-assets.s3.amazonaws.com/webrefresh/explore-images/related-links-2.png");
+  background-repeat: no-repeat;
+
+}
+
+.overlap-related-box-3 {
+  bottom: -60px;
+  position: relative;
+  height: 400px;
+  width: 261px;
+  background-image: url("https://mos-general-assets.s3.amazonaws.com/webrefresh/explore-images/related-links-3.png");
+  background-repeat: no-repeat;
+
+}
+
+.overlap-related-box-4 {
+  bottom: -60px;
+  position: relative;
+  height: 400px;
+  width: 261px;
+  background-image: url("https://mos-general-assets.s3.amazonaws.com/webrefresh/explore-images/related-links-4.png");
+  background-repeat: no-repeat;
+
+}
+
+/*End of Related Links Styling*/
