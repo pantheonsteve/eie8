@@ -72,10 +72,3 @@ function eie8_preprocess_block(&$variables){
   $variables['urls'] = $image_urls;
   */
 }
-
-/**
- * @param $variables
- */
-function eie8_ds_entity_view(&$variables){
-  xdebug_break();
-}

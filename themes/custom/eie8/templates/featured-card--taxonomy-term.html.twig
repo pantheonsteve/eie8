@@ -35,7 +35,6 @@
     'animated',
   ]
 %}
-{{ breakpoint() }}
 <div {{ attributes.setAttribute('id', 'taxonomy-term-' ~ term.id).addClass(classes) }} data-url="{{ url }}">
   {% if content.field_category_image|render is not empty %}
     <div class="featured-image-wrapper">
