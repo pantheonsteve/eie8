@@ -21,24 +21,16 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-md-12">
-<div class="row">
+<div class="container">
 {% for row in rows %}
-  {%
-    set row_classes = [
-      'col-lg-6',
-      'lifelong-learning',
-      'pr-lg-2',
-      'pt-3',
+    {%
+      set row_classes = [
+      'row',
+      'highlighted-event',
     ]
-  %}
+    %}
   <div{{ row.attributes.addClass(row_classes) }}>
     {{- row.content -}}
   </div>
 {% endfor %}
-</div>
-  </div>
-  </div>
 </div>

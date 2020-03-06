@@ -21,9 +21,6 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-{% set rowscount %}
-  {{ rows|length }}
-{% endset %}
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
@@ -43,6 +40,16 @@
     {%
       set row_classes = [
       'col-lg-6',
+      'lifelong-learning',
+      'pr-lg-2',
+      'pt-3',
+    ]
+    %}
+  {% endif %}
+  {% if rows|length == 1 %}
+    {%
+      set row_classes = [
+      'col-lg-12',
       'lifelong-learning',
       'pr-lg-2',
       'pt-3',

@@ -29,18 +29,18 @@
  * @ingroup themeable
  */
 #}
+{% if label %}
 <div class="container-fluid container-padding pb-5">
   <div class="row">
     <div class="d-none d-md-block col-md-1 offset-md-2">
       <div class="light-blue-hr"></div>
     </div>
     <div class="col-md-9">
-      {% if label %}
         <h3><strong>{{ label }}</strong></h3>
-      {% endif %}
     </div>
   </div>
 </div>
+{% endif %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
