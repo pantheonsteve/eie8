@@ -21,34 +21,19 @@
 {% if title %}
   <h3>{{ title }}</h3>
 {% endif %}
-{% set rowscount %}
-  {{ rows|length }}
-{% endset %}
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-12">
 <div class="row">
 {% for row in rows %}
-  {% if rows|length == 3 %}
   {%
     set row_classes = [
-      'col-lg-4',
-      'lifelong-learning',
-      'pr-lg-2',
-      'pt-3',
-    ]
-  %}
-  {% endif %}
-  {% if rows|length == 2 %}
-    {%
-      set row_classes = [
       'col-lg-6',
       'lifelong-learning',
       'pr-lg-2',
       'pt-3',
     ]
-    %}
-  {% endif %}
+  %}
   <div{{ row.attributes.addClass(row_classes) }}>
     {{- row.content -}}
   </div>
