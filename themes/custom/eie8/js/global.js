@@ -28,6 +28,15 @@
         position = scroll;
       });
 
+      $(".lifelong-learning").hover(
+        function () {
+          $(".layer", $(this)).hide();
+          $(".more-info", $(this)).show();
+        }, function () {
+          $(".layer", $(this)).show();
+          $(".more-info", $(this)).hide();
+        }
+      );
     }
   };
 

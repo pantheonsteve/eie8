@@ -135,3 +135,14 @@ featured_card:
   regions:
     main:
       label: Main Content
+# Square CTA Tile.
+square_cta_tile:
+  label: 'Square CTA Tile'
+  category: 'EiE'
+  template: templates/layout/layouts/square-cta-tile--paragraph
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content

@@ -1,4 +1,63 @@
 
+Blazy 8.x-2.0-dev, 2020-02-29
+-----------------------------
+- Added library blazy/base as failsafe when blazy JS library might not be loaded
+  or even disabled such as with Blazy text for CSS grid only.
+- Fixed for the newly supported CSS background for Responsive image regression
+  with multi-breakpoint CSS background. Doh.
+- Added generic container classes to apply to sub-modules as well.
+
+Blazy 8.x-2.0-dev, 2020-02-27
+-----------------------------
+- Added another compatibility for Claro.
+- Renamed CSS class hint to b-hint to avoid potential conflicts.
+- Cleaned up few deprecated CSS stuffs related to custom breakpoints removal.
+
+Blazy 8.x-2.0-dev, 2020-02-26
+-----------------------------
+- Added blazy.css to reduce dups and for basic blazy module features.
+- Cleaned up irrelevant iframe attributes due to iframe within iframe since 8.6.
+- Removed useless iframe for when Image to iframe is enabled to save few bytes.
+- Added supports for iframe only without Image to iframe for uncool people.
+
+Blazy 8.x-2.0-dev, 2020-02-25
+-----------------------------
+- Cleaned up no longer relevant settings due to deprecation.
+- Added supports for youtube/embed which is ignored by OEmbed Resource.
+- Added micro optimization for BlazyFilter.
+
+Blazy 8.x-2.0-dev, 2020-02-24
+-----------------------------
+- Added a hook_update() to remove unused settings and cache clearing.
+- Removed deprecated BlazyAdminBreakpointTrait.
+- Removed few deprecated classes and methods:
+  Drupal\blazy\BlazyBreakpoint, Drupal\blazy\Dejavu\BlazyDefault.
+  Deprecated formatters are still kept till 3.x, or sooner.
+
+Blazy 8.x-2.0-dev, 2020-02-23
+-----------------------------
+- Updated tests to use Selenium.
+- Added micro optimization for OEmbed.
+- Simplified BlazyOEmbed::getAutoPlayUrl.
+- Removed no longer relevant autoplay_url check which is now done within iframe.
+- Updated hard-coded iframe so that can be cleanly removed via variables.
+
+Blazy 8.x-2.0-dev, 2020-02-20
+-----------------------------
+- Issue #3114838 by gausarts, lexsoft: Add a NULL check, else cannot read
+  property hasAttribute of null.
+- Issue #3114486 by gausarts, hunterbuchanan: Default image no longer shows up
+  in image field using Blazy 8.x-2.0-rc7.
+
+Blazy 8.x-2.0-dev, 2020-02-17
+-----------------------------
+- Issue #3079167 by gausarts, nashkrammer, Kristen Pol, Berdir: Implement
+  TrustedCallbackInterface to fix deprecation notices.
+- Issue #3114035 by chr.fritsch: Missing schema for optionset.
+- Fixed for the new formatter schemas: blazy_oembed and blazy_text.
+- Removed no longer useful BlazyFormatterOEmbedTrait.
+- Removed and cleaned up deprecated custom breakpoints, wish me luck.
+
 Blazy 8.x-2.0-dev, 2020-02-15
 -----------------------------
 - Issue #3113094 by thalles: Fix subclassing and stop overriding constructors
@@ -184,7 +243,7 @@ Blazy 8.x-2.0-dev, 2020-01-04
 - Added a new class BlazyBreakpoint to centralize all custom breakpoints.
 - Added BlazyOEmbedInterface, BlazyEntityInterface, BlazyFormatterInterface.
 - Added a new service blazy.formatter to replace blazy.formatter.manager.
-- Changed deprecation removal from blazy:9.x-1.0 to blazy:8.x-3.0.
+- Changed deprecation removal from blazy:8.x-3.0 to blazy:8.x-3.0.
 - Added micro optimizations, or organizations.
 
 Blazy 8.x-2.0-dev, 2020-01-03
