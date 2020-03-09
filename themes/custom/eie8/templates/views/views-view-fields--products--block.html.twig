@@ -74,7 +74,7 @@
   {{ fields.title.content }}
 {% endset %}
 
-<div class="jumbotron">
+<div class="jumbotron white-background">
   <div class="p-5">
     <div class="container">
       <div class="row">
@@ -101,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div class="row display-flex">
+      <div class="row display-flex mt-5">
         <div class="col-lg-6">
           <div class="p-5">
             <h3>What's Included?</h3>
@@ -109,8 +109,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="p-5">
-            <img src="{{ image_block }}" class="img-thumbnail" />
+          <div class="p-5 highlight-card" style="background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(150, 150, 150, 0.5)), url({{ image_block }}); background-position: center; background-size: cover;">
           </div>
         </div>
       </div>

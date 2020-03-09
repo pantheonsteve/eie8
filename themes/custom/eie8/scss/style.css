@@ -13370,7 +13370,11 @@ template {
   display: none !important; }
 
 .highlight-card {
-  min-height: 368px; }
+  min-height: 370px; }
+  .highlight-card h4 {
+    text-align: center; }
+  .highlight-card p {
+    font-size: 1.0em; }
 
 /* GENERAL STYLES
 -------------------------------------------------*/
