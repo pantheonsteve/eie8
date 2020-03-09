@@ -256,6 +256,9 @@ Description: Bootstrap 4 with Sass
   background-color: #e1e1e1;
   color: #000; }
 
+.eie-blue {
+  color: #4089bd !important; }
+
 /* VARIABLES */
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -8893,6 +8896,9 @@ form .form-type-textarea {
   background-color: #e1e1e1;
   color: #000; }
 
+.eie-blue {
+  color: #4089bd !important; }
+
 /* ------------------ Header ------------------ */
 #navbar-top {
   padding: 0 1rem; }
@@ -9836,6 +9842,9 @@ nav.tabs {
 .light-gray-background {
   background-color: #e1e1e1;
   color: #000; }
+
+.eie-blue {
+  color: #4089bd !important; }
 
 .mos-branding {
   background-color: #f2f2f2;
