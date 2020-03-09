@@ -1,0 +1,119 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set color %}
+  {{ fields.field_color.content|striptags }}
+{% endset %}
+{% set description %}
+  {{ fields.field_highlight_card_description.content }}
+{% endset %}
+{% set highlight_card_description %}
+  {{ fields.body.content }}
+{% endset %}
+{% set image_block %}
+  {{ fields.field_media_image_1.content|striptags }}
+{% endset %}
+{% set product_category %}
+  {{ fields.field_product_category.content|striptags }}
+{% endset %}
+{% set product_image %}
+  {{ fields.field_media_image.content|striptags }}
+{% endset %}
+{% set product_link %}
+  {{ fields.field_product_link.content|striptags }}
+{% endset %}
+{% set product_short_code %}
+  {{ fields.field_product_short_code.content|striptags }}
+{% endset %}
+{% set purchase_link %}
+  {{ fields.field_purchase_link.content|striptags }}
+{% endset %}
+{% set highlight_card_title %}
+  {{ fields.field_highlight_card_title.content }}
+{% endset %}
+{% set unit_overview_link %}
+  {{ fields.field_unit_overview_link.content }}
+{% endset %}
+{% set units_link %}
+  {{ fields.field_units_link.content }}
+{% endset %}
+{% set whats_included %}
+  {{ fields.field_whats_included.content }}
+{% endset %}
+{% set title %}
+  {{ fields.title.content }}
+{% endset %}
+
+<div class="jumbotron">
+  <div class="p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>{{ title }}</h3>
+          <p>{{ description}}</p>
+        </div>
+      </div>
+      <div class="row display-flex">
+        <div class="col-lg-5" style="background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(150, 150, 150, 0.5)), url({{ product_image }}); background-position: center; background-size: cover;">
+        </div>
+        <div class="col-lg-5">
+          <div class="highlight-card {{ color }} p-3">
+            <h4 class="p-1">{{ highlight_card_title }}</h4>
+            <p class="p-2">{{ highlight_card_description}}</p>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="p-1">
+            <button class="btn btn-info">{{ product_link }}</button>
+            <p>{{ units_link }}</p>
+            <p>{{ unit_overview_link }}</p>
+            <p>{{ purchase_link }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row display-flex">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h3>What's Included?</h3>
+            <p>{{ whats_included }}</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img src="{{ image_block }}" class="img-thumbnail" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
