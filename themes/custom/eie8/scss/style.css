@@ -13369,6 +13369,9 @@ template {
 [hidden] {
   display: none !important; }
 
+.highlight-card {
+  min-height: 368px; }
+
 /* GENERAL STYLES
 -------------------------------------------------*/
 body {
