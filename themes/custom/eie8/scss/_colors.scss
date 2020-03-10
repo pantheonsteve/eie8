@@ -5,7 +5,7 @@
 // Brand Colors
 $eie-red: #da291c;
 $eie-yellow: #ffb700;
-$eie-blue: #214391;
+$eie-blue: #4089bd;
 $eie-green: #4db4b5;
 $eie-purple: #662d91;
 $eie-charcoal: #474747;
@@ -429,4 +429,8 @@ $gray: #dcdcdc;
 .light-gray-background {
   background-color: $lightGray;
   color: #000;
+}
+
+.eie-blue {
+  color: $eie-blue !important;
 }

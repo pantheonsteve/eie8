@@ -55,3 +55,14 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
+
+/**
+ * @param $variables
+ */
+function eie8_preprocess_superfish(&$variables){
+
+  if(isset($variables["menu_classes"])){
+    $variables["menu_classes"] = 'persistent-nav-links menu sf-menu sf-secondary-navigation sf-horizontal sf-style-none secondary-navigation-menu';
+  }
+}
+

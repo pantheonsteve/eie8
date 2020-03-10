@@ -66,6 +66,7 @@
  * @see html.html.twig
  */
 #}
+
 <div id="page-wrapper" class="page-wrapper-class">
   <div id="page">
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
@@ -159,7 +160,7 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="container-fluid">
+        <div id="main" class="container">
           {{ page.breadcrumb }}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
             <main{{ content_attributes }}>
