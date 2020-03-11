@@ -44,7 +44,6 @@
   {% block content %}
     <div{{ content_attributes.addClass('content') }}>
       {{ content }}
-      <img src={{ file_url(content.field_background_image|field_target_entity.uri.value) }} alt={{ content.field_background_image|field_raw('alt') }} />
     </div>
   {% endblock %}
 </div>

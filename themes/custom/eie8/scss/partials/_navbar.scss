@@ -145,6 +145,8 @@
   margin-bottom: 26px;
   display: inline-block;
   vertical-align: middle;
+  -webkit-filter: drop-shadow( 1px 1px 3px rgba(0,27,48,1));
+  filter: drop-shadow( 1px 1px 3px rgba(0,27,48,1));
   @media screen and (max-width: $breakMedium) {
     -webkit-filter: none;
     filter: none;
@@ -166,8 +168,6 @@
   margin-bottom: 22px;
   display: inline-block;
   vertical-align: middle;
-  -webkit-filter: drop-shadow( 1px 1px 3px rgba(0,27,48,1));
-  filter: drop-shadow( 1px 1px 3px rgba(0,27,48,1));
 }
 
 .navbar-icons {

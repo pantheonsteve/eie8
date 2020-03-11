@@ -21,6 +21,7 @@ regions:
   page_top: 'Page top'
   page_bottom: 'Page bottom'
   highlighted: Highlighted
+  slideshow_region: 'Slideshow/Hero Region'
   featured_top: 'Featured top'
   breadcrumb: Breadcrumb
   content: Content

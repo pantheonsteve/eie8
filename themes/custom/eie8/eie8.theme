@@ -65,4 +65,3 @@ function eie8_preprocess_superfish(&$variables){
     $variables["menu_classes"] = 'persistent-nav-links menu sf-menu sf-secondary-navigation sf-horizontal sf-style-none secondary-navigation-menu';
   }
 }
-

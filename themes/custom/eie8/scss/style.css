@@ -10622,7 +10622,7 @@ label {
       .hero-content i {
         font-size: 26px; } }
 
-@media (min-width: 801px) {
+@media (max-width: 801px) {
   .media-slide-content .media-slide-title {
     width: 100%;
     margin-left: calc(20vw - 10%);
@@ -10652,13 +10652,19 @@ label {
 .media-slide-title {
   position: absolute;
   top: 96px;
-  left: 122px;
+  left: 275px;
   width: 50%;
-  /*max-width: 600px;*/
   padding: 20px;
   height: 100px;
   overflow: hidden;
   z-index: 1000002; }
+  .media-slide-title h2 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #fff;
+    width: 3%; }
 
 .media-hero-title {
   text-shadow: 1px 1px 3px #001b30;
@@ -10678,11 +10684,18 @@ label {
   padding: 20px; }
 
 .media-slide-text {
-  top: 176px;
+  position: absolute;
+  top: 158px;
+  left: 276px;
+  font-family: Arial, sans-serif;
   font-size: 22px;
+  color: #fff;
   width: 50%;
   height: 120px;
-  /*max-width: 600px;*/ }
+  padding: 10px;
+  overflow: hidden;
+  padding: 20px;
+  z-index: 1000002; }
 
 .media-slide-cta a {
   font-family: Arial, sans-serif;
@@ -10694,11 +10707,6 @@ label {
   background: #4089BD;
   white-space: nowrap;
   z-index: 1000002; }
-
-.media-slide-title,
-.media-slide-text {
-  width: 100%;
-  /*max-width: 600px;*/ }
 
 .full-width-hero {
   background: blue;
@@ -11538,7 +11546,7 @@ img.image-style-hero-image {
       .hero-content i {
         font-size: 26px; } }
 
-@media (min-width: 801px) {
+@media (max-width: 801px) {
   .media-slide-content .media-slide-title {
     width: 100%;
     margin-left: calc(20vw - 10%);
@@ -11568,13 +11576,19 @@ img.image-style-hero-image {
 .media-slide-title {
   position: absolute;
   top: 96px;
-  left: 122px;
+  left: 275px;
   width: 50%;
-  /*max-width: 600px;*/
   padding: 20px;
   height: 100px;
   overflow: hidden;
   z-index: 1000002; }
+  .media-slide-title h2 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #fff;
+    width: 3%; }
 
 .media-hero-title {
   text-shadow: 1px 1px 3px #001b30;
@@ -11594,11 +11608,18 @@ img.image-style-hero-image {
   padding: 20px; }
 
 .media-slide-text {
-  top: 176px;
+  position: absolute;
+  top: 158px;
+  left: 276px;
+  font-family: Arial, sans-serif;
   font-size: 22px;
+  color: #fff;
   width: 50%;
   height: 120px;
-  /*max-width: 600px;*/ }
+  padding: 10px;
+  overflow: hidden;
+  padding: 20px;
+  z-index: 1000002; }
 
 .media-slide-cta a {
   font-family: Arial, sans-serif;
@@ -11610,11 +11631,6 @@ img.image-style-hero-image {
   background: #4089BD;
   white-space: nowrap;
   z-index: 1000002; }
-
-.media-slide-title,
-.media-slide-text {
-  width: 100%;
-  /*max-width: 600px;*/ }
 
 .full-width-hero {
   background: blue;
@@ -12591,7 +12607,9 @@ view-display-id-engineering_curriculum .offering-details {
   margin-right: 28px;
   margin-bottom: 26px;
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  -webkit-filter: drop-shadow(1px 1px 3px #001b30);
+  filter: drop-shadow(1px 1px 3px #001b30); }
   @media screen and (max-width: 992px) {
     .navbar-brand img {
       -webkit-filter: none;
@@ -12609,9 +12627,7 @@ view-display-id-engineering_curriculum .offering-details {
   margin-right: 28px;
   margin-bottom: 22px;
   display: inline-block;
-  vertical-align: middle;
-  -webkit-filter: drop-shadow(1px 1px 3px #001b30);
-  filter: drop-shadow(1px 1px 3px #001b30); }
+  vertical-align: middle; }
 
 .navbar-icons {
   margin-top: 18px;

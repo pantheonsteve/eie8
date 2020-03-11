@@ -40,6 +40,7 @@
  * - page.primary_menu: Items for the primary menu region.
  * - page.secondary_menu: Items for the secondary menu region.
  * - page.featured_top: Items for the featured top region.
+ * - page.slideshow_region: Slideshow or Hero Block region
  * - page.content: The main content of the current page.
  * - page.sidebar_first: Items for the first sidebar.
  * - page.sidebar_second: Items for the second sidebar.
@@ -139,9 +140,6 @@
         </nav>
       {% endblock %}
     </header>
-    {% if node.type.landing_page %}
-      <h1> This is a landing page</h1>
-    {% endif %}
     {% if page.highlighted %}
       <div class="highlighted">
         <aside class="{{ container }} section clearfix" role="complementary">
@@ -157,6 +155,11 @@
           </aside>
         </div>
       {% endblock %}
+    {% endif %}
+    {% if page.slideshow_region %}
+      <div class="slideshow-region container-fluid">
+        <div class="slideshow-content">{{ page.slideshow_region }}</div>
+      </div>
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
