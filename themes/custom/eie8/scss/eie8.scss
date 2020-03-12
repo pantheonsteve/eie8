@@ -1,23 +1,34 @@
 @import "colors";
 
-//***MoS Branding at Top of Page***//
-.mos-branding {
-  background-color: $light-gray;
-  margin-bottom: 10px;
+body {
+  font-size: 1.1rem !important;
+}
 
-  img {
-    height: 25px;
-    width: 125px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    position: relative;
-    left: 15px;
-    //max-width: 80%;
-
+/** Grid Overrides to match eie.org original styling **/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 961px !important;
   }
 }
 
+
+//***MoS Branding at Top of Page***//
+.mos-branding {
+  background-color: $light-gray;
+  height: 25px;
+  padding: 5px;
+}
+
+.mos-logo-header {
+  position: relative;
+  bottom: 6px;
+}
+
 //***Site Logo Block***//
+.navbar {
+  padding: 0.1rem 1rem !important;
+  margin-bottom: -10px;
+}
 a.navbar-brand img {
     height: 90px;
     width: auto;
@@ -62,10 +73,6 @@ a.navbar-brand img {
 
 .superfish-main-navigation {
 
-  @media (min-width: 576px) {
-    position: relative;
-    top: 5px;
-  }
 
   float:right;
 }
@@ -82,7 +89,11 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 
 a.secondary-nav-link {
   color: $darkGray;
-  font-size: 1.0rem;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  padding: 15px 15px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .navbar-nav li.nav-item > a.nav-link {
@@ -114,18 +125,16 @@ a.secondary-nav-link {
   //**Hide on mobile, show on other screen sizes**//
 }
 
-.shop-eie {
-  //**Shop EiE Button**//
+a.shop-eie {
   position: relative;
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 12px 24px !important;
   background: #4089BD;
   white-space: nowrap;
-  top: 7px;
 }
 
 //**Search Bar**//
@@ -160,6 +169,7 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   justify-content: center;
   display: flex;
   width: 100%;
+  margin-top: -2px;
 }
 
 .sf-main.sf-menu > li a {

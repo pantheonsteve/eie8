@@ -9846,16 +9846,25 @@ nav.tabs {
 .eie-blue {
   color: #4089bd !important; }
 
+body {
+  font-size: 1.1rem !important; }
+
+/** Grid Overrides to match eie.org original styling **/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 961px !important; } }
 .mos-branding {
-  background-color: #f2f2f2;
-  margin-bottom: 10px; }
-  .mos-branding img {
-    height: 25px;
-    width: 125px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    position: relative;
-    left: 15px; }
+  background-color: #e5e7e9;
+  height: 25px;
+  padding: 5px; }
+
+.mos-logo-header {
+  position: relative;
+  bottom: 6px; }
+
+.navbar {
+  padding: 0.1rem 1rem !important;
+  margin-bottom: -10px; }
 
 a.navbar-brand img {
   height: 90px;
@@ -9887,10 +9896,6 @@ a.navbar-brand img {
 
 .superfish-main-navigation {
   float: right; }
-  @media (min-width: 576px) {
-    .superfish-main-navigation {
-      position: relative;
-      top: 5px; } }
 
 .sf-depth-2 {
   background: white; }
@@ -9902,7 +9907,11 @@ ul.sf-menu a, ul.sf-menu span.nolink {
 
 a.secondary-nav-link {
   color: #1e1e1e;
-  font-size: 1.0rem; }
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  padding: 15px 15px;
+  -webkit-font-smoothing: antialiased; }
 
 .navbar-nav li.nav-item > a.nav-link {
   color: #1e1e1e;
@@ -9918,17 +9927,16 @@ a.secondary-nav-link {
   position: relative;
   bottom: 5px; }
 
-.shop-eie {
+a.shop-eie {
   position: relative;
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: bold;
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 12px 24px !important;
   background: #4089BD;
-  white-space: nowrap;
-  top: 7px; }
+  white-space: nowrap; }
 
 .form-row.search-block-form.search-form {
   position: relative;
@@ -9951,7 +9959,8 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .block-superfishmain {
   justify-content: center;
   display: flex;
-  width: 100%; }
+  width: 100%;
+  margin-top: -2px; }
 
 .sf-main.sf-menu > li a {
   color: #474747;
@@ -9961,7 +9970,7 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   padding: 15px 15px; }
 
 .site-footer {
-  background: #f2f2f2; }
+  background: #e5e7e9; }
 
 .search-block-form {
   margin-right: 2px; }
@@ -10565,7 +10574,7 @@ label {
   padding-left: 30px;
   width: 100%;
   text-shadow: 1px 1px 3px #001b30;
-  height: 700px; }
+  height: 70px; }
   .hero-content h1 {
     color: white;
     font-size: 75px;
@@ -11489,7 +11498,7 @@ img.image-style-hero-image {
   padding-left: 30px;
   width: 100%;
   text-shadow: 1px 1px 3px #001b30;
-  height: 700px; }
+  height: 70px; }
   .hero-content h1 {
     color: white;
     font-size: 75px;
@@ -12603,13 +12612,11 @@ view-display-id-engineering_curriculum .offering-details {
   border-style: none; }
 
 .navbar-brand img {
-  margin-top: 8px;
+  margin-top: 13px;
   margin-right: 28px;
   margin-bottom: 26px;
   display: inline-block;
-  vertical-align: middle;
-  -webkit-filter: drop-shadow(1px 1px 3px #001b30);
-  filter: drop-shadow(1px 1px 3px #001b30); }
+  vertical-align: middle; }
   @media screen and (max-width: 992px) {
     .navbar-brand img {
       -webkit-filter: none;
@@ -13402,6 +13409,408 @@ template {
   .highlight-card p {
     font-size: 1.0em; }
 
+/* Colors */
+.dark-gray {
+  color: #474747 !important; }
+
+.light-gray {
+  color: #e1e1e1 !important; }
+
+.pale-yellow {
+  color: #f1eb9c !important; }
+
+.pale-yellow-background {
+  background-color: #f1eb9c;
+  color: #fff; }
+
+.peach {
+  color: #ffb3ab !important; }
+
+.peach-background {
+  background-color: #ffb3ab;
+  color: #fff; }
+
+.purple {
+  color: #470c68 !important; }
+
+.purple-background {
+  background-color: #470c68;
+  color: #fff; }
+
+.blue {
+  color: #003057 !important; }
+
+.blue-background {
+  background-color: #003057;
+  color: #fff; }
+
+.light-blue {
+  color: #007398 !important; }
+
+.light-blue-background {
+  background-color: #007398;
+  color: #fff; }
+
+.very-light-blue {
+  color: #7bafde !important; }
+
+.very-light-blue-background {
+  background-color: #7bafde;
+  color: #fff; }
+
+.dark-blue {
+  color: #0a2b4c !important; }
+
+.dark-blue-background {
+  background-color: #0a2b4c;
+  color: #fff; }
+
+.pink {
+  color: #a20067 !important; }
+
+.pink-background {
+  background-color: #a20067;
+  color: #fff; }
+
+.dark-pink {
+  color: #91005d !important; }
+
+.dark-pink-background {
+  background-color: #91005d;
+  color: #fff; }
+
+.orange {
+  color: #dc4405 !important; }
+
+.orange-background {
+  background-color: #dc4405;
+  color: #fff; }
+
+.dark-orange {
+  color: #c53d03 !important; }
+
+.dark-orange-background {
+  background-color: #c53d03;
+  color: #fff; }
+
+.white {
+  color: #fff !important; }
+
+.white-background {
+  background-color: #fff; }
+
+.white-transparent {
+  color: white;
+  opacity: .7; }
+
+.light-purple {
+  color: #a20067 !important; }
+
+.light-purple-background {
+  background-color: #a20067;
+  color: #fff; }
+
+.green {
+  color: #034638 !important; }
+
+.green-background {
+  background-color: #034638;
+  color: #fff; }
+
+.maroon {
+  color: #96232f !important; }
+
+.maroon-background {
+  background-color: #96232f;
+  color: #fff; }
+
+.light-green {
+  color: #487a7b !important; }
+
+.light-green-background {
+  background-color: #487a7b;
+  color: #fff; }
+
+/* Colors */
+.pale-yellow {
+  color: #f1eb9c !important; }
+
+.pale-yellow-background {
+  background-color: #f1eb9c;
+  color: #fff; }
+
+.peach {
+  color: #ffb3ab !important; }
+
+.peach-background {
+  background-color: #ffb3ab;
+  color: #fff; }
+
+.purple {
+  color: #470c68 !important; }
+
+.purple-background {
+  background-color: #470c68;
+  color: #fff; }
+
+.blue {
+  color: #003057 !important; }
+
+.blue-background {
+  background-color: #003057;
+  color: #fff; }
+
+.light-blue {
+  color: #007398 !important; }
+
+.light-blue-background {
+  background-color: #007398;
+  color: #fff; }
+
+.very-light-blue {
+  color: #7bafde !important; }
+
+.very-light-blue-background {
+  background-color: #7bafde;
+  color: #fff; }
+
+.dark-blue {
+  color: #0a2b4c !important; }
+
+.dark-blue-background {
+  background-color: #0a2b4c;
+  color: #fff; }
+
+.pink {
+  color: #a20067 !important; }
+
+.pink-background {
+  background-color: #a20067;
+  color: #fff; }
+
+.dark-pink {
+  color: #91005d !important; }
+
+.dark-pink-background {
+  background-color: #91005d;
+  color: #fff; }
+
+.orange {
+  color: #dc4405 !important; }
+
+.orange-background {
+  background-color: #dc4405;
+  color: #fff; }
+
+.dark-orange {
+  color: #c53d03 !important; }
+
+.dark-orange-background {
+  background-color: #c53d03;
+  color: #fff; }
+
+.white {
+  color: #fff !important; }
+
+.white-background {
+  background-color: #fff; }
+
+.white-transparent {
+  color: white !important;
+  opacity: .7 !important; }
+
+.light-purple {
+  color: #a20067 !important; }
+
+.light-purple-background {
+  background-color: #a20067;
+  color: #fff; }
+
+.green {
+  color: #034638 !important; }
+
+.green-background {
+  background-color: #034638;
+  color: #fff; }
+
+.maroon {
+  color: #96232f !important; }
+
+.maroon-background {
+  background-color: #96232f;
+  color: #fff; }
+
+.light-green {
+  color: #487a7b !important; }
+
+.light-green-background {
+  background-color: #487a7b;
+  color: #fff; }
+
+.events-blue {
+  color: #e2eff2 !important; }
+
+.events-blue-background {
+  background-color: #e2eff2;
+  color: #000; }
+
+.light-gray {
+  color: #e1e1e1 !important; }
+
+.light-gray-background {
+  background-color: #e1e1e1;
+  color: #000; }
+
+.eie-blue {
+  color: #4089bd !important; }
+
+body {
+  font-size: 1.1rem !important; }
+
+/** Grid Overrides to match eie.org original styling **/
+@media (min-width: 1200px) {
+  .container {
+    max-width: 961px !important; } }
+.mos-branding {
+  background-color: #e5e7e9;
+  height: 25px;
+  padding: 5px; }
+
+.mos-logo-header {
+  position: relative;
+  bottom: 6px; }
+
+.navbar {
+  padding: 0.1rem 1rem !important;
+  margin-bottom: -10px; }
+
+a.navbar-brand img {
+  height: 90px;
+  width: auto; }
+
+.secondary-menu {
+  position: relative; }
+
+.menu--main {
+  margin-left: auto;
+  margin-right: auto; }
+
+.nav-link {
+  color: #1e1e1e; }
+  .nav-link :hover {
+    color: blue; }
+  .nav-link :focus {
+    color: blue; }
+
+.superfish-secondary-navigation {
+  float: right; }
+  @media (min-width: 576px) {
+    .superfish-secondary-navigation {
+      position: relative;
+      top: 5px; } }
+
+.sf-depth-2 {
+  background: white; }
+
+.superfish-main-navigation {
+  float: right; }
+
+.sf-depth-2 {
+  background: white; }
+
+ul.sf-menu a, ul.sf-menu span.nolink {
+  display: block;
+  padding: 1em 1.1em;
+  position: relative; }
+
+a.secondary-nav-link {
+  color: #1e1e1e;
+  font-size: 0.9rem;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  padding: 15px 15px;
+  -webkit-font-smoothing: antialiased; }
+
+.navbar-nav li.nav-item > a.nav-link {
+  color: #1e1e1e;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 15px; }
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: #1e1e1e; }
+
+#superfish-secondary-navigation-toggle {
+  position: relative;
+  bottom: 5px; }
+
+a.shop-eie {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 12px 24px !important;
+  background: #4089BD;
+  white-space: nowrap; }
+
+.form-row.search-block-form.search-form {
+  position: relative;
+  top: 11px;
+  left: 27px; }
+
+@media (min-width: 576px) {
+  svg.svg-inline--fa.fa-search.fa-w-16.float-right {
+    position: relative;
+    bottom: 28px;
+    left: 125px; } }
+svg.svg-inline--fa.fa-search.fa-w-16.float-right {
+  position: relative;
+  bottom: 28px;
+  right: 10px; }
+
+.search-block-form button {
+  display: none; }
+
+.block-superfishmain {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin-top: -2px; }
+
+.sf-main.sf-menu > li a {
+  color: #474747;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 15px; }
+
+.site-footer {
+  background: #e5e7e9; }
+
+.search-block-form {
+  margin-right: 2px; }
+
+.customer-support-content {
+  margin-top: 5rem;
+  margin-bottom: 5rem; }
+
+.row.display-flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+.row.display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column; }
+
+/**Page Width Correction for large screen**/
+.page-wrapper-class {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; }
+
 /* GENERAL STYLES
 -------------------------------------------------*/
 body {
@@ -13416,7 +13825,7 @@ a {
   background: #A8CF45 !important; }
 
 .site-footer {
-  background: #f2f2f2 !important; }
+  background: #e5e7e9 !important; }
 
 .menu--main li a {
   color: #A8CF45; }

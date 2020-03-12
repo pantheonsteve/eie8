@@ -6,9 +6,9 @@ description: 'SASS Theme for EiE Drupal 8 based on Bootstrap Barrio.'
 base theme: bootstrap_barrio
 
 libraries:
-  - eie8/global-styling
   - eie8/bootstrap
-  - eie8/bootstrap_cdn
+  - eie8/global-styling
+
 libraries-override:
   bootstrap_barrio/global-styling: false
 regions:
