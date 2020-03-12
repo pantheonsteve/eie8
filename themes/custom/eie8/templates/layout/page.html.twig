@@ -181,8 +181,10 @@
     {% endif %}
     <div id="main-wrapper" class="layout-main-wrapper clearfix">
       {% block content %}
-        <div id="main" class="container">
-          {{ page.breadcrumb }}
+        <div id="main" class="container-fluid">
+          {% if page.breadcrumb %}
+            {{ page.breadcrumb }}
+          {% endif %}
           <div class="row row-offcanvas row-offcanvas-left clearfix">
             <main{{ content_attributes }}>
               <section class="section">

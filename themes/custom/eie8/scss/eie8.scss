@@ -15,7 +15,7 @@ body {
 //***MoS Branding at Top of Page***//
 .mos-branding {
   background-color: $light-gray;
-  height: 25px;
+  height: 26px;
   padding: 5px;
 }
 
@@ -96,6 +96,14 @@ a.secondary-nav-link {
   -webkit-font-smoothing: antialiased;
 }
 
+//** navbar **//
+.navbar {
+  position: relative;
+  z-index: 4;
+  height: 88px;
+  margin-bottom: 4px;
+}
+
 .navbar-nav li.nav-item > a.nav-link {
   color: $darkGray;
   font-family: Arial, sans-serif;
@@ -170,6 +178,8 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   display: flex;
   width: 100%;
   margin-top: -2px;
+  position: relative;
+  top: 21px;
 }
 
 .sf-main.sf-menu > li a {
@@ -180,11 +190,6 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   padding: 15px 15px;
 }
 
-//***Footer Content***//
-.site-footer {
-  background: $light-gray;
-}
-
 //***Search Block Form***//
 .search-block-form {
     margin-right: 2px;
@@ -192,6 +197,33 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 
 //***Header***//
 .header {
+  position: relative;
+  z-index: 4;
+  font-family: "museo-sans-rounded", "myriad-pro", Arial, sans-serif;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+//** Breadcrumbs **//
+.breadcrumb {
+  background: white !important;
+}
+
+.breadcrumb-item {
+    margin: 0;
+    float: left;
+    font-size: 0.8125em !important;
+    text-transform: none;
+
+    a {
+      color: #da291c !important;
+    }
+
+}
+
+//** Slideshow Region **//
+.region-slideshow-region {
+  position: relative;
+  top: -6px;
 }
 
 //**Customer Support Block**//
@@ -214,4 +246,9 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+}
+
+//***Footer Content***//
+.site-footer {
+  background: $light-gray;
 }
