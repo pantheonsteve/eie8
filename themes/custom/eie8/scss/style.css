@@ -9884,12 +9884,14 @@ a.navbar-brand img {
   .nav-link :focus {
     color: blue; }
 
-.superfish-secondary-navigation {
-  float: right; }
-  @media (min-width: 576px) {
-    .superfish-secondary-navigation {
-      position: relative;
-      top: 5px; } }
+@media (min-width: 576px) {
+  .superfish-secondary-navigation {
+    position: relative;
+    top: 5px; } }
+@media (max-width: 575px) {
+  .superfish-secondary-navigation {
+    visibility: hidden;
+    float: right; } }
 
 .sf-depth-2 {
   background: white; }
@@ -9933,17 +9935,25 @@ a.secondary-nav-link {
   position: relative;
   bottom: 5px; }
 
+@media (min-width: 576px) {
+  .show-on-mobile {
+    visibility: hidden; } }
+
 a.shop-eie {
   position: relative;
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   padding: 12px 24px !important;
   background: #4089BD;
   white-space: nowrap; }
 
+@media (max-width: 575px) {
+  .shop-eie-mobile-button {
+    position: relative;
+    left: 161px; } }
 .form-row.search-block-form.search-form {
   position: relative;
   top: 11px;
@@ -13731,12 +13741,14 @@ a.navbar-brand img {
   .nav-link :focus {
     color: blue; }
 
-.superfish-secondary-navigation {
-  float: right; }
-  @media (min-width: 576px) {
-    .superfish-secondary-navigation {
-      position: relative;
-      top: 5px; } }
+@media (min-width: 576px) {
+  .superfish-secondary-navigation {
+    position: relative;
+    top: 5px; } }
+@media (max-width: 575px) {
+  .superfish-secondary-navigation {
+    visibility: hidden;
+    float: right; } }
 
 .sf-depth-2 {
   background: white; }
@@ -13780,17 +13792,25 @@ a.secondary-nav-link {
   position: relative;
   bottom: 5px; }
 
+@media (min-width: 576px) {
+  .show-on-mobile {
+    visibility: hidden; } }
+
 a.shop-eie {
   position: relative;
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   padding: 12px 24px !important;
   background: #4089BD;
   white-space: nowrap; }
 
+@media (max-width: 575px) {
+  .shop-eie-mobile-button {
+    position: relative;
+    left: 161px; } }
 .form-row.search-block-form.search-form {
   position: relative;
   top: 11px;

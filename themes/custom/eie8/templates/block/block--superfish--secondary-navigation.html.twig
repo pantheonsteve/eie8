@@ -16,8 +16,12 @@
  * @ingroup themeable
  */
 #}
+
 {% block content %}
   <div{{ content_attributes.addClass('content', 'container-inline', 'superfish-secondary-navigation') }}>
     {{ parent() }}
+  </div>
+  <div class="show-on-mobile shop-eie-mobile-button">
+    <a class="shop-eie">Get EiE</a>
   </div>
 {% endblock %}

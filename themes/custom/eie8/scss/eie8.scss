@@ -64,7 +64,10 @@ a.navbar-brand img {
     top: 5px;
   }
 
-  float:right;
+  @media (max-width: 575px) {
+    visibility: hidden;
+    float:right;
+  }
 }
 
 .sf-depth-2 {
@@ -127,6 +130,9 @@ a.secondary-nav-link {
 
 .show-on-mobile {
   //**Show only on mobile, hide on other screens**//
+  @media (min-width: 576px) {
+    visibility: hidden;
+  }
 }
 
 .hide-on-mobile {
@@ -138,11 +144,18 @@ a.shop-eie {
   font-family: Arial, sans-serif;
   font-size: 12px;
   font-weight: bold;
-  color: #fff;
+  color: #fff !important;
   text-transform: uppercase;
   padding: 12px 24px !important;
   background: #4089BD;
   white-space: nowrap;
+}
+
+@media (max-width: 575px) {
+  .shop-eie-mobile-button {
+    position: relative;
+    left: 161px;
+  }
 }
 
 //**Search Bar**//

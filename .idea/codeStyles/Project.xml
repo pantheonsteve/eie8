@@ -25,13 +25,6 @@
       <option name="FORCE_SHORT_DECLARATION_ARRAY_STYLE" value="true" />
       <option name="PHPDOC_USE_FQCN" value="true" />
     </PHPCodeStyleSettings>
-    <codeStyleSettings language="CSS">
-      <indentOptions>
-        <option name="INDENT_SIZE" value="2" />
-        <option name="CONTINUATION_INDENT_SIZE" value="2" />
-        <option name="TAB_SIZE" value="2" />
-      </indentOptions>
-    </codeStyleSettings>
     <codeStyleSettings language="JavaScript">
       <option name="RIGHT_MARGIN" value="80" />
       <option name="ELSE_ON_NEW_LINE" value="true" />
