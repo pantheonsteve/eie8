@@ -9935,10 +9935,6 @@ a.secondary-nav-link {
   position: relative;
   bottom: 5px; }
 
-@media (min-width: 576px) {
-  .show-on-mobile {
-    visibility: hidden; } }
-
 a.shop-eie {
   position: relative;
   font-family: Arial, sans-serif;
@@ -9950,10 +9946,6 @@ a.shop-eie {
   background: #4089BD;
   white-space: nowrap; }
 
-@media (max-width: 575px) {
-  .shop-eie-mobile-button {
-    position: relative;
-    left: 161px; } }
 .form-row.search-block-form.search-form {
   position: relative;
   top: 11px;
@@ -13792,10 +13784,6 @@ a.secondary-nav-link {
   position: relative;
   bottom: 5px; }
 
-@media (min-width: 576px) {
-  .show-on-mobile {
-    visibility: hidden; } }
-
 a.shop-eie {
   position: relative;
   font-family: Arial, sans-serif;
@@ -13807,10 +13795,6 @@ a.shop-eie {
   background: #4089BD;
   white-space: nowrap; }
 
-@media (max-width: 575px) {
-  .shop-eie-mobile-button {
-    position: relative;
-    left: 161px; } }
 .form-row.search-block-form.search-form {
   position: relative;
   top: 11px;

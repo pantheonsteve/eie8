@@ -130,9 +130,6 @@ a.secondary-nav-link {
 
 .show-on-mobile {
   //**Show only on mobile, hide on other screens**//
-  @media (min-width: 576px) {
-    visibility: hidden;
-  }
 }
 
 .hide-on-mobile {
@@ -149,13 +146,6 @@ a.shop-eie {
   padding: 12px 24px !important;
   background: #4089BD;
   white-space: nowrap;
-}
-
-@media (max-width: 575px) {
-  .shop-eie-mobile-button {
-    position: relative;
-    left: 161px;
-  }
 }
 
 //**Search Bar**//
