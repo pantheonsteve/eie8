@@ -101,20 +101,36 @@
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form or page.site_branding %}
           <div class="page-wrapper-class">
-          <nav{{ navbar_top_attributes }}>
+            <nav class="navbar navbar-expand-lg navbar-light mt-2">
             {% if container_navbar %}
             <div class="container">
               {% endif %}
-              <div class="col-3">
-                {{ page.site_branding }}
-              </div>
-              <div class="col-9">
-                {% if page.secondary_menu %}
-                  <div class="">
-                    {{ page.secondary_menu }}
+                <div class="col-3">{{ page.site_branding }}
+                </div>
+                <div class="col-9">
+                  <div class="show-on-mobile text-right">
+                    <a class="shop-eie" href="#">Get EiE</a>
                   </div>
-                {% endif %}
-                <div class="row">
+                  <div class="row">
+                  {% if page.secondary_menu %}
+
+                    <div class="collapse navbar-collapse row secondary-menu" id="navbarSupportedContent">
+                      <ul id="superfish-secondary-navigation" class="navbar-nav mr-auto mt-2 mt-lg-0">
+
+
+                        <!-- THEME DEBUG -->
+                        <!-- THEME HOOK: 'superfish_menu_items' -->
+                        <!-- BEGIN OUTPUT from 'themes/custom/eie8/templates/superfish-menu-items.html.twig' -->
+
+                        {{ page.secondary_menu }}
+
+                      </ul>
+                    </div>
+
+                    <!-- END OUTPUT from 'themes/custom/eie8/templates/superfish-menu-items.html.twig' -->
+                  {% endif %}
+                  </div>
+                <div class="row search-form-top">
                   <div class="col-12">
                     {% if page.top_header_form %}
                       <div class="form-inline navbar-form float-right">
@@ -125,14 +141,14 @@
                     </div>
                   </div>
                 </div>
-              </div>
+
               {% if container_navbar %}
             </div>
             {% endif %}
           </nav>
           </div>
         {% endif %}
-        <nav{{ navbar_attributes }}>
+        <nav class="navbar navbar-expand-md menu-main">
           {% if container_navbar %}
           <div class="container">
             {% endif %}

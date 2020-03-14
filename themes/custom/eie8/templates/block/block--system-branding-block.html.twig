@@ -14,7 +14,7 @@
 #}
 {% set attributes = attributes.addClass('site-branding') %}
   {% if site_logo or site_name %}
-    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="navbar-brand">
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="navbar-brand mt-4">
       {% if site_logo %}
         <img alt="EiE Logo" src="/themes/custom/eie8/logo.svg" class="img-fluid d-inline-block align-top" />
       {% endif %}

@@ -20,26 +20,26 @@
 #}
 
 
-
 {% set classes = [] %}
 {% spaceless %}
 {% for item in menu_items %}
 
   {% if item.children is not empty %}
-    {% set item_class = item.item_class ~ ' menuparent' %}
+    {% set item_class = item.item_class ~ ' nav-item' %}
     {% if item.multicolumn_column %}
-      {% set item_class = item_class ~ ' sf-multicolumn-column' %}
+      {% set item_class = item_class ~ ' dropdown ' %}
     {% endif %}
   {% endif %}
 
   <li{{ item.attributes }}>
     {% if item.multicolumn_column %}
-    <div class="sf-multicolumn-column">
+    {{ item.link.addClass('nav-link', 'dropdown-toggle') }}
+    <div class="dropdown-menu">
     {% endif %}
     {% if item.children is not empty %}
-      {{ item.link_menuparent }}
+      {{ item.link_menuparent.addClass('dropdown') }}
     {% else %}
-      {{ item.link }}
+      {{ item.link.addClass('nav-it') }}
     {% endif %}
     {% if item.multicolumn_wrapper %}<ul class="sf-multicolumn">
     <li class="sf-multicolumn-wrapper {{ item.item_class }}">
