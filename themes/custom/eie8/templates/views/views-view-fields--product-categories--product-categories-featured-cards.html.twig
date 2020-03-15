@@ -36,10 +36,10 @@
   {{ fields.field_body.content }}
 {% endset %}
 {% set category_image %}
-  {{ fields.field_media_image_1.content|striptags }}
+  {{ fields.field_media_image.content|striptags }}
 {% endset %}
 {% set category_icon %}
-  {{ fields.field_media_image.content|striptags }}
+  {{ fields.field_media_image_1.content|striptags }}
 {% endset %}
 
 <div class="featured-card wow col mr-3 animated" data-url="{{ taxonomy_term }}" style="visibility: visible;">

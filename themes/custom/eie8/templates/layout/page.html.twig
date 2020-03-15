@@ -100,7 +100,7 @@
       </div>
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form or page.site_branding %}
-          <div class="page-wrapper-class">
+          <div class="page-wrapper-class pt-3">
             <nav class="navbar navbar-expand-lg navbar-light mt-2">
             {% if container_navbar %}
             <div class="container">
@@ -108,13 +108,13 @@
                 <div class="col-3">{{ page.site_branding }}
                 </div>
                 <div class="col-9">
-                  <div class="show-on-mobile text-right">
-                    <a class="shop-eie" href="#">Get EiE</a>
+                  <div class="d-block d-sm-none show-on-mobile text-right">
+                    <a class="shop-eie" href="http://www.eiestore.com/?__hstc=97864128.7aaf7b74f2c3fd30296403df51cc5a90.1578955115125.1584159059322.1584166522653.59&__hssc=97864128.1.1584166522653&__hsfp=460571030">Get EiE</a>
                   </div>
                   <div class="row">
                   {% if page.secondary_menu %}
 
-                    <div class="collapse navbar-collapse row secondary-menu" id="navbarSupportedContent">
+                    <div class="d-none d-sm-block" id="navbarSupportedContent">
                       <ul id="superfish-secondary-navigation" class="navbar-nav mr-auto mt-2 mt-lg-0">
 
 
@@ -137,26 +137,28 @@
                         {{ page.top_header_form }}
                       </div>
                     {% endif %}
-                    <div>
-                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="navbar-toggler navbar-toggler-right main-nav-mobile" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
                   </div>
                 </div>
 
               {% if container_navbar %}
-            </div>
+              </div>
             {% endif %}
-          </nav>
+            </nav>
           </div>
         {% endif %}
+
         <nav class="navbar navbar-expand-md menu-main">
           {% if container_navbar %}
           <div class="container">
             {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
-              <button class="navbar-toggler navbar-toggler-right main-nav-mobile" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"><i
-                    class="fas fa-bars fa-1x"></i></span></button>
-              <div class="collapse navbar-collapse" id="CollapsingNavbar">
+              <div class="d-none d-sm-block" id="MainNav">
                 {{ page.primary_menu }}
                 {% if page.header_form %}
                   <div class="form-inline navbar-form float-right">
@@ -165,15 +167,23 @@
                 {% endif %}
               </div>
             {% endif %}
-            {% if sidebar_collapse %}
-              <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#CollapsingLeft" aria-controls="CollapsingLeft" aria-expanded="false" aria-label="Toggle navigation"></button>
-            {% endif %}
             {% if container_navbar %}
           </div>
           {% endif %}
         </nav>
       {% endblock %}
     </header>
+    <div class="container-fluid d-block d-sm-none">
+      <div class="collapse navbar-collapse" id="CollapsingNavbar">
+        {{ page.primary_menu }}
+        {% if page.header_form %}
+          <div class="form-inline navbar-form float-right">
+            {{ page.header_form }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+
     {% if page.highlighted %}
       <div class="highlighted">
         <aside class="{{ container }} section clearfix" role="complementary">
