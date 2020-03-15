@@ -82,6 +82,12 @@ a.navbar-brand img {
   float:right;
 }
 
+.main-nav-mobile {
+  background: #da291c;
+  position: relative;
+  left: 190px;
+}
+
 .sf-depth-2 {
   background: white;
 }
@@ -163,6 +169,11 @@ a.shop-eie {
   }
 }
 
+.shop-eie-wrapper {
+  position: relative;
+  top: 15px;
+}
+
 //**Search Bar**//
 .form-row.search-block-form.search-form {
   position: relative;
@@ -234,6 +245,13 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   }
 }
 
+.navbar-form {
+  @media (max-width: 576px) {
+    position: relative;
+    top: 15px;
+  }
+}
+
 //***Header***//
 .header {
   position: relative;
@@ -282,9 +300,12 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 
 /**Page Width Correction for large screen**/
 .page-wrapper-class {
+
+  @media (max-width: 575px){
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  }
 }
 
 //***Footer Content***//

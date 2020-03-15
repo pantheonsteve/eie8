@@ -9902,6 +9902,11 @@ a.navbar-brand img {
 .superfish-main-navigation {
   float: right; }
 
+.main-nav-mobile {
+  background: #da291c;
+  position: relative;
+  left: 190px; }
+
 .sf-depth-2 {
   background: white; }
 
@@ -9961,6 +9966,10 @@ a.shop-eie {
     a.shop-eie {
       left: 17px; } }
 
+.shop-eie-wrapper {
+  position: relative;
+  top: 15px; }
+
 .form-row.search-block-form.search-form {
   position: relative;
   top: 11px;
@@ -10014,6 +10023,11 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
       bottom: 22px;
       right: 1px; } }
 
+@media (max-width: 576px) {
+  .navbar-form {
+    position: relative;
+    top: 15px; } }
+
 .header {
   position: relative;
   z-index: 4;
@@ -10048,10 +10062,11 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   flex-direction: column; }
 
 /**Page Width Correction for large screen**/
-.page-wrapper-class {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; }
+@media (max-width: 575px) {
+  .page-wrapper-class {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .site-footer {
   background: #e5e7e9; }
@@ -13783,6 +13798,11 @@ a.navbar-brand img {
 .superfish-main-navigation {
   float: right; }
 
+.main-nav-mobile {
+  background: #da291c;
+  position: relative;
+  left: 190px; }
+
 .sf-depth-2 {
   background: white; }
 
@@ -13842,6 +13862,10 @@ a.shop-eie {
     a.shop-eie {
       left: 17px; } }
 
+.shop-eie-wrapper {
+  position: relative;
+  top: 15px; }
+
 .form-row.search-block-form.search-form {
   position: relative;
   top: 11px;
@@ -13895,6 +13919,11 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
       bottom: 22px;
       right: 1px; } }
 
+@media (max-width: 576px) {
+  .navbar-form {
+    position: relative;
+    top: 15px; } }
+
 .header {
   position: relative;
   z-index: 4;
@@ -13929,10 +13958,11 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   flex-direction: column; }
 
 /**Page Width Correction for large screen**/
-.page-wrapper-class {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; }
+@media (max-width: 575px) {
+  .page-wrapper-class {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto; } }
 
 .site-footer {
   background: #e5e7e9; }
