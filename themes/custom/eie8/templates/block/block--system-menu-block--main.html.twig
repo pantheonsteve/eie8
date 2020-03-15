@@ -37,12 +37,10 @@
     'block-menu',
     'navigation',
     'menu--' ~ derivative_plugin_id|clean_class,
-    'collapse',
-    'navbar-collapse'
   ]
 %}
 {% set heading_id = attributes.id ~ '-menu'|clean_id %}
-<nav role="navigation" id="CollapsingNavbar" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
+<nav role="navigation" aria-labelledby="{{ heading_id }}"{{ attributes.addClass(classes)|without('role', 'aria-labelledby') }}>
   {# Label. If not displayed, we still provide it for screen readers. #}
   {% if not configuration.label_display %}
     {% set title_attributes = title_attributes.addClass('sr-only') %}
