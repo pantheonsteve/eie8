@@ -71,6 +71,7 @@
 <div id="page-wrapper">
   <div id="page">
     <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t}}">
+
       <div class="mos-branding">
         <div class="container-fluid">
           <div class="row">
@@ -98,9 +99,10 @@
           </div>
         </div>
       </div>
+
       {% block head %}
         {% if page.secondary_menu or page.top_header or page.top_header_form or page.site_branding %}
-          <div class="page-wrapper-class pt-1">
+          <div class="container-xl pt-1">
             <nav class="navbar navbar-expand-lg navbar-light mt-2">
             {% if container_navbar %}
             <div class="container">
@@ -138,7 +140,7 @@
                       </div>
                     {% endif %}
                   </div>
-                  <div class="col-12">
+                  <div class="col-12 hamburger-nav">
                     <button class="navbar-toggler navbar-toggler-right main-nav-mobile navbar-dark" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
                       <span class="navbar-toggler-icon"></span>
                     </button>

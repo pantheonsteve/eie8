@@ -9849,6 +9849,10 @@ nav.tabs {
 body {
   font-size: 1.1rem !important; }
 
+a {
+  color: #4089BD;
+  text-decoration: none; }
+
 /** Grid Overrides to match eie.org original styling **/
 @media (min-width: 1200px) {
   .container {
@@ -9865,13 +9869,13 @@ body {
 a.navbar-brand img {
   height: 90px;
   width: auto; }
-  @media (max-width: 979px) and (min-width: 120px) {
-    a.navbar-brand img {
-      height: 64px;
-      width: auto;
-      position: relative;
-      bottom: 40px; } }
 
+@media (max-width: 767.98px) {
+  a.navbar-brand img {
+    height: 64px;
+    width: auto;
+    position: relative;
+    bottom: 40px; } }
 .secondary-menu {
   position: relative;
   left: 1px; }
@@ -9887,6 +9891,9 @@ a.navbar-brand img {
   .nav-link :focus {
     color: blue; }
 
+@media (min-width: 768px) {
+  .menu--secondary-navigation {
+    left: 24px; } }
 @media (min-width: 576px) {
   .superfish-secondary-navigation {
     position: relative;
@@ -9904,8 +9911,10 @@ a.navbar-brand img {
 
 .main-nav-mobile {
   background: #da291c;
-  position: relative;
-  left: 190px; }
+  float: right; }
+
+.hamburger-nav {
+  padding-right: 0px; }
 
 .sf-depth-2 {
   background: white; }
@@ -9979,7 +9988,7 @@ a.shop-eie {
   svg.svg-inline--fa.fa-search.fa-w-16.float-right {
     position: relative;
     bottom: 28px;
-    left: 125px; } }
+    left: 165px; } }
 svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   position: relative;
   bottom: 28px;
@@ -9991,11 +10000,11 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .menu-main {
   height: 46px;
   margin-top: 33px; }
-  @media (max-width: 576px) {
-    .menu-main {
-      height: 24px;
-      margin-top: 20px; } }
 
+@media (max-width: 767.98px) {
+  .menu-main {
+    height: 24px;
+    margin-top: 20px; } }
 .block-superfishmain {
   justify-content: center;
   display: flex;
@@ -10014,20 +10023,23 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .search-block-form {
   margin-right: 2px; }
 
+@media (max-width: 767.98px) {
+  .search-block-form {
+    position: relative;
+    top: 4px; } }
 .search-form-top {
   position: relative;
   bottom: 38px;
   right: 3px; }
-  @media (max-width: 576px) {
-    .search-form-top {
-      bottom: 22px;
-      right: 1px; } }
 
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
+  .search-form-top {
+    bottom: 22px;
+    right: 1px; } }
+@media (max-width: 767.98px) {
   .navbar-form {
     position: relative;
     top: 15px; } }
-
 .header {
   position: relative;
   z-index: 4;
@@ -10060,13 +10072,6 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .row.display-flex > [class*='col-'] {
   display: flex;
   flex-direction: column; }
-
-/**Page Width Correction for large screen**/
-@media (max-width: 575px) {
-  .page-wrapper-class {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto; } }
 
 .site-footer {
   background: #e5e7e9; }
@@ -10841,7 +10846,9 @@ img.image-style-hero-image {
 .featured-image-wrapper {
   height: 341px;
   width: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-left: -15px;
+  margin-right: -15px; }
 
 .featured-card-icon {
   position: relative !important;
@@ -10863,7 +10870,7 @@ img.image-style-hero-image {
   left: -15px; }
 
 .content-area {
-  padding: 35px;
+  padding-top: 35px;
   margin-bottom: -65px;
   display: inline-block;
   position: relative;
@@ -10889,25 +10896,33 @@ img.image-style-hero-image {
   padding-top: 10px;
   padding-bottom: 10px; }
 
+.title {
+  text-align: center;
+  font-size: 1.2rem; }
+
+.product-feature-card {
+  border: 1px solid #e5e7e9; }
+
 .email-webform-block {
-  background: #007398 !important;
+  background: green;
   color: #fff !important;
   margin-top: 25px;
   margin-bottom: 25px;
-  padding: 5rem;
-  width: 108% !important;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   position: relative;
-  right: 15px; }
+  right: 10px; }
   @media (min-width: 576px) {
     .email-webform-block {
-      background: #007398 !important;
+      background: #4089BD !important;
       color: #fff !important;
       margin-top: 25px;
       margin-bottom: 25px;
-      padding: 6rem;
-      width: 103% !important;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      width: 104% !important;
       position: relative;
-      right: 15px; } }
+      right: 20px; } }
 
 .form-item-email-opt-in {
   float: left;
@@ -13487,6 +13502,11 @@ template {
   .highlight-card p {
     font-size: 1.0em; }
 
+.fluid-layout {
+  width: 100vw;
+  position: relative;
+  right: 2vw; }
+
 /* Colors */
 .dark-gray {
   color: #474747 !important; }
@@ -13745,6 +13765,10 @@ template {
 body {
   font-size: 1.1rem !important; }
 
+a {
+  color: #4089BD;
+  text-decoration: none; }
+
 /** Grid Overrides to match eie.org original styling **/
 @media (min-width: 1200px) {
   .container {
@@ -13761,13 +13785,13 @@ body {
 a.navbar-brand img {
   height: 90px;
   width: auto; }
-  @media (max-width: 979px) and (min-width: 120px) {
-    a.navbar-brand img {
-      height: 64px;
-      width: auto;
-      position: relative;
-      bottom: 40px; } }
 
+@media (max-width: 767.98px) {
+  a.navbar-brand img {
+    height: 64px;
+    width: auto;
+    position: relative;
+    bottom: 40px; } }
 .secondary-menu {
   position: relative;
   left: 1px; }
@@ -13783,6 +13807,9 @@ a.navbar-brand img {
   .nav-link :focus {
     color: blue; }
 
+@media (min-width: 768px) {
+  .menu--secondary-navigation {
+    left: 24px; } }
 @media (min-width: 576px) {
   .superfish-secondary-navigation {
     position: relative;
@@ -13800,8 +13827,10 @@ a.navbar-brand img {
 
 .main-nav-mobile {
   background: #da291c;
-  position: relative;
-  left: 190px; }
+  float: right; }
+
+.hamburger-nav {
+  padding-right: 0px; }
 
 .sf-depth-2 {
   background: white; }
@@ -13875,7 +13904,7 @@ a.shop-eie {
   svg.svg-inline--fa.fa-search.fa-w-16.float-right {
     position: relative;
     bottom: 28px;
-    left: 125px; } }
+    left: 165px; } }
 svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   position: relative;
   bottom: 28px;
@@ -13887,11 +13916,11 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .menu-main {
   height: 46px;
   margin-top: 33px; }
-  @media (max-width: 576px) {
-    .menu-main {
-      height: 24px;
-      margin-top: 20px; } }
 
+@media (max-width: 767.98px) {
+  .menu-main {
+    height: 24px;
+    margin-top: 20px; } }
 .block-superfishmain {
   justify-content: center;
   display: flex;
@@ -13910,20 +13939,23 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .search-block-form {
   margin-right: 2px; }
 
+@media (max-width: 767.98px) {
+  .search-block-form {
+    position: relative;
+    top: 4px; } }
 .search-form-top {
   position: relative;
   bottom: 38px;
   right: 3px; }
-  @media (max-width: 576px) {
-    .search-form-top {
-      bottom: 22px;
-      right: 1px; } }
 
-@media (max-width: 576px) {
+@media (max-width: 767.98px) {
+  .search-form-top {
+    bottom: 22px;
+    right: 1px; } }
+@media (max-width: 767.98px) {
   .navbar-form {
     position: relative;
     top: 15px; } }
-
 .header {
   position: relative;
   z-index: 4;
@@ -13956,13 +13988,6 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .row.display-flex > [class*='col-'] {
   display: flex;
   flex-direction: column; }
-
-/**Page Width Correction for large screen**/
-@media (max-width: 575px) {
-  .page-wrapper-class {
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto; } }
 
 .site-footer {
   background: #e5e7e9; }

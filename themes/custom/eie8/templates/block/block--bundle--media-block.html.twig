@@ -39,7 +39,7 @@
 %}
 
 <div{{ attributes.addClass(classes) }}>
-  <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+  <div class="media-block">
     <div class="container">
   {{ title_prefix }}
   {% if label %}
@@ -47,15 +47,15 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <div{{ content_attributes.addClass('content', 'lead', 'text-left') }}>
+    <div{{ content_attributes.addClass('content', 'text-left') }}>
       {{ content.body }}
     </div>
   {% endblock %}
+    </div>
   {% if content.field_media %}
-    <div{{ content_attributes.removeClass('lead', 'text-left') }}>
+    <div{{ content_attributes.removeClass('text-left') }}>
         {{ content.field_media }}
     </div>
   {% endif %}
   </div>
-    </div>
 </div>

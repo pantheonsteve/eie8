@@ -26,6 +26,8 @@
   height: 341px;
   width: auto;
   overflow: hidden;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .featured-card-icon {
@@ -51,7 +53,7 @@
 }
 
 .content-area {
-  padding: 35px;
+  padding-top: 35px;
   margin-bottom: -65px;
   display: inline-block;
   position: relative;
@@ -80,4 +82,13 @@
 .featured-attractions .content-area .description {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.product-feature-card {
+  border: 1px solid #e5e7e9;
 }

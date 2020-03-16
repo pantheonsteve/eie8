@@ -4,8 +4,13 @@ body {
   font-size: 1.1rem !important;
 }
 
+a {
+  color: #4089BD;
+  text-decoration: none;
+}
+
 /** Grid Overrides to match eie.org original styling **/
-@media (min-width: 1200px) {
+@include media-breakpoint-up(xl) {
   .container {
     max-width: 961px !important;
   }
@@ -26,10 +31,12 @@ body {
 
 //***Site Logo Block***//
 a.navbar-brand img {
-    height: 90px;
-    width: auto;
+  height: 90px;
+  width: auto;
+}
 
-  @media (max-width: 979px) and (min-width: 120px) {
+@include media-breakpoint-down(sm) {
+  a.navbar-brand img {
     height: 64px;
     width: auto;
     position: relative;
@@ -59,6 +66,13 @@ a.navbar-brand img {
   }
 }
 
+@include media-breakpoint-up(md) {
+  .menu--secondary-navigation {
+    left: 24px;
+  }
+}
+
+
 .superfish-secondary-navigation {
 
   @media (min-width: 576px) {
@@ -84,8 +98,11 @@ a.navbar-brand img {
 
 .main-nav-mobile {
   background: #da291c;
-  position: relative;
-  left: 190px;
+  float:right;
+}
+
+.hamburger-nav {
+  padding-right: 0px;
 }
 
 .sf-depth-2 {
@@ -182,11 +199,11 @@ a.shop-eie {
 }
 
 
-@media (min-width: 576px) {
+@include media-breakpoint-up(sm) {
   svg.svg-inline--fa.fa-search.fa-w-16.float-right {
     position: relative;
     bottom: 28px;
-    left: 125px;
+    left: 165px;
   }
 }
 
@@ -205,8 +222,11 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .menu-main {
   height: 46px;
   margin-top: 33px;
+}
 
-  @media (max-width: 576px) {
+@include media-breakpoint-down(sm) {
+
+  .menu-main {
     height: 24px;
     margin-top: 20px
   }
@@ -234,19 +254,28 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
     margin-right: 2px;
 }
 
+@include media-breakpoint-down(sm) {
+  .search-block-form {
+    position: relative;
+    top: 4px;
+  }
+}
+
 .search-form-top {
   position: relative;
   bottom: 38px;
   right: 3px;
+}
 
-  @media (max-width: 576px) {
+@include media-breakpoint-down(sm) {
+  .search-form-top {
     bottom: 22px;
     right: 1px;
   }
 }
 
-.navbar-form {
-  @media (max-width: 576px) {
+@include media-breakpoint-down(sm) {
+  .navbar-form {
     position: relative;
     top: 15px;
   }
@@ -296,16 +325,6 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 .row.display-flex > [class*='col-'] {
   display: flex;
   flex-direction: column;
-}
-
-/**Page Width Correction for large screen**/
-.page-wrapper-class {
-
-  @media (max-width: 575px){
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  }
 }
 
 //***Footer Content***//
