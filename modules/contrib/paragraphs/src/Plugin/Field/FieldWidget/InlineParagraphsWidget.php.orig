@@ -14,7 +14,6 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Field\FieldItemListInterface;
 use Drupal\Core\Render\Element;
 use Drupal\paragraphs\ParagraphInterface;
-use Drupal\paragraphs\Traits\FieldWidgetTrait;
 use Symfony\Component\Validator\ConstraintViolationInterface;
 use Drupal\paragraphs\Plugin\EntityReferenceSelection\ParagraphSelection;
 
@@ -34,8 +33,6 @@ use Drupal\paragraphs\Plugin\EntityReferenceSelection\ParagraphSelection;
  * )
  */
 class InlineParagraphsWidget extends WidgetBase {
-
-  use FieldWidgetTrait;
 
   /**
    * Indicates whether the current widget instance is in translation.
@@ -1361,9 +1358,6 @@ class InlineParagraphsWidget extends WidgetBase {
       return;
     }
     $this->isTranslating = FALSE;
-
-    $this->initFormLangcodes($form_state, $host);
-
     if (!$host->isTranslatable()) {
       return;
     }

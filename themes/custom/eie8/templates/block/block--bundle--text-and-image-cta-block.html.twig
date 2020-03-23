@@ -44,7 +44,7 @@
 {% endif %}
 <div{{ attributes.addClass(classes) }}>
   {% block content %}
-    <div{{ content_attributes.addClass('content') }}>
+    <div{{ content_attributes.addClass('content', 'pt-3') }}>
       {{ content }}
     </div>
   {% endblock %}

@@ -34,7 +34,6 @@
 {%
   set classes = [
 
-  'p-lg-4',
   'two-col-square',
 
 ]
@@ -53,9 +52,11 @@
 
 <div{{ attributes.addClass(classes) }}>
   <div class="tile {{ overlay_color }}">
+    {% if overlay_text %}
     <div class="img-tile overlay-text">
       {{ overlay_text }}
     </div>
+    {% endif %}
     <img src={{ bg_image }} class="img-fluid "/>
   </div>
 </div>
