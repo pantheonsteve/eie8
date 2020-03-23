@@ -17,16 +17,16 @@
  */
 #}
 {% if content %}
-  <div class='container-fluid'>
-    <div class='row'>
-      <div class='col-sm-12'>
-        {% if content.main %}
-          <div {{ region_attributes.main.addClass('main-region') }}>
-            <p>Image Right</p>
-            {{ content.main }}
-          </div>
-        {% endif %}
-      </div>
+<div class='fluid-layout'>
+  <div class='row'>
+    <div class='col-sm-12'>
+      {% if content.main %}
+        <div {{ region_attributes.main.addClass('main-region') }}>
+          <p>Image Right</p>
+          {{ content.main }}
+        </div>
+      {% endif %}
     </div>
   </div>
+</div>
 {% endif %}

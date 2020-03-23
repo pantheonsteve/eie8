@@ -10565,7 +10565,24 @@ body {
   position: relative;
   left: 0;
   overflow-x: hidden;
-  font-family: Apostrophe, akzidenz-grotesk-pro, sans-serif; }
+  font-family: "montserrat", Arial, sans-serif;
+  background: #fff;
+  color: #474747;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "museo-sans-rounded", "myriad-pro", Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #474747;
+  line-height: 1.4;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  text-rendering: optimizeLegibility; }
 
 .container-padding {
   padding: 40px; }
