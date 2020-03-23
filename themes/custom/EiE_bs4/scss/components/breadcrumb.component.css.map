@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,WAAY;ECuHN,SAAS,EAtCI,QAAwC;;AD7E3D,kBAAmB;EACjB,OAAO,EAAE,aAAa;EACtB,KAAK,EAAE,IAAI",
+"sources": ["breadcrumb.component.scss","../../node_modules/bootstrap/scss/vendor/_rfs.scss"],
+"names": [],
+"file": "breadcrumb.component.css"
+}

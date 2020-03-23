@@ -1,0 +1,63 @@
+.navbar {
+
+  .form-inline {
+
+    .form-actions {
+      display: none;
+    }
+  }
+}
+
+.toolbar-oriented .toolbar-bar {
+  z-index: 1200;
+}
+
+.toolbar-horizontal {
+
+  .toolbar-menu {
+
+    &.nav {
+      float: left;
+    }
+  }
+}
+
+//***Site Logo Block***//
+a.navbar-brand img {
+  height: 90px;
+  width: auto;
+}
+
+@include media-breakpoint-down(sm) {
+  a.navbar-brand img {
+    height: 64px;
+    width: auto;
+  }
+}
+
+//**Get EiE Button**//
+a.shop-eie {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 12px !important;
+  font-weight: bold;
+  color: #fff !important;
+  text-transform: uppercase;
+  padding: 12px 24px !important;
+  background: #4089BD;
+  white-space: nowrap;
+
+  @media (max-width:575px){
+    left: 17px;
+  }
+}
+
+//**Main Navigation**//
+.header-top {
+  background: #4089BD;
+}
+
+.header-bottom {
+  margin-left: auto;
+  margin-right: auto;
+}

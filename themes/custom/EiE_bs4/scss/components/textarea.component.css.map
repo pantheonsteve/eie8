@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,+BAAgC;EAC9B,OAAO,EAAE,KAAK;EACd,MAAM,EAAE,CAAC;EACT,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,UAAU",
+"sources": ["textarea.component.scss"],
+"names": [],
+"file": "textarea.component.css"
+}

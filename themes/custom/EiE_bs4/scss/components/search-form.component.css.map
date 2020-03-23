@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,oBAAqB;EACnB,UAAU,EAAE,UAAU;;AAGxB,yBAA0B;EACxB,OAAO,EAAE,QAAQ;EACjB,SAAS,EAAE,QAAQ;;AAGrB,kBAAmB;EACjB,OAAO,EAAE,IAAI",
+"sources": ["search-form.component.scss"],
+"names": [],
+"file": "search-form.component.css"
+}

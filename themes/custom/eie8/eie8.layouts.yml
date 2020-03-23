@@ -31,6 +31,28 @@ one_column_fluid__taxonomy_term_full:
   regions:
     main:
       label: Main content
+#One Column Fluid - Text and Image CTA Block - Image Left
+one_column_fluid__block_content_2_col_image_left:
+  label: 'One Column Fluid - Text and Image CTA Block - Image Left'
+  category: 'EiE'
+  template: templates/layout/layouts/one-column-fluid--block-content-2-col-image-left
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content
+#One Column Fluid - Text and Image CTA Block - Image Right
+one_column_fluid__block_content_image_right:
+  label: 'One Column Fluid - Text and Image CTA Block - Image Right'
+  category: 'EiE'
+  template: templates/layout/layouts/one-column-fluid--block-content-image-right
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content
 # Two column.
 two_column:
   label: 'Two column'
@@ -58,6 +80,44 @@ two_column_fluid:
     - [left]
     - [right]
   template: templates/layout/layouts/two-column-fluid
+  regions:
+    left:
+      label: 'Left'
+      classes:
+        - col-sm-12
+        - col-lg-6
+    right:
+      label: 'Right'
+      classes:
+        - col-sm-12
+        - col-lg-6
+# Two column Content Text and Image CTA Block - Image Right
+two_column_cta_image_right:
+  label: 'Two Column CTA image right'
+  category: 'EiE'
+  icon_map:
+    - [left]
+    - [right]
+  template: templates/layout/layouts/two-column--block-content-text-and-image-cta-block-image-right
+  regions:
+    left:
+      label: 'Left'
+      classes:
+        - col-sm-12
+        - col-lg-6
+    right:
+      label: 'Right'
+      classes:
+        - col-sm-12
+        - col-lg-6
+# Two column Content Text and Image CTA Block - Image Left
+two_column_cta_image_leftt:
+  label: 'Two Column CTA image left'
+  category: 'EiE'
+  icon_map:
+    - [left]
+    - [right]
+  template: templates/layout/layouts/two-column--block-content-text-and-image-cta-block-2-col-image-left
   regions:
     left:
       label: 'Left'

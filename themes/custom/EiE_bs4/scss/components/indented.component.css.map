@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUA,SAAU;EACR,WAAW,EAAE,MAAe;EAC5B,SAAS;;AAGX,qBAAsB;EACpB,WAAW,EAAE,CAAC;EACd,YAAY,EAAE,MAAe",
+"sources": ["indented.component.scss"],
+"names": [],
+"file": "indented.component.css"
+}

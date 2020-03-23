@@ -1,13 +1,15 @@
 //
-// Colors
+// EiE Colors
 //
 
 // Brand Colors
-$eie-red: #da291c;
-$eie-yellow: #ffb700;
-$eie-blue: #4089bd;
-$eie-green: #4db4b5;
-$eie-purple: #662d91;
+$eie-red: #ee3024;
+$eie-yellow: #ffef00;
+$eie-orange: #f6961b;
+$eie-blue: #4089bc;
+$eie-dark-blue: #21428f;
+$eie-green: #4db1b1;
+$eie-purple: #66308e;
 $eie-charcoal: #474747;
 $eie-light-blue: #f3f3f3;
 $eie-light-yellow: #fef4d8;
@@ -33,13 +35,13 @@ $wee-engineer: $eie-purple;
 $wee-engineer-dark: #663090;
 $wee-engineer-light: #c2509d;
 $eie-for-kindergarten: #ff7945;
-$eie-for-kindergarten-dark: #f89a42;
-$eie-for-kindergarten-light: #ffef00;
+$eie-for-kindergarten-dark: $eie-orange;
+$eie-for-kindergarten-light: $eie-yellow;
 $engineering-is-elementary: $primary-color;
 $engineering-is-elementary-dark: #ee3124;
 $engineering-is-elementary-light: #f37021;
 $engineering-adventures: $eie-blue;
-$engineering-adventures-dark: #214391;
+$engineering-adventures-dark: $eie-dark-blue;
 $engineering-adventures-light: #37c5f0;
 $engineering-everywhere: $eie-green;
 $engineering-everywhere-dark: #4eb3b4;

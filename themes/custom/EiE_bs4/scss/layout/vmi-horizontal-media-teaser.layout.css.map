@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,kCAAmC;EACjC,MAAM,EAAE,UAAyB;EACjC,OAAO,EAAE,CAAC;EAEV;0CACM;IACJ,YAAY,EAAE,CAAC;IAEf;wDAAc;MACZ,UAAU,EAAE,CAAC;EAKf,6DAAG;IACD,UAAU,EAAE,CAAC;;AAOf;oDACM;EACJ,YAAY,ECtBG,IAA+B;EDuB9C,aAAa,EAAE,CAAC",
+"sources": ["vmi-horizontal-media-teaser.layout.scss","../vartheme_bs4-variables.scss"],
+"names": [],
+"file": "vmi-horizontal-media-teaser.layout.css"
+}

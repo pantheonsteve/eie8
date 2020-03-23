@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,UAAW;EACT,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,YAAY;EACrB,OAAO,EAAE,UAAa",
+"sources": ["feed-icon.component.scss"],
+"names": [],
+"file": "feed-icon.component.css"
+}

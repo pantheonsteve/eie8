@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiBQ,mEAA2D;AALjE,uDAAsB;EACpB,WAAW,EAAE,OAAO;;AAMxB,IAAK;EACH,WAAW,EAAE,+BAA+B",
+"sources": ["vartheme_bs4-rtl.base.scss"],
+"names": [],
+"file": "vartheme_bs4-rtl.base.css"
+}

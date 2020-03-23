@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AASE,qCAAK;EACH,aAAa,EAAE,cAAc;AAG/B,yCAAS;EACP,OAAO,ECiIF,IAAI;AD9HX,oCAAgE;EAC9D,yCAAS;IACP,UAAU,EAAE,IAAI;EAKd,kEAAU;IACR,YAAY,EAAE,IAAa;EAK7B,mEAAU;IACR,aAAa,EAAE,IAAa;;AAQpC,oCAAgE;EAC9D,qDAAS;IACP,UAAU,EAAE,KAAK;EAIf,8EAAU;IACR,YAAY,ECiGb,IAAI;IDhGH,aAAa,EAAE,IAAa;EAK9B,+EAAU;IACR,aAAa,EC0Fd,IAAI;IDzFH,YAAY,EAAE,IAAa",
+"sources": ["vbp_text_and_image_default.layout.scss","../bootstrap-variables.scss"],
+"names": [],
+"file": "vbp_text_and_image_default.layout.css"
+}

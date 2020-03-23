@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,sBAAuB;EACrB,UAAU,EAAE,iBAAuB;;AAGrC,4BAA6B;EAC3B,aAAa,EAAE,iBAAuB;EACtC,UAAU,EAAE,iBAAuB;EACnC,MAAM,EAAE,CAAC",
+"sources": ["book.component.scss"],
+"names": [],
+"file": "book.component.css"
+}

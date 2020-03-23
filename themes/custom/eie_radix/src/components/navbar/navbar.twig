@@ -1,0 +1,63 @@
+{#
+/**
+ * @file
+ * Template for Navbar component.
+ *
+ * Available config:
+ * - container: fixed | fluid.
+ * - placement: default | fixed-top | fixed-bottom | sticky-top
+ * - color: light | dark
+ * - utility_classes: An array of utility classes.
+ *
+ * Available blocks:
+ * - branding
+ * - left
+ * - right
+ */
+#}
+{{ attach_library('eie_radix/navbar') }}
+
+{% set container = container == 'fixed' ? 'container' : false %}
+{% set placement = placement ?? '' %}
+{% set color = color ?? 'light' %}
+
+<nav class="navbar navbar-expand-lg justify-content-between navbar-{{ color }} {{ placement }} {{ utility_classes|join(' ') }}">
+  {% if container %}
+  <div class="{{ container }}">
+    {% endif %}
+    <div class="col-md-2 col-sm-12 ml-0">
+      <div class="d-block d-flex d-lg-none flex-row-reverse float-right">
+        <div class="shop-eie-wrapper mt-2 mr-4">
+          <a class="shop-eie" href="http://www.eiestore.com/?__hstc=97864128.7aaf7b74f2c3fd30296403df51cc5a90.1578955115125.1584159059322.1584166522653.59&__hssc=97864128.1.1584166522653&__hsfp=460571030">Order EiE</a>
+        </div>
+      </div>
+
+    <div class="row">
+      {% block branding %}
+        {{ branding }}
+      {% endblock %}
+      </div>
+
+      <div class="col-10">
+        <div class="collapse navbar-collapse">
+          <div class="row col-12">
+          {% block secondary %}
+            {{ secondary }}
+          {% endblock %}
+
+          {% block search %}
+            {{ search }}
+          {% endblock %}
+          </div>
+          <div class="row col-12">
+          {% block main %}
+            {{ main }}
+          {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% if container %}
+  </div>
+  {% endif %}
+</nav>

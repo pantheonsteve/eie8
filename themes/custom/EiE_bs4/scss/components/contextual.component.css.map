@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAQA,mBAAoB;EAClB,aAAa,EAAE,IAAI;EACnB,WAAW,EAAE,KAAK",
+"sources": ["contextual.component.scss"],
+"names": [],
+"file": "contextual.component.css"
+}

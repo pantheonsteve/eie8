@@ -257,7 +257,7 @@ Description: Bootstrap 4 with Sass
   color: #000; }
 
 .eie-blue {
-  color: #4089bd !important; }
+  color: #4089bc !important; }
 
 /* VARIABLES */
 /*!
@@ -8897,7 +8897,7 @@ form .form-type-textarea {
   color: #000; }
 
 .eie-blue {
-  color: #4089bd !important; }
+  color: #4089bc !important; }
 
 /* ------------------ Header ------------------ */
 #navbar-top {
@@ -9844,7 +9844,7 @@ nav.tabs {
   color: #000; }
 
 .eie-blue {
-  color: #4089bd !important; }
+  color: #4089bc !important; }
 
 body {
   font-size: 1.1rem !important; }
@@ -9998,8 +9998,8 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   display: none; }
 
 .menu-main {
-  height: 46px;
-  margin-top: 33px; }
+  height: 60px;
+  margin-top: 20px; }
 
 @media (max-width: 767.98px) {
   .menu-main {
@@ -11398,7 +11398,6 @@ img.image-style-hero-image {
 .lifelong-learning .tile {
   color: #fff;
   height: 450px;
-  padding: 40px;
   width: 100%;
   text-shadow: 1px 1px 3px #001b30; }
   .lifelong-learning .tile p {
@@ -11419,11 +11418,14 @@ img.image-style-hero-image {
     display: none; }
 .lifelong-learning .maroon-tint {
   cursor: pointer;
-  background-image: url("https://mos-general-assets.s3.amazonaws.com/webrefresh/homepage-images/tile-1.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  position: relative; }
+  position: relative;
+  background-color: rgba(0, 48, 87, 0.7); }
+  .lifelong-learning .maroon-tint img {
+    opacity: 0.6;
+    height: 100%; }
   .lifelong-learning .maroon-tint .layer {
     background-color: rgba(0, 48, 87, 0.7);
     position: absolute;
@@ -13502,6 +13504,15 @@ template {
   .highlight-card p {
     font-size: 1.0em; }
 
+.img-text-cta {
+  height: 100%;
+  opacity: 0.6; }
+
+.two-col-square {
+  max-height: 385px;
+  overflow: hidden;
+  position: relative; }
+
 .fluid-layout {
   width: 100vw;
   position: relative;
@@ -13760,7 +13771,7 @@ template {
   color: #000; }
 
 .eie-blue {
-  color: #4089bd !important; }
+  color: #4089bc !important; }
 
 body {
   font-size: 1.1rem !important; }
@@ -13914,8 +13925,8 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   display: none; }
 
 .menu-main {
-  height: 46px;
-  margin-top: 33px; }
+  height: 60px;
+  margin-top: 20px; }
 
 @media (max-width: 767.98px) {
   .menu-main {

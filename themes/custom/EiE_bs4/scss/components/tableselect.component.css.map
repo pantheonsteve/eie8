@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AASA,cAAe;EACb,UAAU,EAAE,IAAI;;AAElB;WACY;EACV,UAAU,EAAE,MAAM;;AAEpB;uBACwB;EACtB,gEAAgE;EAChE,UAAU,EAAE,MAAM",
+"sources": ["tableselect.component.scss"],
+"names": [],
+"file": "tableselect.component.css"
+}

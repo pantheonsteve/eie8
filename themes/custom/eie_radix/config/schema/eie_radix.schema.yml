@@ -1,0 +1,5 @@
+# Schema for the configuration files of the eie_radix theme.
+
+eie_radix.settings:
+  type: theme_settings
+  label: 'eie_radix settings'

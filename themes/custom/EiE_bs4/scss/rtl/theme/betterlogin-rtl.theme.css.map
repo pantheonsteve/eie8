@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AASE,0BAAiB;EACf,UAAU,EAAE,KAAK;EAEjB,kCAAQ;IACN,aAAa,EAAE,CAAC",
+"sources": ["betterlogin-rtl.theme.scss"],
+"names": [],
+"file": "betterlogin-rtl.theme.css"
+}

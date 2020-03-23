@@ -1,0 +1,69 @@
+{#
+/**
+ * @file
+ * Default view template to display all the fields in a row.
+ *
+ * Available variables:
+ * - view: The view in use.
+ * - fields: A list of fields, each one contains:
+ *   - content: The output of the field.
+ *   - raw: The raw data for the field, if it exists. This is NOT output safe.
+ *   - class: The safe class ID to use.
+ *   - handler: The Views field handler controlling this field.
+ *   - inline: Whether or not the field should be inline.
+ *   - wrapper_element: An HTML element for a wrapper.
+ *   - wrapper_attributes: List of attributes for wrapper element.
+ *   - separator: An optional separator that may appear before a field.
+ *   - label: The field's label text.
+ *   - label_element: An HTML element for a label wrapper.
+ *   - label_attributes: List of attributes for label wrapper.
+ *   - label_suffix: Colon after the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ *   - has_label_colon: A boolean indicating whether to display a colon after
+ *     the label.
+ *   - element_type: An HTML element for the field content.
+ *   - element_attributes: List of attributes for HTML element for field content.
+ * - row: The raw result from the query, with all data it fetched.
+ *
+ * @see template_preprocess_views_view_fields()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% set name %}
+  {{ fields.name.content|striptags }}
+{% endset %}
+{% set description %}
+  {{ fields.description__value_1.content|striptags }}
+{% endset %}
+{% set category_icon %}
+  {{ fields.field_media_image.content|striptags }}
+{% endset %}
+{% set category_image %}
+  {{ fields.field_media_image_1.content|striptags|trim }}
+{% endset %}
+{% set tid %}
+  {{ fields.tid.content|striptags }}
+{% endset %}
+{% set url %}
+  {{ fields.view_taxonomy_term.content|striptags }}
+{% endset %}
+
+<div {{ attributes.setAttribute('id', 'taxonomy-term-' ~ tid) }} data-url="{{ url }}">
+  {% if category_image|render is not empty %}
+    <div class="featured-image-wrapper" style="background-image:url({{ fields.field_media_image_1.content|striptags|trim }}); background-repeat: no-repeat; background-size: cover; background-position: center center; height: 341px;">
+    </div>
+  {% endif %}
+  <div class="content-area">
+    {% if category_icon|render is not empty %}
+      <p class="icon"><img class="inner-border img-fluid wow mr-3 animated category-icon-card featured-card-icon" src={{ category_icon }} alt={{ name }} /></p>
+    {% endif %}
+    {{ title_prefix }}
+    {% if name and not page %}
+      <h4 class="title"><a href="{{ url }}">{{ name }}</a></h4>
+    {% endif %}
+    <p class="p-1 description">{{ description }}</p>
+  </div>
+</div>
