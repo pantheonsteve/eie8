@@ -55,9 +55,3 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
 }
-
-function eie8_preprocess_viewfield(&$variables){
-  xdebug_break();
-  $view = $variables["items"][0]["#content"]["#view"];
-
-}
