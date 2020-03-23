@@ -20,25 +20,25 @@
 
 {% if content %}
   <div {{ attributes.addClass('two-column', 'container') }}>
-  {{ title_suffix.contextual_links }}
-  <div class="row display-flex">
-  {% if content.left %}
-  <div class="col-sm-12 col-lg-6">
-    <div {{ region_attributes.left.addClass('left-region') }}>
-    {{ content.left }}
-    </div>
-  </div>
-  {% endif %}
+    {{ title_suffix.contextual_links }}
+    <div class="row display-flex">
+      {% if content.left %}
+        <div class="col-sm-12 col-lg-6">
+          <div {{ region_attributes.left.addClass('left-region') }}>
+            {{ content.left }}
+          </div>
+        </div>
+      {% endif %}
 
-  {% if content.right %}
-    <div class="col-sm-12 col-lg-6">
-      <div {{ region_attributes.right.addClass('right-region') }}>
-      {{ content.right.field_image_with_text_overlay }}
-      </div>
+      {% if content.right %}
+        <div class="col-sm-12 col-lg-6">
+          <div {{ region_attributes.right.addClass('right-region', 'p-lg-4') }}>
+            {{ content.right }}
+          </div>
+        </div>
+      {% endif %}
     </div>
-  {% endif %}
   </div>
-</div>
 {% endif %}
 
 
