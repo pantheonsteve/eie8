@@ -21,22 +21,20 @@
  * @ingroup themeable
  */
 #}
-<div class="container-fluid email-webform-block">
+<div class="fluid-layout email-webform-block">
 <div class="container email-webform">
   <div class="row">
     <div class="col-sm-4 col-lg-2">
       <i class="fas fa-envelope fa-5x"></i>
     </div>
-    <div class="col-sm-8 col-lg-4">
-      <h2>Email Signup</h2>
-      <p>Contact our customer success team for product information and Professional Development
+    <div class="col-sm-8 col-lg-6">
+      <h2 class="white">Email Signup</h2>
+      <p>Contact our customer success team for product information and Professional Development</p>
     </div>
-    <div class="col-sm-12 col-lg-6">
-      <form{{ attributes }} class="form-control">
-        {{ title_prefix }}
-        {{ children }}
-        {{ title_suffix }}
-      </form>
+    <div class="col-sm-12 col-lg-8">
+      <a href="https://info.eie.org/news-and-updates-subscription" class="btn-email-signup">
+        <button class="webform-button--submit float-right email-submit-button button button--primary js-form-submit form-submit btn btn-primary" data-drupal-selector="edit-actions-submit" type="submit" id="edit-actions-submit" name="op" value="Submit">Sign up</button>
+      </a>
     </div>
   </div>
 </div>

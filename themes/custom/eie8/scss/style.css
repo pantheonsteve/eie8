@@ -10920,6 +10920,9 @@ img.image-style-hero-image {
 .product-feature-card {
   border: 1px solid #e5e7e9; }
 
+.card-bottom {
+  min-height: 300px; }
+
 .email-webform-block {
   background: green;
   color: #fff !important;
@@ -11591,6 +11594,10 @@ img.image-style-hero-image {
 
 .author-size {
   font-size: 18px !important; }
+
+.btn-email-signup {
+  float: left;
+  margin-left: 85%; }
 
 .hero-image img {
   width: 100%;

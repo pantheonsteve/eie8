@@ -37,14 +37,27 @@
 {% set taxonomy_term %}
   {{ fields.view_taxonomy_term.content|striptags }}
 {% endset %}
+{% set name %}
+  {{ fields.name.content|striptags }}
+{% endset %}
+{% set description %}
+  {{ fields.description__value.content }}
+{% endset %}
+{% set name %}
+  {{ fields.name.content|striptags }}
+{% endset %}
 
-<div class="featured-card wow col mr-3 animated" data-url="{{ taxonomy_term }}" style="visibility: visible;">
-  <img class="inner-border" src="{{ category_image }}" width="100%"/>
-  <br>
-  <br>
-  <a href="{{ taxonomy_term }}"><h2>
-      {{ fields.name.content|striptags }}                </h2></a>
-  <p></p> <!-- spacer don't delete -->
-  <p>{{ fields.description__value.content }}</p>
-  <br class="d-lg-none">
+
+<div {{ attributes.setAttribute('id', 'taxonomy-term-' ~ tid) }} data-url="{{ url }}" class="card">
+  {% if category_image|render is not empty %}
+    <img class="card-img-top" src="{{category_image}}">
+  {% endif %}
+    </img>
+  <div class="card-body card-bottom">
+    {{ title_prefix }}
+    {% if name and not page %}
+      <h4 class="card-title"><a href="{{ taxonomy_term }}">{{ name }}</a></h4>
+    {% endif %}
+    <p class="card-text">{{ description }}</p>
+  </div>
 </div>
