@@ -31,21 +31,26 @@
 #}
 {%
   set classes = [
-    'block',
-    'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
-    'container-fluid',
-  ]
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
 %}
-
-<div class="container-padding">
-  <div>
-    <div class="container">
-  {% if content.field_featured_card_view %}
-    <div{{ content_attributes.removeClass('lead', 'text-left') }}>
-      {{ content.field_featured_card_view }}
-    </div>
+<div{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }}>{{ label }}</h2>
   {% endif %}
-  </div>
+  {{ title_suffix }}
+  <div class="container-padding">
+    <div>
+      <div class="container">
+    {% if content.field_featured_card_view %}
+      <div{{ content_attributes.removeClass('lead', 'text-left') }}>
+        {{ content.field_featured_card_view }}
+      </div>
+    {% endif %}
     </div>
+      </div>
+  </div>
 </div>

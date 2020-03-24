@@ -34,13 +34,11 @@
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
-    'container-fluid',
   ]
 %}
 
 <div{{ attributes.addClass(classes) }}>
   <div class="media-block">
-    <div class="container">
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes.addClass('display-5', 'text-left') }}>{{ label }}</h2>
@@ -51,7 +49,6 @@
       {{ content.body }}
     </div>
   {% endblock %}
-    </div>
   {% if content.field_media %}
     <div{{ content_attributes.removeClass('text-left') }}>
         {{ content.field_media }}

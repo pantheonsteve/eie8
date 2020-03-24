@@ -21,7 +21,17 @@
  * @ingroup themeable
  */
 #}
-<div class="fluid-layout email-webform-block">
+{%
+ set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+    'fluid-layout',
+    'email-webform-block',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
 <div class="container email-webform">
   <div class="row">
     <div class="col-sm-4 col-lg-2">
