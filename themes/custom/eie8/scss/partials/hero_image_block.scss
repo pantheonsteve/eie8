@@ -174,6 +174,12 @@
     /* max-width: 600px; */
     *zoom: 1 !important;
   }
+
+  .media--bundle--image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    bottom: 50vh;
+  }
 }
 
   .slick-dots {

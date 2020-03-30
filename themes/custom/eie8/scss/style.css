@@ -10797,7 +10797,12 @@ label {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     /* max-width: 600px; */
-    *zoom: 1 !important; } }
+    *zoom: 1 !important; }
+
+  .media--bundle--image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    bottom: 50vh; } }
 .slick-dots {
   bottom: 65% !important; }
   .slick-dots li > button {
@@ -11791,7 +11796,12 @@ img.image-style-hero-image {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     /* max-width: 600px; */
-    *zoom: 1 !important; } }
+    *zoom: 1 !important; }
+
+  .media--bundle--image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    bottom: 50vh; } }
 .slick-dots {
   bottom: 65% !important; }
   .slick-dots li > button {
