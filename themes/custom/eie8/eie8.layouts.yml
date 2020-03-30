@@ -53,6 +53,17 @@ one_column_fluid__block_content_image_right:
   regions:
     main:
       label: Main content
+#One Column Fluid - Slideshow Block
+one_column_fluid__block_content_slideshow_block:
+  label: 'One Column Fluid - Slideshow Block'
+  category: 'EiE'
+  template: templates/layout/layouts/one-column-fluid--block-content-slideshow-block
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content
 # Two column.
 two_column:
   label: 'Two column'

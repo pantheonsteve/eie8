@@ -591,13 +591,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    background-color: rgba(0, 48, 87, 0.7);
+    background-color: rgba(88, 48, 109, 0.7);
     img {
       opacity: 0.6;
       height: 100%;
     }
     .layer {
-      background-color: rgba(0, 48, 87, 0.7);
+      background-color: rgba(88, 48, 109, 0.7);
       position: absolute;
       bottom: 0;
       right: 0;
@@ -607,11 +607,15 @@
   }
   .light-blue-tint {
     cursor: pointer;
-    background-image: url("https://mos-general-assets.s3.amazonaws.com/webrefresh/homepage-images/tile-2.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
+    background-color: rgba(0, 115, 152, 0.7);
+    img {
+      opacity: 0.6;
+      height: 100%;
+    }
     .layer {
       background-color: rgba(0, 115, 152, 0.7);
       position: absolute;
@@ -623,13 +627,13 @@
   }
   .light-green-tint {
     cursor: pointer;
-    background-image: url("https://mos-general-assets.s3.amazonaws.com/webrefresh/homepage-images/tile-3.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    background-color: rgba(0, 71, 50, 0.6);
     position: relative;
     .layer {
-      background-color: rgba(72, 122, 123, 0.7);
+      background-color: rgba(0, 71, 50, 0.6);
       position: absolute;
       bottom: 0;
       right: 0;
@@ -762,12 +766,6 @@
 }
 .author-size {
   font-size: 18px !important;
-}
-
-//**Email Signup Block**//
-.btn-email-signup {
-  float:left;
-  margin-left:85%;
 }
 
 

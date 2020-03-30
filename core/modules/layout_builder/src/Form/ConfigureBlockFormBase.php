@@ -3,14 +3,17 @@
 namespace Drupal\layout_builder\Form;
 
 use Drupal\Component\Utility\Html;
+use Drupal\Component\Utility\NestedArray;
 use Drupal\Component\Uuid\UuidInterface;
 use Drupal\Core\Ajax\AjaxFormHelperTrait;
 use Drupal\Core\Block\BlockManagerInterface;
 use Drupal\Core\Block\BlockPluginInterface;
+use Drupal\Core\Entity\Entity\EntityFormDisplay;
 use Drupal\Core\Form\BaseFormIdInterface;
 use Drupal\Core\Form\FormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\SubformState;
+use Drupal\Core\Form\SubformStateInterface;
 use Drupal\Core\Plugin\Context\ContextRepositoryInterface;
 use Drupal\Core\Plugin\ContextAwarePluginAssignmentTrait;
 use Drupal\Core\Plugin\ContextAwarePluginInterface;
@@ -174,6 +177,48 @@ abstract class ConfigureBlockFormBase extends FormBase implements BaseFormIdInte
     $subform_state = SubformState::createForSubform($form['settings'], $form, $form_state);
     $form['settings'] = $this->getPluginForm($this->block)->buildConfigurationForm($form['settings'], $subform_state);
 
+    if ($this->block->getBaseId() === 'block_content') {
+      // Show the block content form here.
+      // @todo inject the entity type manager.
+      /** @var \Drupal\block_content\Plugin\Derivative\BlockContent[] $block_contents */
+      $block_contents = \Drupal::entityTypeManager()->getStorage('block_content')->loadByProperties([ 'uuid' => $this->block->getDerivativeId() ]);
+      if (count($block_contents) === 1) {
+        $form['messages'] = [
+          '#theme' => 'status_messages',
+          '#message_list' => [
+            'warning' => [$this->t("This block is reusable! Any changes made will be applied globally.")],
+          ],
+        ];
+        $form['block_form'] = [
+          '#type' => 'container',
+          '#process' => [[static::class, 'processBlockContentForm']],
+          '#block' => reset($block_contents),
+          // @todo  Inject current user service.
+          '#access' => \Drupal::currentUser()->hasPermission('create and edit custom blocks'),
+        ];
+      }
+    }
+    elseif ($this->block->getBaseId() === 'inline_block') {
+      /** @var \Drupal\block_content\BlockContentInterface $block_content */
+      $block_content = $form['settings']['block_form']['#block'];
+      $form['reusable'] = [
+        '#type' => 'checkbox',
+        '#title' => $this->t('Reusable'),
+        '#description' => $this->t('Would you like to be able to reuse this block? This option can not be changed after saving.'),
+        '#default_value' => $block_content->isReusable(),
+      ];
+      $form['info'] = [
+        '#type' => 'textfield',
+        '#title' => $this->t('Admin title'),
+        '#description' => $this->t('The title used to find and reuse this block later.'),
+        '#states' => [
+          'visible' => [
+            ':input[name="reusable"]' => [ 'checked' => TRUE ],
+          ],
+        ],
+      ];
+    }
+
     $form['actions']['submit'] = [
       '#type' => 'submit',
       '#value' => $this->submitLabel(),
@@ -198,6 +243,26 @@ abstract class ConfigureBlockFormBase extends FormBase implements BaseFormIdInte
   }
 
   /**
+   * Process callback to insert a Custom Block form.
+   *
+   * @param array $element
+   *   The containing element.
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *   The form state.
+   *
+   * @return array
+   *   The containing element, with the Custom Block form inserted.
+   */
+  public static function processBlockContentForm(array $element, FormStateInterface $form_state) {
+    /** @var \Drupal\block_content\BlockContentInterface $block */
+    $block = $element['#block'];
+    EntityFormDisplay::collectRenderDisplay($block, 'edit')->buildForm($block, $element, $form_state);
+    $element['revision_log']['#access'] = FALSE;
+    $element['info']['#access'] = FALSE;
+    return $element;
+  }
+
+  /**
    * Returns the label for the submit button.
    *
    * @return string
@@ -211,6 +276,18 @@ abstract class ConfigureBlockFormBase extends FormBase implements BaseFormIdInte
   public function validateForm(array &$form, FormStateInterface $form_state) {
     $subform_state = SubformState::createForSubform($form['settings'], $form, $form_state);
     $this->getPluginForm($this->block)->validateConfigurationForm($form['settings'], $subform_state);
+
+    if ($this->block->getBaseId() === 'block_content') {
+      $block_form = $form['block_form'];
+      /** @var \Drupal\block_content\BlockContentInterface $block_content */
+      $block_content = $block_form['#block'];
+      $form_display = EntityFormDisplay::collectRenderDisplay($block_content, 'edit');
+      $complete_form_state = $form_state instanceof SubformStateInterface ? $form_state->getCompleteFormState() : $form_state;
+      $form_display->extractFormValues($block_content, $block_form, $complete_form_state);
+      $form_display->validateFormValues($block_content, $block_form, $complete_form_state);
+      // @todo Remove when https://www.drupal.org/project/drupal/issues/2948549 is closed.
+      $form_state->setTemporaryValue('block_form_parents', $block_form['#parents']);
+    }
   }
 
   /**
@@ -227,6 +304,38 @@ abstract class ConfigureBlockFormBase extends FormBase implements BaseFormIdInte
     }
 
     $configuration = $this->block->getConfiguration();
+
+    if ($this->block->getBaseId() === 'block_content' && isset($form['block_form'])) {
+      // @todo Remove when https://www.drupal.org/project/drupal/issues/2948549 is closed.
+      $block_form = NestedArray::getValue($form, $form_state->getTemporaryValue('block_form_parents'));
+      /** @var \Drupal\block_content\BlockContentInterface $block_content */
+      $block_content = $block_form['#block'];
+      $form_display = EntityFormDisplay::collectRenderDisplay($block_content, 'edit');
+      $complete_form_state = $form_state instanceof SubformStateInterface ? $form_state->getCompleteFormState() : $form_state;
+      $form_display->extractFormValues($block_content, $block_form, $complete_form_state);
+      $block_content->save();
+    }
+    // If the block got marked as reusable, then convert the inline_block plugin
+    // to a block_content plugin.
+    elseif ($this->block->getBaseId() === 'inline_block' && $form_state->getValue('reusable')) {
+      $block_info = $form_state->getValue('info');
+      if (empty($block_info)) {
+        $block_info = $form_state->getValue('settings')['label'];
+      }
+      /** @var \Drupal\block_content\BlockContentInterface $block_content */
+      $block_content = $form['settings']['block_form']['#block'];
+      $block_content->setReusable();
+      $block_content->setInfo($block_info);
+      $block_content->save();
+
+      $this->block = $this->blockManager->createInstance('block_content:' . $block_content->uuid(), [
+        'view_mode' => $configuration['view_mode'],
+        'label' => $configuration['label'],
+        'type' => $block_content->bundle(),
+        'uuid' => $block_content->uuid()
+      ]);
+      $configuration = $this->block->getConfiguration();
+    }
 
     $section = $this->sectionStorage->getSection($this->delta);
     $section->getComponent($this->uuid)->setConfiguration($configuration);

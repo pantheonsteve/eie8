@@ -60,6 +60,7 @@
         "drupal/varbase_heroslider_media": "^7.7",
         "drupal/vartheme_bs4": "~6.0",
         "drupal/video_embed_field": "^2.2",
+        "drupal/views_bootstrap": "^4.2",
         "drupal/views_bulk_operations": "^3.6",
         "drupal/webform": "^5.8"
     },
