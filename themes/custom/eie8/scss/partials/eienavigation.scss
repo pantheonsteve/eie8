@@ -1,0 +1,289 @@
+@include media-breakpoint-down(sm) {
+  body {
+    background: green !important;
+  }
+}
+
+@include media-breakpoint-between(sm, lg) {
+  body {
+    background: purple !important;
+  }
+
+  .navbar-brand {
+    position: relative;
+    bottom: 65px;
+  }
+
+  .search-block-form {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .hamburger-nav {
+    position: relative;
+    bottom: 75px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  /*body {
+    background: orange !important;
+  }*/
+
+  .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu {
+    top: 45px !important;
+    border-radius: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    li:first-child > a {
+      border-top: none;
+    }
+
+    .navbar-nav {
+      .navbar-expand-lg {
+        position: absolute;
+      }
+    }
+  }
+
+  .main-nav-item {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .secondary-nav-item {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  #block-mainnavigation-2 {
+    z-index: 0;
+  }
+
+  .dropdown-item {
+    display: block;
+    float: none;
+    list-style: none;
+    margin-left: 0;
+    a {
+      color: #839192;
+      border-top: 1px solid #eee;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+      padding-top: 7px;
+    }
+  }
+
+  #search-block-form {
+    padding-right: 0px !important;
+  }
+
+  fieldset.col-auto {
+      padding-right: 0px !important;
+  }
+}
+
+
+//**Main Nav**//
+.menu-main {
+  height: 60px;
+  margin-top: 20px;
+}
+
+.block-superfishmain {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  margin-top: -2px;
+  position: relative;
+  top: 21px;
+}
+
+.sf-main.sf-menu > li a {
+  color: #474747;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 15px;
+}
+
+
+//***TOP MENUS***//
+.secondary-menu {
+  position: relative;
+  left: 1px;
+}
+.menu--main {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link {
+  color: $darkGray;
+
+  :hover {
+    color: blue;
+  }
+
+  :focus {
+    color: blue;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .menu--secondary-navigation {
+    left: 24px;
+  }
+}
+
+
+.superfish-secondary-navigation {
+
+  @media (min-width: 576px) {
+    position: relative;
+    top: 5px;
+  }
+
+  @media (max-width: 575px) {
+    visibility: hidden;
+    float:right;
+  }
+}
+
+.sf-depth-2 {
+  background: white;
+}
+
+.superfish-main-navigation {
+
+
+  float:right;
+}
+
+.main-nav-mobile {
+  background: #da291c;
+  float:right;
+}
+
+.hamburger-nav {
+  padding-right: 0px;
+}
+
+.sf-depth-2 {
+  background: white;
+}
+
+ul.sf-menu a, ul.sf-menu span.nolink {
+  display: block;
+  padding: 1em 1.1em;
+  position: relative;
+}
+
+a.secondary-nav-link {
+  color: $darkGray;
+  font-size: 14px !important;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+//** navbar **//
+.navbar {
+  position: relative;
+  z-index: 4;
+  height: 93px;
+  margin-bottom: 4px;
+  padding: 0.1rem 1rem !important;
+}
+
+.navbar-nav li.nav-item > a.nav-link {
+  color: $darkGray;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  padding: 15px 13px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+  color: $darkGray;
+}
+
+#superfish-secondary-navigation-toggle {
+  position: relative;
+  bottom: 5px;
+}
+
+.shop-eie-button {
+  //**wrapper for Shop EiE Button to style on non-mobile displays**//
+}
+
+.show-on-mobile {
+  //**Show only on mobile, hide on other screens**//
+  @media (max-width: 575px) {
+    visibility: visible;
+  }
+  visibility: hidden;
+
+  a.shop-eie {
+    bottom: 17px;
+  }
+}
+
+.hide-on-mobile {
+  //**Hide on mobile, show on other screen sizes**//
+}
+
+a.shop-eie {
+  position: relative;
+  font-family: Arial, sans-serif;
+  font-size: 12px !important;
+  font-weight: bold;
+  color: #fff !important;
+  text-transform: uppercase;
+  padding: 12px 24px !important;
+  background: #4089BD;
+  white-space: nowrap;
+
+  @media (max-width:575px){
+    left: 17px;
+  }
+}
+
+.shop-eie-wrapper {
+  position: relative;
+  top: 15px;
+}
+
+//**Search Bar**//
+.form-row.search-block-form.search-form {
+  position: relative;
+  top: 11px;
+  left: 27px;
+}
+
+
+@include media-breakpoint-up(sm) {
+  svg.svg-inline--fa.fa-search.fa-w-16.float-right {
+    position: relative;
+    bottom: 28px;
+    left: 165px;
+  }
+}
+
+svg.svg-inline--fa.fa-search.fa-w-16.float-right {
+  position: relative;
+  bottom: 28px;
+  right: 10px;
+}
+
+//**Search bar button hidden**//
+.search-block-form button {
+  display: none;
+}
+
+
