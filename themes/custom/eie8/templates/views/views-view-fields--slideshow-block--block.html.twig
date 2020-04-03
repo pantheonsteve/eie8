@@ -32,28 +32,43 @@
  */
 #}
 
-{{ fields.field_slide_image }}
-{{ fields.field_button }}
-{{ fields.field_body }}
-{{ fields.field_title }}
+{% set image_overlay %}
+  {{ fields.field_image_overlay.content|striptags }}
+{% endset %}
+{% set image %}
+  {{ fields.field_media_image.content|striptags }}
+{% endset %}
+{% set title %}
+  {{ fields.field_title.content|striptags }}
+{% endset %}
+{% set body %}
+  {{ fields.field_body.content }}
+{% endset %}
+{% set button %}
+  {{ fields.field_button.content }}
+{% endset %}
 
 <div class="media-slide-content">
-  <div class="heroblock jumbotron jumbotron-fluid hero-image media-slide-content media-slide-image" style="background: url({{slide_image}}); background-repeat: no-repeat;
-    background-size: cover; background-position: center center;">
-    <div class="container">
-      <div class="row">
-          <span class="media-slide-title">
-              <h2>{{ slide_title }}</h2>
-          </span>
-          <span class="media-slide-text">{{ slide_text }}</span>
-          <div>
-            {% if content.field_button %}
-              <div class="media-slide-cta">
-                <a href="{{ slide_cta }}">Learn More</a>
-              </div>
-            {% endif %}
+  <div style="background: {{ image_overlay }};">
+    <div class="heroblock jumbotron jumbotron-fluid hero-image media-slide-content media-slide-image" style="background: url({{image}}); background-repeat: no-repeat;
+      background-size: cover; background-position: center center;">
+      <div class="container">
+        <div class="row">
+          <div class="color-overlay">
+            <span class="media-slide-title">
+                <h2>{{ title }}</h2>
+            </span>
+            <span class="media-slide-text">{{ body }}</span>
+            <div>
+              {% if content.field_button %}
+                <div class="media-slide-cta">
+                  <a href="{{ button }}">{{ button }}</a>
+                </div>
+              {% endif %}
+            </div>
           </div>
         </div>
+      </div>
     </div>
   </div>
 </div>

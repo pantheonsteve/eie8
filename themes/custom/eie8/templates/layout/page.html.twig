@@ -141,7 +141,7 @@
                     {% endif %}
                   </div>
                   <div class="col-12 hamburger-nav">
-                    <button class="navbar-toggler navbar-toggler-right main-nav-mobile navbar-dark" type="button" data-toggle="collapse" data-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
+                    <button class="navbar-toggler navbar-toggler-right main-nav-mobile navbar-dark" type="button" data-toggle="collapse" data-target="#MainNav" aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                   </div>
@@ -160,7 +160,7 @@
             {% endif %}
             {{ page.header }}
             {% if page.primary_menu or page.header_form %}
-              <div class="d-none d-sm-block" id="MainNav">
+              <div class="d-none d-sm-block">
                 {{ page.primary_menu }}
                 {% if page.header_form %}
                   <div class="form-inline navbar-form float-right">

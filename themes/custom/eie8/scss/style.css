@@ -13532,6 +13532,10 @@ template {
   /*body {
     background: orange !important;
   }*/
+  .menu-main {
+    height: 72px;
+    margin-top: 8px; }
+
   .dropdown:hover > .dropdown-menu {
     display: block; }
 
@@ -13572,11 +13576,12 @@ template {
     padding-right: 0px !important; }
 
   fieldset.col-auto {
-    padding-right: 0px !important; } }
-.menu-main {
-  height: 60px;
-  margin-top: 20px; }
+    padding-right: 0px !important; }
 
+  .footer-link {
+    min-width: 200px;
+    font-size: 0.8em !important;
+    line-height: 1.0em; } }
 .block-superfishmain {
   justify-content: center;
   display: flex;
@@ -13717,6 +13722,9 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
   position: relative;
   right: 2vw; }
 
+@media (min-width: 992px) {
+  .slide__caption {
+    padding: 0px !important; } }
 /* Colors */
 .dark-gray {
   color: #474747 !important; }

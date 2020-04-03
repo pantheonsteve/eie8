@@ -30,6 +30,12 @@
     background: orange !important;
   }*/
 
+  //**Main Nav**//
+  .menu-main {
+    height: 72px;
+    margin-top: 8px;
+  }
+
   .dropdown:hover>.dropdown-menu {
     display: block;
   }
@@ -86,13 +92,12 @@
   fieldset.col-auto {
       padding-right: 0px !important;
   }
-}
 
-
-//**Main Nav**//
-.menu-main {
-  height: 60px;
-  margin-top: 20px;
+  .footer-link {
+    min-width: 200px;
+    font-size: 0.8em !important;
+    line-height: 1.0em;
+  }
 }
 
 .block-superfishmain {
