@@ -9932,6 +9932,9 @@ a.navbar-brand img {
 .site-footer {
   background: #e5e7e9; }
 
+.copyright-text {
+  font-size: 0.7em; }
+
 /* MIXINS */
 .btn-primary a {
   color: #ffffff;
@@ -14026,6 +14029,9 @@ a.navbar-brand img {
 
 .site-footer {
   background: #e5e7e9; }
+
+.copyright-text {
+  font-size: 0.7em; }
 
 /* GENERAL STYLES
 -------------------------------------------------*/
