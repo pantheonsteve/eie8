@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 801px) {
-  .media-slide-content .media-slide-title {
+  .media-slide-content {
     width: 100%;
     margin-left: calc(20vw - 10%);
     margin-right: auto;
@@ -100,7 +100,7 @@
     /*max-width: 600px;*/
     *zoom: 1;
   }
-  .media-slide-content .media-slide-text {
+  .media-slide-content {
     width: 100%;
     margin-left: calc(20vw - 10%);
     margin-right: auto;
@@ -124,17 +124,6 @@
 .media-slide-opacity-layer {
   height: 400px;
   width: 64%;
-}
-.media-slide-title {
-
-  h2 {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 35px;
-    color: #fff;
-    width: 100%;
-  }
 }
 
 .media-hero-title {
@@ -166,7 +155,7 @@
     width: 55% !important;
   }
 
-  .media-slide-content .media-slide-cta a {
+  .media-slide-content {
     margin-left: calc(20vw - 10%) !important;
     margin-right: auto !important;
     margin-top: 0 !important;
@@ -182,23 +171,6 @@
   }
 }
 
-  .slick-dots {
-    bottom: 65% !important;
-
-    li > button {
-        width: 20px !important;
-        height: 20px !important;
-        border-radius: 50px !important;
-        font-size: 0px !important;
-        color: #fff !important;
-        line-height: 100px !important;
-        text-align: center !important;
-        display: inline !important;
-        margin: 0px !important;
-        padding: 0px !important;
-        outline: none !important;
-      }
-}
 
 .media-hero-text {
   width: 100%;
@@ -206,46 +178,6 @@
   font-size: 22px;
   color: #fff;
   padding: 20px;
-}
-
-span.media-slide-text {
-  width: 100%;
-  font-family: Arial, sans-serif;
-  font-size: 22px;
-  color: #fff;
-  overflow: hidden;
-  z-index: 1000002;
-  padding: 20px;
-}
-
-.media-slide-title {
-
-  h2 {
-    font-family: Arial, sans-serif;
-    font-size: 36px;
-    font-weight: bold;
-    line-height: 35px;
-    color: #fff;
-  }
-}
-
-.media-slide-cta {
-
-  width: 100%;
-
-  a {
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 12px 24px;
-    background: #4089BD;
-    white-space: nowrap;
-    z-index: 1000002;
-    position: absolute;
-    top: 208px;
-  }
 }
 
 .full-width-hero {
