@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Bootstrap Layouts: "1 Column" template.
+ *
+ * Available layout variables:
+ * - wrapper: Wrapper element for the layout container.
+ * - attributes: Wrapper attributes for the layout container.
+ *
+ * Available region variables:
+ * - main
+ *
+ * Each region variable contains the following properties:
+ * - wrapper: The HTML element to use to wrap this region.
+ * - attributes: The HTML attributes to use on the wrapper for this region.
+ * - content: The content to go inside the wrapper for this region.
+ */
+#}
+{% if content %}
+  <h2>HERO IMAGE</h2>
+  <div class="media-slide-content">
+    <div class="heroblock jumbotron jumbotron-fluid hero-image full-width media-slide-content media-slide-image" style="background: url('{{ file_url(content.field_category_image[0]['#media'].field_media_image.entity.uri.value) }}'); background-repeat: no-repeat;
+      background-size: cover; background-position: center center;">
+      <div class="container">
+        <div class="row">
+          <div class="p-5">
+            <div class="media-hero-title">
+              <h2>{{ content.name }}</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

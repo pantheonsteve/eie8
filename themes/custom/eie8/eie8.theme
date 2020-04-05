@@ -54,4 +54,5 @@ function eie8_theme_suggestions_block_alter(array &$suggestions, array $variable
   if (isset($variables['elements']['content']['#block_content'])) {
     array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
   }
+
 }

@@ -31,6 +31,17 @@ one_column_fluid__taxonomy_term_full:
   regions:
     main:
       label: Main content
+#One Column Fluid - taxonomy term w/ hero image
+one_column_fluid__taxonomy_term_full:
+  label: 'One column - Fluid - Taxonomy Term w/ Hero Image'
+  category: 'EiE'
+  template: templates/layout/layouts/one-column-fluid--taxonomy-term-taxonomy-hero.html.twig
+  default_region: main
+  icon_map:
+    - [main]
+  regions:
+    main:
+      label: Main content
 #One Column Fluid - Text and Image CTA Block - Image Left
 one_column_fluid__block_content_2_col_image_left:
   label: 'One Column Fluid - Text and Image CTA Block - Image Left'
