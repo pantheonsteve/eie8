@@ -114,20 +114,17 @@
 {% set name %}
   {{ fields.title.content|striptags }}
 {% endset %}
-
-
+{% set color %}
+  {{ fields.field_color_overlay.content|striptags }}
+{% endset %}
 <div class="media-slide-content">
-  <div>
-    <div class="taxonomy-term-hero" style="background: url({{image}}); background-repeat: no-repeat;
-      background-size: cover; background-position: center center;">
-      <div class="container">
-        <div class="row">
-          <div class="color-overlay">
-            <span class="media-slide-title taxonomy-term-name">
-                <h2>{{ name }}</h2>
-            </span>
-          </div>
-        </div>
+  <div class="color-overlay" style="background:{{ color }};">
+    <div class="section-hero-title">
+      <h2>{{ name }}</h2>
+    </div>
+    <div class="opacity-layer">
+      <div class="taxonomy-term-hero" style="background: url({{image}}); background-repeat: no-repeat;
+        background-size: cover; background-position: center center;">
       </div>
     </div>
   </div>
