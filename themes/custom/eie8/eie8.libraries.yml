@@ -3,7 +3,6 @@ global-styling:
   js:
     js/global.js: {}
     ../../../libraries/superfish/superfish.js: {}
-    ../../../libraries/slick/slick/slick.min.js: {}
   css:
     component:
       css/style.css: {}
