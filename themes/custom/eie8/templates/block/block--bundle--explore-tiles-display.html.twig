@@ -40,6 +40,16 @@
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
+    <div class="container-padding pb-5">
+      <div class="row">
+        <div class="d-none d-md-block col-md-1 offset-md-2">
+          <div class="light-blue-hr"></div>
+        </div>
+        <div class="col-md-9">
+          <h3><strong>{{ label }}</strong></h3>
+        </div>
+      </div>
+    </div>
   {% endif %}
   {{ title_suffix }}
   {% block content %}
