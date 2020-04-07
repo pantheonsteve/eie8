@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,UAAW;EACT,UAAU,EAAE,0CAA0C;EACtD,SAAS;EACT,OAAO,EAAE,gBAAyB;EAClC,SAAS;;AAGX,sBAAuB;EACrB,mBAAmB,EAAE,QAAQ;EAC7B,OAAO,EAAE,gBAAyB;;AAGpC,UAAW;EACT,UAAU,EAAE,oCAAoC;EAChD,QAAQ,EAAE,MAAM;EAChB,WAAW,EAAE,OAAO;EACpB,OAAO,EAAE,KAAK;EACd,KAAK,EC2QuB,IAAI;ED1QhC,MAAM,EC0QsB,IAAI",
-"sources": ["icons.component.scss","../bootstrap-variables.scss"],
-"names": [],
-"file": "icons.component.css"
-}

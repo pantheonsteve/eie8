@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,UAAW;EACT,IAAI,EAAE,GAAG;EACT,iBAAiB,EAAE,gBAAgB;EACnC,aAAa,EAAE,gBAAgB;EAC/B,SAAS,EAAE,gBAAgB;EAC3B,OAAO,EAAE,EAAE;EACX,UAAU,ECggCwB,OAAwB;ED//B1D,SAAS,ECqRmB,IAAI;EDpRhC,WAAW,ECmOiB,GAAG;EDlO/B,OAAO,EAAE,YAAe;EACxB,aAAa,EAAE,iBAAuC;EACtD,mBAAmB,EAAE,CAAC;EACtB,OAAO,EAAE,CAAC;;AAGZ,0CAA2C;EACzC,QAAQ,EAAE,mBAAmB;EAC7B,KAAK,ECmlC6B,IAAM",
-"sources": ["skip-link.component.scss","../bootstrap-variables.scss"],
-"names": [],
-"file": "skip-link.component.css"
-}

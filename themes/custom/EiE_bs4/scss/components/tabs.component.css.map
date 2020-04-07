@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,QAAS;EACP,aAAa,ECsIN,IAAI",
-"sources": ["tabs.component.scss","../bootstrap-variables.scss"],
-"names": [],
-"file": "tabs.component.css"
-}

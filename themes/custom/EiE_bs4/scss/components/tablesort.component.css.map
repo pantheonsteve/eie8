@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,gBAAiB;EACf,OAAO,EAAE,MAAM;;AAGjB,YAAa;EACX,gBAAgB,EC4gCkB,OAAS",
-"sources": ["tablesort.component.scss","../bootstrap-variables.scss"],
-"names": [],
-"file": "tablesort.component.css"
-}

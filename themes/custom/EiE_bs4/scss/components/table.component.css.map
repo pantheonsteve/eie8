@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,uBAAwB;EACtB,cAAc,EAAE,MAAM;EACtB,aAAa,EAAE,iBAAmD;;AAGpE,iBAAkB;EAChB,OAAO,EC2VqB,OAAM;ED1VlC,cAAc,EAAE,GAAG;EACnB,UAAU,EAAE,iBAA6C",
-"sources": ["table.component.scss","../bootstrap-variables.scss"],
-"names": [],
-"file": "table.component.css"
-}

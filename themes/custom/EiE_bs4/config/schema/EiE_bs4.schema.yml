@@ -1,4 +1,0 @@
-# Schema for the configuration files of the VARTHEME_BS4_SUBTHEME.
-EiE_bs4.settings:
-  type: theme_settings
-  label: 'EiE_bs4 settings'

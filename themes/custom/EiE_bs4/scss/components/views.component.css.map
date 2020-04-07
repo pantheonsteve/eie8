@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAUA,+BAA8B;EAC5B,aAAa,EAAE,iBAAuC;;AAGxD;qCACoC;EAClC,KAAK,ECw/B6B,OAAqB;;ADr/BzD,uCAAwC;EACtC,SAAS,ECk2ByB,QAAa;;AD51BjD,kCAAmC;EACjC,OAAO,EAAE,CAAC;;AAMZ,kFAAmF;EACjF,gBAAgB,EAAE,OAAO;;AAM3B,sDAAuD;EACrD,KAAK,ECswB6B,OAAiB;;ADnwBrD;4DAC6D;EAC3D,KAAK,EC09B6B,OAAqB",
-"sources": ["views.component.scss","../bootstrap-variables.scss"],
-"names": [],
-"file": "views.component.css"
-}

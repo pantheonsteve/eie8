@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA;;;yBAG0B;EACxB,UAAU,EAAE,WAAW;EACvB,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,OAAO",
-"sources": ["image-button.component.scss"],
-"names": [],
-"file": "image-button.component.css"
-}

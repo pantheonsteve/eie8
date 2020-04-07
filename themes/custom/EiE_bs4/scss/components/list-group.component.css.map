@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AASA,iBAAkB;EAChB,UAAU,EAAE,iBAAiC;EAC7C,OAAO,EAAE,WAA8B;;AAGzC,wBAAyB;EACvB,MAAM,EAAE,WAA8B",
-"sources": ["list-group.component.scss"],
-"names": [],
-"file": "list-group.component.css"
-}

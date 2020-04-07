@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQC,SAAU;EACR,OAAO,EAAE,QAAQ;;AAEnB,QAAS;EACP,WAAW,EAAE,IAAI;;AAEnB;;sBAEuB;EACrB,KAAK,EAAE,OAAO;;AAEhB;;mBAEoB;EAClB,KAAK,EAAE,OAAO;;AAEhB;;sBAEuB;EACrB,KAAK,EAAE,OAAO;;AAEhB;;qBAEsB;EACpB,KAAK,EAAE,OAAO",
-"sources": ["alerts.component.scss"],
-"names": [],
-"file": "alerts.component.css"
-}

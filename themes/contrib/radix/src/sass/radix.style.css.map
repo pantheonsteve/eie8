@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAII,kCAAc;EACZ,OAAO,EAAE,IAAI;;AAKnB,8BAA+B;EAC7B,OAAO,EAAE,IAAI;;AAOX,qCAAM;EACJ,KAAK,EAAE,IAAI;;ACjBf,oBAAO;EACL,SAAS,EAAE,IAAI;;AAInB,WAAY;EACV,aAAa,EAAE,IAAI;EAEnB,sDACmB;IACjB,aAAa,EAAE,CAAC;;ACVlB,kBAAc;EACZ,KAAK,EAAE,GAAG;;AAMZ,kBAAS;EACP,KAAK,EAAE,GAAG;;ACVd,kBAAmB;EACjB,UAAU,EAAE,OAAO",
-"sources": ["../components/navbar/_navbar.scss","../components/form/_form.scss","../components/forum/_forum.scss","../components/offcanvas/_offcanvas.scss"],
-"names": [],
-"file": "radix.style.css"
-}

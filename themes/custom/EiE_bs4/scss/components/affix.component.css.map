@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,MAAO;EACL,QAAQ,EAAE,KAAK;EACf,KAAK,EAAE,IAAI;EACX,GAAG,EAAE,CAAC;EACN,OAAO,EAAE,IAAI;EACb,IAAI,EAAE,CAAC",
-"sources": ["affix.component.scss"],
-"names": [],
-"file": "affix.component.css"
-}

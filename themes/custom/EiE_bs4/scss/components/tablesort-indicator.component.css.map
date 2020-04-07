@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,UAAW;EACT,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,cAAc,EAAE,GAAG;EACnB,MAAM,EAAE,WAAW;;AAErB,eAAgB;EACd,gBAAgB,EAAE,mDAAmD;;AAEvE,gBAAiB;EACf,gBAAgB,EAAE,iDAAiD",
-"sources": ["tablesort-indicator.component.scss"],
-"names": [],
-"file": "tablesort-indicator.component.css"
-}

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAWA,QAAS;EACP,YAAY,EAAE,CAAC;EACf,UAAU,EAAE,IAAI;ECZhB,eAAS;IACP,OAAO,EAAE,KAAK;IACd,KAAK,EAAE,IAAI;IACX,OAAO,EAAE,EAAE;EDWb,WAAG;IACD,OAAO,EAAE,MAAM;IACf;sBACO;MACL,OAAO,EAAE,YAAY;MACrB,OAAO,EAAE,QAAQ;MACjB,gBAAgB,EEulCc,IAAM;MFtlCpC,MAAM,EAAE,iBAAuD;MAC/D,aAAa,EEkOW,OAAM;IF/NhC;yBACU;MACR,eAAe,EAAE,IAAI;MACrB,gBAAgB,EEihCc,OAAS;;AF7gC7C,oBAAqB;EACnB,aAAa,EAAE,CAAC;EAChB,YAAY,EAAE,OAAO",
-"sources": ["vb-tags.component.scss","../../node_modules/bootstrap/scss/mixins/_clearfix.scss","../bootstrap-variables.scss"],
-"names": [],
-"file": "vb-tags.component.css"
-}

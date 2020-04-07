@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAQA,OAAQ;EACN,gBAAgB,EAAE,OAAO;;AAG3B,gBAAiB;EACf,gBAAgB,EAAE,IAAI;;AAGxB,kCAAmC;EACjC,aAAa,EAAE,MAAa",
-"sources": ["tabledrag.component.scss"],
-"names": [],
-"file": "tabledrag.component.css"
-}
