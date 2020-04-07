@@ -22,13 +22,5 @@
   <h3>{{ title }}</h3>
 {% endif %}
 {% for row in rows %}
-    {%
-      set row_classes = [
-      'col',
-      'explore-tiles'
-    ]
-    %}
-  <div{{ row.attributes.addClass(row_classes) }}>
     {{- row.content -}}
-  </div>
 {% endfor %}

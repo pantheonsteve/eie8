@@ -13712,7 +13712,79 @@ svg.svg-inline--fa.fa-search.fa-w-16.float-right {
 /*---Explore Tiles---*/
 @media (min-width: 992px) {
   .explore-tiles {
-    max-width: 260px; } }
+    max-width: 260px;
+    color: white; } }
+.explore-tile-single {
+  text-align: center;
+  -webkit-transition: transform .1s ease-in-out;
+  -moz-transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out; }
+  @media screen and (min-width: 768px) {
+    .explore-tile-single:hover {
+      transform: scale(1.1);
+      transition: all 150ms;
+      z-index: 1000;
+      -webkit-transition: transform .2s ease-in-out;
+      -moz-transition: transform .2s ease-in-out;
+      transition: transform .2s ease-in-out;
+      z-index: 1; } }
+  .explore-tile-single .subline {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff; }
+  .explore-tile-single span {
+    padding-top: 20px; }
+  .explore-tile-single h1 i {
+    font-size: 60px;
+    opacity: 0.75; }
+  .explore-tile-single h3 {
+    font-size: 40px;
+    color: white; }
+  .explore-tile-single h4 {
+    font-size: 20px;
+    font-weight: 700; }
+  .explore-tile-single div {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer; }
+  .explore-tile-single .up {
+    position: relative;
+    top: -20px; }
+  .explore-tile-single .footer-text {
+    position: absolute;
+    bottom: -190px;
+    left: 0px; }
+  .explore-tile-single .featured-attraction {
+    font-size: 16px;
+    padding-right: 0px !important;
+    padding-left: 0px !important; }
+  @media screen and (max-width: 992px) {
+    .explore-tile-single {
+      height: 100px;
+      text-align: left; }
+      .explore-tile-single .up {
+        top: 0px; }
+      .explore-tile-single .footer-text {
+        display: none; }
+      .explore-tile-single .subline {
+        opacity: 0.75;
+        color: #fff;
+        font-size: 14px; }
+      .explore-tile-single .featured-attraction {
+        font-size: 11px; }
+      .explore-tile-single:hover {
+        transform: scale(1); } }
+  @media (max-width: 1200px) and (min-width: 992px) {
+    .explore-tile-single .footer-text {
+      bottom: -175px; }
+    .explore-tile-single h4 {
+      font-size: 14px; }
+    .explore-tile-single .subline {
+      font-size: 12px; }
+    .explore-tile-single:hover {
+      transform: scale(1); } }
+
 /* Colors */
 .dark-gray {
   color: #474747 !important; }

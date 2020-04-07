@@ -31,6 +31,14 @@
  */
 #}
 {%
+  set row_classes = [
+  'col',
+  'explore-tiles',
+  'explore-tile-single',
+  'mx-1',
+]
+%}
+{%
   set classes = [
     'view',
     'view-' ~ id|clean_class,
@@ -50,34 +58,22 @@
 {% set icon %}
   {{ fields.field_icon.content }}
 {% endset %}
+{% set title %}
+  {{ fields.field_title.content }}
+{% endset %}
 
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if title %}
-    {{ title }}
-  {% endif %}
-  {{ title_suffix }}
-  <div style="background: {{ color }}">
-    <h1 class="d-none d-lg-block mb-md-0 pt-md-1">
-      <a class="explore-tile pr-1 pl-1 wow fadeInUp slow" href="explore/exhibits" style="visibility: visible; animation-name: fadeInUp;">
-        {{ icon }}
-      </a>
-    </h1>
-    <h4 class="exhibits-i-h4">
-      <a class="explore-tile pr-1 pl-1 wow fadeInUp slow" href="explore/exhibits" style="visibility: visible; animation-name: fadeInUp;">
-        {{ text }} <i class="fa fa-long-arrow-right pale-yellow d-lg-none" aria-hidden="true"></i>
-      </a>
-    </h4>
-    <p class="subline white-transparent">
-      <a class="explore-tile pr-1 pl-1 wow fadeInUp slow" href="explore/exhibits" style="visibility: visible; animation-name: fadeInUp;">30 Exhibits</a>
-    </p>
-    <div class="footer-text">
+<div{{ attributes.addClass(row_classes) }} style="background: {{ color }}">
+  <div{{ attributes.addClass(classes) }}>
+    {{ title_prefix }}
+    {% if title %}
+      <h1 class="d-none d-lg-block mb-md-0 pt-md-1">
+          {{ icon }}
+      </h1>
+      <h3>{{ title }}</h3>
       <p>
-        <a class="explore-tile pr-1 pl-1 wow fadeInUp slow" href="explore/exhibits" style="visibility: visible; animation-name: fadeInUp;">
-          <span class="featured-attraction">Featured Exhibit</span><br />
-          <span class="subline white-transparent">Butterfly Garden</span>
-        </a>
+        {{ text }}
       </p>
-    </div>
+    {% endif %}
+      {{ title_suffix }}
   </div>
 </div>

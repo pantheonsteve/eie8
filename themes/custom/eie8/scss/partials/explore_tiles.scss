@@ -3,6 +3,99 @@
 
   .explore-tiles {
     max-width: 260px;
+    color: white;
   }
+}
 
+.explore-tile-single {
+  text-align: center;
+  -webkit-transition: transform .1s ease-in-out;
+  -moz-transition: transform .1s ease-in-out;
+  transition: transform .1s ease-in-out;
+  @media screen and (min-width: $breakSmall) {
+    &:hover {
+      transform: scale(1.1);
+      transition: all 150ms;
+      z-index: 1000;
+      -webkit-transition: transform .2s ease-in-out;
+      -moz-transition: transform .2s ease-in-out;
+      transition: transform .2s ease-in-out;
+      z-index: 1;
+    }
+  }
+  .subline {
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+  }
+  span {
+    padding-top: 20px;
+  }
+  h1 i {
+    font-size: 60px;
+    opacity: 0.75;
+  }
+  h3 {
+    font-size: 40px;
+    color: white;
+  }
+  h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  div {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+  }
+  .up {
+    position: relative;
+    top: -20px;
+  }
+  .footer-text {
+    position: absolute;
+    bottom: -190px;
+    left: 0px;
+  }
+  .featured-attraction {
+    font-size: 16px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+  }
+  @media screen and (max-width: $breakMedium) {
+    height: 100px;
+    text-align: left;
+    .up {
+      top: 0px;
+    }
+    .footer-text {
+      display: none;
+    }
+    .subline {
+      opacity: 0.75;
+      color: #fff;
+      font-size: 14px;
+    }
+    .featured-attraction {
+      font-size: 11px;
+    }
+    &:hover {
+      transform: scale(1);
+    }
+  }
+  @media (max-width: $breakLarge) and (min-width: $breakMedium) {
+    .footer-text {
+      bottom: -175px;
+    }
+    h4 {
+      font-size: 14px;
+    }
+    .subline {
+      font-size: 12px;
+    }
+    &:hover {
+      transform: scale(1);
+    }
+  }
 }
