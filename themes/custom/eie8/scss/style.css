@@ -13445,9 +13445,10 @@ template {
     .dropdown-menu .navbar-nav .navbar-expand-lg {
       position: absolute; }
 
-  .main-nav-item {
-    margin-left: 3px;
-    margin-right: 3px; }
+  .multilevel-menu {
+    position: absolute;
+    left: 100%;
+    margin-top: -45px; }
 
   .secondary-nav-item {
     margin-left: 3px;
